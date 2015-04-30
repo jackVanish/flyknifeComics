@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    {% if page.page_class == "page-home" %}
+        {% capture meta_title %}{{ site.title }} – {{ site.tagline }}{% if paginator.page > 1 %} &ndash; Page {{ paginator.page }}{% endif %}{% endcapture %}
+    {% else %}
+        {% capture meta_title %}{{ page.title }} – {{ site.title }}{% endcapture %}
+    {% endif %}
+
+    {% if page.introduction %}
+        {% capture meta_description %}{{ page.introduction }}{% endcapture %}
+    {% elsif page.description %}
+        {% capture meta_description %}{{ page.description }}{% endcapture %}
+    {% else %}
+        {% capture meta_description %}{{ site.description }}{% if paginator.page > 1 %} – Page {{ paginator.page }}{% endif %}{% endcapture %}
+    {% endif %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, minimal-ui">
+
+    <title>{{ meta_title }}</title>
+
+    <link rel="stylesheet" href="/css/flyknife.css">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+    <link rel="author" href="/humans.txt">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="apple-mobile-web-app-title" content="{{ meta_title }}">
+    <meta name="description" content="{{ meta_description }}">
+    <meta name="theme-color" content="#b4d455">
+
+    {% if page.page_class != "page-not-found" %}
+        <!-- Twitter Microdata and OpenGraph -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@{{ site.author_twitter }}">
+        <meta name="twitter:title" content="{{ meta_title }}">
+        <meta name="twitter:description" content="{{ meta_description }}">
+        <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/favicon.png">
+        <meta name="twitter:domain" content="{{ site.url | replace: 'https://', '' }}">
+
+        <meta property="og:title" content="{{ meta_title }}">
+        <meta property="og:description" content="{{ meta_description }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/{% if page.page_class != "page-home" %}{{ page.url }}{% endif %}">
+        <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/favicon.png">
+    {% else %}
+        <meta name="robots" content="noindex,nofollow">
+    {% endif %}
+
+    {% include js-head.html %}
+
+</head>
+<body{% if page.page_class %} class="{{ page.page_class }}"{% endif %}>
+
+    <header class="wrap  clear" role="banner">
+        <a class="site-title" rel="home" href="/" tabindex="-1">
+            <h1>{{ site.title }}</h1>
+        </a>
+        <div class="site-tagline">{{ site.tagline }}</div>
+    </header>
+
+    <nav class="wrap  clear  primary-navigation" role="navigation">
+        <ol class="primary-navigation-list">
+            <li class="primary-navigation-home"><a rel="home" href="/" tabindex="1">Home</a></li><!--
+         --><li class="primary-navigation-about"><a rel="me" href="/about" tabindex="2">About</a></li><!--
+         --><li class="primary-navigation-life-comix"><a href="/life-comix" tabindex="3">Life Comix</a></li><!--
+         --><li class="primary-navigation-projects"><a href="/projects" tabindex="4">Projects</a></li>
+        </ol>
+    </nav>

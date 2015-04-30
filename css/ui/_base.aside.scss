@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    $BASE - Aside
+\*------------------------------------*/
+
+/**
+ * The width of the asides is static above the medium breakpoint and always
+ * floated within an article or list of articles. The math is calculated as in
+ * `_content.scss`.
+ */
+aside {
+    width: $aside-width;
+    font-family: $secondary-font-stack;
+    @include media(">medium") {
+        float: left;
+        margin-left: -($aside-width + $default-padding);
+    }
+    @include media("<=medium") {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        order: 999;
+    }
+}

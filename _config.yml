@@ -1,0 +1,23 @@
+title:       Flyknife Comics
+tagline:     "Online Home of Snakepunk since 1993"
+description: "SITE META DESCRIPTION"
+
+author:           Bruce Delo
+author_email:     email@email.ninja
+author_twitter:   FlyknifeComics
+
+url: http://lab.chrisburnell.com/flyknife
+
+timezone: America/Halifax
+
+destination: ./_site
+layouts: ./_layouts
+exclude: ['node_modules', '.sass-cache']
+
+paginate: 10
+paginate_path: 'page:num'
+
+gems:
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji

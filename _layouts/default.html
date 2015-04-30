@@ -1,0 +1,23 @@
+{% include header.html %}
+
+
+<main class="wrap  clear  content" role="main">
+    <article>
+
+        {% if page.title %}
+            <h1 class="page-title" role="heading">{{ page.title }}</h1>
+        {% endif %}
+
+        {% include main-aside.html %}
+
+        {% if page.description %}
+            <h2 class="page-description">{{ page.description }}</h2>
+        {% endif %}
+
+        {{ content }}
+
+    </article>
+</main>
+
+
+{% include footer.html %}
