@@ -440,7 +440,7 @@ h6 {
 
 p {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Abel', sans-serif;
 }
 p:not(:last-child) {
     margin-bottom: 1.25rem;
@@ -985,7 +985,7 @@ button,
 .sectionHead
 {
     color: #8cddff;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .center
