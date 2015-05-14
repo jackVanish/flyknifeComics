@@ -983,7 +983,11 @@ button,
 /*Added by Bruce, 20150514*/
 .sectionHead
 {
-    text-align:center;
     color: #8cddff;
     font-family: 'Oswald', sans-serif;
+}
+
+.center
+{
+    text-align:center;
 }
