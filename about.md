@@ -4,7 +4,7 @@ layout: default
 title: About
 ---
 
-<h2 class="sectionHeader">Gamez 'n' Toyz From a Future Nobody Asked For</h2>
+<h2 class="sectionHead">Gamez 'n' Toyz From a Future Nobody Asked For</h2>
 
 Flyknife Comics is the greasy brain-spawn of a mind raised on the Grid. Wired into the NETWORLD from birth, cyber-failure
 BRUCE DELO uses his computer-augmented brain to beam hard truths and harder Comix into the mindspace of a blasted age.
@@ -13,7 +13,7 @@ amid the wreckage of HALIFAX_1, ready to rock the CITYBLOCK.EXE harder than it's
 
 Hitch up your boots and grab your decks- the GRIDDZONE waits for no one, and the Apocalypse Clock is ticking.
 
-<h2 class="sectionHeader">READ THE COMICS THE BATTERY COULDN'T STOP</h2>
+<h2 class="sectionHead">READ THE COMICS THE BATTERY COULDN'T STOP</h2>
   
   
 ## >_ CHARACTERS ##
