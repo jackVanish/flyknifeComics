@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    #OBJECTS - Primary Navigation
+\*------------------------------------*/
+
+.primary-navigation {
+    font-family: "Englebert";
+}
+.primary-navigation-list {
+    overflow: hidden;
+    a {
+        color: $brand;
+        display: block;
+        padding: 1rem;
+        position: relative;
+        outline: none;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-shadow: 0 0 .5rem rgba($brand, .5);
+        @include animation(glow 2.5s ease alternate infinite);
+        &:hover,
+        &:focus,
+        &:active {
+            color: $brand-alt;
+            text-shadow: 0 0 .75rem $brand-alt;
+            @include animation(none);
+            &:before {
+                top: -100%; // hidden
+                @include animation(none)
+            }
+            &:after {
+                top: 80%; // visible
+            }
+        }
+        &:before,
+        &:after {
+            content: "";
+            height: 1px;
+            position: absolute;
+            top: 80%;
+            left: 0;
+            right: 0;
+        }
+        &:before {
+            box-shadow: 0 0 2em $brand,
+                        inset 0 0 1px rgba($brand, .05);
+            @include animation(glow-shadow 2.5s ease alternate infinite);
+        }
+        &:after {
+            top: -100%; // hidden
+            box-shadow: 0 0 2em $brand-alt,
+                        inset 0 0 1px rgba($brand-alt, .05);
+        }
+    }
+    li {
+        display: inline-block;
+        &:nth-child(2) a {
+            animation-duration: 5s;
+        }
+        &:nth-child(3) a {
+            animation-duration: 1;
+            animation-delay: 1.25s;
+        }
+        &:nth-child(4) a {
+            animation-name: glow-drastic;
+            animation-timing-function: cubic-bezier(1, 0, 0, 1) !important;
+            &:before {
+                @include animation(glow-drastic-shadow 2.5s cubic-bezier(1, 0, 0, 1) alternate infinite);
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                &:before {
+                    @include animation(none);
+                }
+            }
+        }
+    }
+}
+@keyframes glow {
+    0% {
+        color: rgba($brand, .75);
+        text-shadow: 0 0 .5rem rgba($brand, .5);
+    }
+    100% {
+        color: $brand;
+        text-shadow: 0 0 .75rem $brand;
+    }
+}
+@keyframes glow-shadow {
+    0% {
+        box-shadow: 0 0 2em $brand,
+                    inset 0 0 1px rgba($brand, .05);
+    }
+    100% {
+        box-shadow: 0 0 2em $brand-light,
+                    inset 0 0 1px rgba($brand-light, .05);
+    }
+}
+@keyframes glow-drastic {
+    0% {
+        color: rgba($brand, .65);
+        text-shadow: none;
+    }
+    100% {
+        color: $brand;
+        text-shadow: 0 0 2rem $brand;
+    }
+}
+@keyframes glow-drastic-shadow {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 2em $brand-light,
+                    inset 0 0 1px rgba($brand-light, .05);
+    }
+}

@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #OBJECTS - Header
+\*------------------------------------*/
+
+.logo {
+    display: block;
+    padding: 1rem 0;
+        @include animation(wobble .7s ease alternate infinite);
+        animation-play-state: paused;
+    &:hover,
+    &:focus,
+    &:active {
+        animation-play-state: running;
+    }
+}
+@keyframes wobble {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-0.5em);
+    }
+}

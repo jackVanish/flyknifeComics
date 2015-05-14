@@ -1,12 +1,35 @@
 @charset "UTF-8";
 
-@import "normalize",
-        "include-media";
-@import "ui/settings.global",
-        "ui/settings.branding",
-        "ui/tools.mixins",
-        "ui/base.layout",
-        "ui/base.typography",
-        "ui/base.header",
-        "ui/base.content",
-        "ui/base.aside";
+// #SETTINGS
+@import "settings.global";
+
+// #TOOLS
+@import "tools.include-media",
+        "tools.mixins";
+
+// #GENERIC
+@import "generic.normalize",
+        "generic.box-sizing";
+
+// #BASE
+@import "base.page",
+        "base.typography",
+        "base.header",
+        "base.article",
+        "base.aside",
+        "base.footer",
+        "base.buttons";
+
+// #OBJECTS
+@import "objects.layout",
+        "objects.header",
+        "objects.primary-navigation",
+        "objects.content",
+        "objects.media",
+        "objects.print";
+
+// #COMPONENTS
+@import "components.styleguide";
+
+// #TRUMPS
+@import "trumps.helpers";

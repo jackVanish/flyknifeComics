@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #OBJECTS - Buttons
+\*------------------------------------*/
+
+button,
+.button {
+    @extend %non-selectable;
+    &:hover,
+    &:focus,
+    &:active {
+
+    }
+    &:active {
+
+    }
+    &[disabled] {
+        opacity: .4;
+    }
+}

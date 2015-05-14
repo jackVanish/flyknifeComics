@@ -1,15 +1,17 @@
 /**
- * Flyknife Comics gulp Configuration
+ * Flyknife gulp Configuration
  */
 
 // Define gulp objects
 var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
+    csscomb      = require('gulp-csscomb'),
     minifycss    = require('gulp-minify-css'),
     plumber      = require('gulp-plumber'),
     notify       = require('gulp-notify'),
     rename       = require('gulp-rename'),
     sass         = require('gulp-sass'),
+    sourcemaps   = require('gulp-sourcemaps'),
     watch        = require('gulp-watch');
 
 // Define the locations of our assets
@@ -21,14 +23,19 @@ var cssPath = 'css/';
 gulp.task('css', function() {
     return gulp.src(cssPath + 'flyknife.scss')
         .pipe(plumber())
+        .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
             style: 'expanded'
         }))
         .pipe(autoprefixer('last 2 versions', '> 1%'))
+        .pipe(csscomb())
         .pipe(gulp.dest(cssPath))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(minifycss())
+        .pipe(minifycss({
+            advanced: false
+        }))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(cssPath))
         .pipe(notify({ title: 'gulp', message: 'CSS compiled.', onLast: true }));
 });

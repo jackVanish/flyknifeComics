@@ -1,17 +1,22 @@
 title:       Flyknife Comics
-tagline:     "Online Home of Snakepunk since 1993"
-description: "SITE META DESCRIPTION"
+description: "DESCRIPTION"
 
-author:           Bruce Delo
-author_email:     email@email.ninja
-author_twitter:   FlyknifeComics
+author:         Bruce Delo
+author_twitter: FlyknifeComics
 
-url: http://jackvanish.github.io/flyknifeComics
+url:     http://localhost:4000
+baseurl: ""
+
+url_twitter: https://twitter.com/FlyknifeComics
+
+copyright:     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported
+url_copyright: http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en
 
 timezone: America/Halifax
 
 destination: ./_site
 layouts: ./_layouts
+permalink: /:categories/:title/
 exclude: ['node_modules', '.sass-cache']
 
 paginate: 10
