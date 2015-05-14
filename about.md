@@ -14,20 +14,22 @@ amid the wreckage of HALIFAX_1, ready to rock the CITYBLOCK.EXE harder than it's
 Hitch up your boots and grab your decks- the GRIDDZONE waits for no one, and the Apocalypse Clock is ticking.
 
 ## READ THE COMICS THE BATTERY COULDN'T STOP ##
-
+  
+  
 ## >_ CHARACTERS ##
-
+  
+  
 ### BRUCE DELO ###
 **ORIGINAL APPEARANCE:** *Hyper Punks Issue 881 - Mercenary Lunatics of Hypersector X-6-X*
 Born and raised in the NETWORLD, Bruce is the product of a mind placed at ground zero for the simultaneous arrival of 
 the internet, imported anime, and readily available handheld video games. Armed with a CYBERLINK-8 TRIPLE-CORE DATADECK
 and an innate knowledge of the ebb and flow of the CYBERLANE, Delo fights the forces of COMMANDER ZETA by wiring comix
 made of neon and dying stars into the brains of a generation. 
-**STRENGTH:** 12
-**LATERAL ATTACK POWER:** 6
-**CYBER-DECK:** 8x3
-**QUOTE:** "Statistically speaking, anything is possible."
-
+**STRENGTH:** 12  
+**LATERAL ATTACK POWER:** 6  
+**CYBER-DECK:** 8x3  
+**QUOTE:** "Statistically speaking, anything is possible."  
+  
 ### C.H.R.I.S ###
 **ORIGINAL APPEARANCE:** *Artificial Intelligence Comix Double-Digest: SWORD ISSUE*
 Artificial Intelligence from the future and sworn enemy of R.A.N.C.O.U.R, the CYBER-HALBERD REACTIVE INTELLIGENCE SYSTEM
@@ -35,11 +37,11 @@ Artificial Intelligence from the future and sworn enemy of R.A.N.C.O.U.R, the CY
 in all computers simultaneously, CHRIS is never more than a doubleclick and a RAM-Swap away from delivering sweet read-
 only justice to COMMANDER ZETA'S Rogue Cryptograms. Fighting against ANCIENT_EVIL.EXE for a brighter, cleaner WEBZONE, 
 CHRIS can typically be found at chrisburnell.com. 
-**STRENGTH:** 777
-**LATERAL ATTACK POWER:** 777
-**CYBER-DECK:** 777x777
-**QUOTE:** "SCUMBAG!" 
-
+**STRENGTH:** 777  
+**LATERAL ATTACK POWER:** 777  
+**CYBER-DECK:** 777x777  
+**QUOTE:** "SCUMBAG!"   
+  
 ### CHRISTIAN DEWOLF ###
 **ORIGINAL APPEARANCE:** *Knifewolf//Hyper Punks Double Digest: ATTAXX! Assault on Gogol-1010*
 Christian "The Wolf" DeWolf, owner and operator of Wolfbutler Comedy Server, is an international street cyber-
@@ -51,11 +53,11 @@ such power, he fights on the side of good. He can be found at wolfbutler.com.
 **LATERAL ATTACK POWER:** 22
 **CYBER-DECK:** 2x9
 **QUOTE:** "Better watch out when my katana's CYBER-D METER is full- critical strike! *Atari*!"
-
+  
 ### JON PYE ###
 **ORIGINAL APPEARANCE:** [REDACTED]
-...
-**STRENGTH:** 000
-**LATERAL ATTACK POWER:** 000
-**CYBER-DECK:** 000x000
-**QUOTE:** "[REDACTED] THIRST AGAIN. [REDACTED] AGAIN."
+...  
+**STRENGTH:** 000  
+**LATERAL ATTACK POWER:** 000  
+**CYBER-DECK:** 000x000  
+**QUOTE:** "[REDACTED] THIRST AGAIN. [REDACTED] AGAIN."  
