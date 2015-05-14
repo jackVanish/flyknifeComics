@@ -49,9 +49,9 @@ samurai and business operator. By day, he puts his opponents in *atari* with sen
 but by night, The Wolf stalks the streets of HALIFAX_1, raising his sword to COMMANDER ZETA and striking back against 
 the darkness with defiant swings of his katana. His mighty swing can cut the very fabric of the GRIDDZONE, but despite
 such power, he fights on the side of good. He can be found at wolfbutler.com.   
-**STRENGTH:** 8
-**LATERAL ATTACK POWER:** 22
-**CYBER-DECK:** 2x9
+**STRENGTH:** 8    
+**LATERAL ATTACK POWER:** 22   
+**CYBER-DECK:** 2x9   
 **QUOTE:** "Better watch out when my katana's CYBER-D METER is full- critical strike! *Atari*!"
   
 <h3 class="sectionHead">JON PYE</h3>
