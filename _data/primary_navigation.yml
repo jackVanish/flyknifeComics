@@ -7,9 +7,7 @@
   rel: "me"
 
 - title: Life Comix
-  url: "/about"
-  rel: "me"
+  url: "/life-comix"
 
 - title: Projects
-  url: "/about"
-  rel: "me"
+  url: "/projects"
