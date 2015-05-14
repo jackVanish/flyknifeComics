@@ -979,3 +979,11 @@ button,
             user-select: none;
     -webkit-touch-callout: none;
 }
+
+/*Added by Bruce, 20150514*/
+.sectionHead
+{
+    text-align:center;
+    color: #8cddff;
+    font-family: 'Oswald', sans-serif;
+}
