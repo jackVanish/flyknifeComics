@@ -6,16 +6,16 @@ date: 2015-01-01 00:00:01
 title: Initialize flyknife.exe
 ---
 
-**>_** login  
-**>_** p?:  
-**>_**  
-**>_** Welcome to VICTOR.SYS (C) DYNECORP 777,777  
-**>_** cd /data/sites/gridd/flyknife  
-**>_** sh flyknife.exe  
-**>_** WARNING: Minumum system requirements for flyknife.exe not met. You may experience system instability. Continue?
-**>_** y/n [y]  
-**>_**  
-**>_**  
+** >_ ** login  
+** >_ ** p?:  
+** >_ **  
+** >_ ** Welcome to VICTOR.SYS (C) DYNECORP 777,777  
+** >_ ** cd /data/sites/gridd/flyknife  
+** >_ ** sh flyknife.exe  
+** >_ ** WARNING: Minumum system requirements for flyknife.exe not met. You may experience system instability. Continue?
+** >_ ** y/n [y]  
+** >_ **  
+** >_ **  
 
 Hello and welcome to the redesigned Flyknife Comics website! We had to redesign after the old data sites were fragged when the Battery went pearwise, but we're set up in a much more stable webspace now. That means we can keep delivering high-quality content to you every week, without delay or pause.   
 
@@ -23,4 +23,4 @@ I'll take this opportunity to welcome all you new deckers and deckettes to the Z
 
 I'll get right to it, kids and skids, so take it breezy and lock in your GRIDD-coordinates. It's gonna be hard firin' from here on out so don't waste any time- the Apocalypse Clock is tickin'.   
 
-- Bruce
+_Bruce_
