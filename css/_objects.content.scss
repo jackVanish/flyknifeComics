@@ -4,6 +4,14 @@
 
 .content {
     padding: 2rem 10%;
+    a {
+        font-weight: 600;
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
 }
 
 .sectionHead {

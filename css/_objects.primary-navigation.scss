@@ -17,7 +17,6 @@
         &:focus,
         &:active {
             color: $brand-alt;
-            text-decoration: none;
             text-shadow: 0 0 .75rem $brand-alt;
             @include animation(none);
             &:before {

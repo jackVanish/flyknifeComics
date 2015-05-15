@@ -442,11 +442,6 @@ a {
     color: #8cddff;
     text-decoration: none;
 }
-a:hover,
-a:focus,
-a:active {
-    text-decoration: underline;
-}
 
 p {
     margin: 0;
@@ -729,7 +724,6 @@ button[disabled],
 .primary-navigation-list a:focus,
 .primary-navigation-list a:active {
     color: #f473ff;
-    text-decoration: none;
     text-shadow: 0 0 .75rem #f473ff;
     -webkit-animation: none;
             animation: none;
@@ -878,6 +872,14 @@ button[disabled],
 \*------------------------------------*/
 .content {
     padding: 2rem 10%;
+}
+.content a {
+    font-weight: 600;
+}
+.content a:hover,
+.content a:focus,
+.content a:active {
+    text-decoration: underline;
 }
 
 .sectionHead {
