@@ -648,6 +648,16 @@ blockquote cite:before {
     content: "\2013\00a0";
 }
 
+hr {
+    background-color: #8cddff;
+    width: 100%;
+    height: 1px;
+    display: block;
+    border: 0;
+    margin: 2.5rem 0;
+    box-shadow: 0 0 .5rem #8cddff, 0 1px 0 rgba(244, 115, 255, .6), 0 1px .5rem rgba(244, 115, 255, .9);
+}
+
 /**
  * Fix `iframe` and `video`
  */
