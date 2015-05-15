@@ -1,5 +1,5 @@
 title:       Flyknife Comics
-description: "DESCRIPTION"
+description: "All The Snakepunk that the Battery Can’t Stop"
 
 author:         Bruce Delo
 author_twitter: FlyknifeComics
@@ -8,6 +8,8 @@ url:     http://beta.flyknifecomics.com
 baseurl: ""
 
 url_twitter: https://twitter.com/FlyknifeComics
+
+color_brand: BAD455
 
 copyright:     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported
 url_copyright: http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en

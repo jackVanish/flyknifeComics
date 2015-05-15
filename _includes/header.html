@@ -3,11 +3,27 @@
 <html lang="en">
 <head>
 
+    {% if page.page_class == "page-home" %}
+        {% capture meta_title %}{{ site.title }} – {{ site.description | strip_html }}{% if paginator.page > 1 %} &ndash; Page {{ paginator.page }}{% endif %}{% endcapture %}
+    {% else %}
+        {% capture meta_title %}{{ page.title }} – {{ site.title }}{% endcapture %}
+    {% endif %}
+
+    {% if page.introduction %}
+        {% capture meta_description %}{{ page.introduction | strip_html }}{% endcapture %}
+    {% elsif page.description %}
+        {% capture meta_description %}{{ page.description | strip_html }}{% endcapture %}
+    {% else %}
+        {% capture meta_description %}{{ site.description }}{% if paginator.page > 1 %} – Page {{ paginator.page }}{% endif %}{% endcapture %}
+    {% endif %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, minimal-ui">
 
-    <title>TITLE</title> <!-- CHANGE ME -->
+    <title>{{ meta_title }}</title>
 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Englebert">
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/flyknife.css"> <!-- CHANGE ME TO .min -->
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
@@ -19,44 +35,40 @@
     <meta http-equiv="cleartype" content="on">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="apple-mobile-web-app-title" content="Flyknife Comics">
-    <meta name="description" content="All The Snakepunk that the Battery Can't Stop"> <!-- CHANGE ME -->
-    <meta name="theme-color" content="#BAD455"> <!-- CHANGE ME -->
+    <meta name="apple-mobile-web-app-title" content="{{ meta_title }}">
+    <meta name="description" content="{{ meta_description }}">
+    <meta name="theme-color" content="#{{ site.color_brand }}">
 
     {% if page.page_class != "page-not-found" %}
         <!-- Twitter Microdata and OpenGraph -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:creator" content="@FlyknifeComics"> <!-- CHANGE ME -->
-        <meta name="twitter:title" content="TITLE"> <!-- CHANGE ME -->
-        <meta name="twitter:description" content="DESCRIPTION"> <!-- CHANGE ME -->
+        <meta name="twitter:creator" content="@{{ site.author_twitter }}">
+        <meta name="twitter:title" content="{{ meta_title }}">
+        <meta name="twitter:description" content="{{ meta_description }}">
         <meta name="twitter:image:src" content="IMAGE"> <!-- CHANGE ME -->
         <meta name="twitter:domain" content="{{ site.url | replace: 'http://', '' }}">
         {% if page.twitter == true %}
             <meta name="twitter:widgets:theme" content="light">
-            <meta name="twitter:widgets:link-color" content="#BAD455"> <!-- CHANGE ME -->
-            <meta name="twitter:widgets:border-color" content="#BAD455"> <!-- CHANGE ME -->
+            <meta name="twitter:widgets:link-color" content="#{{ site.color_brand }}">
+            <meta name="twitter:widgets:border-color" content="#{{ site.color_brand }}">
         {% endif %}
-
-        <meta property="og:title" content="TITLE">
-        <meta property="og:description" content="DESCRIPTION">
+        <meta property="og:title" content="{{ meta_title }}">
+        <meta property="og:description" content="{{ meta_description }}">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/{% if page.page_class != "page-home" %}{{ page.url }}{% endif %}">
-        <meta property="og:image" content="IMAGE">
+        <meta property="og:image" content="IMAGE"> <!-- CHANGE ME -->
     {% else %}
         <meta name="robots" content="noindex,nofollow">
     {% endif %}
 
     {% include js-head.html %}
-    <!-- Add fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 
 </head>
 <body{% if body_class %} class="{{ body_class }}"{% endif %}>
 
     <header class="wrap  clear" role="banner">
 
-        <a href="/" class="logo" title="Flyknife Comics" tabindex="-1">
+        <a href="/" class="logo" title="{{ site.title }}" tabindex="-1">
             <img alt="" role="presentation"
                  src="/images/logo.png"
                  srcset="{{ site.url }}{{ site.baseurl }}/images/logo.png 1x,

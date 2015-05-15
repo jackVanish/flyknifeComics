@@ -2,25 +2,22 @@
     #OBJECTS - Primary Navigation
 \*------------------------------------*/
 
-.primary-navigation {
-    font-family: "Englebert";
-}
 .primary-navigation-list {
     overflow: hidden;
     a {
-        color: $brand;
         display: block;
         padding: 1rem;
         position: relative;
         outline: none;
         font-size: 1.5rem;
-        text-decoration: none;
+        font-family: $primary-font-stack;
         text-shadow: 0 0 .5rem rgba($brand, .5);
         @include animation(glow 2.5s ease alternate infinite);
         &:hover,
         &:focus,
         &:active {
             color: $brand-alt;
+            text-decoration: none;
             text-shadow: 0 0 .75rem $brand-alt;
             @include animation(none);
             &:before {

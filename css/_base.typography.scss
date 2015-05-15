@@ -24,7 +24,13 @@ h4 {
 }
 
 a {
-
+    color: $brand;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
 }
 
 p {

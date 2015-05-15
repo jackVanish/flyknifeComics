@@ -1,7 +1,12 @@
 /*------------------------------------*\
-    #OBJECTS - Primary Navigation
+    #OBJECTS - Content
 \*------------------------------------*/
 
 .content {
     padding: 2rem 10%;
+}
+
+.sectionHead {
+    color: $brand;
+    font-family: $secondary-font-stack;
 }
