@@ -82,16 +82,6 @@
         text-shadow: 0 0 .75rem $brand;
     }
 }
-@keyframes glow-shadow {
-    0% {
-        box-shadow: 0 0 2em $brand,
-                    inset 0 0 1px rgba($brand, $opacity-low);
-    }
-    100% {
-        box-shadow: 0 0 2em $brand-light,
-                    inset 0 0 1px rgba($brand-light, $opacity-low);
-    }
-}
 @keyframes glow-drastic {
     0% {
         color: rgba($brand, $opacity-medium);
@@ -100,6 +90,16 @@
     100% {
         color: $brand;
         text-shadow: 0 0 2rem $brand;
+    }
+}
+@keyframes glow-shadow {
+    0% {
+        box-shadow: 0 0 2em $brand,
+                    inset 0 0 1px rgba($brand, $opacity-low);
+    }
+    100% {
+        box-shadow: 0 0 2em $brand-light,
+                    inset 0 0 1px rgba($brand-light, $opacity-low);
     }
 }
 @keyframes glow-drastic-shadow {

@@ -945,24 +945,6 @@ pre {
     }
 }
 
-@-webkit-keyframes glow-shadow {
-    0% {
-        box-shadow: 0 0 2em #8cddff, inset 0 0 1px rgba(140, 221, 255, .05);
-    }
-    100% {
-        box-shadow: 0 0 2em white, inset 0 0 1px rgba(255, 255, 255, .05);
-    }
-}
-
-@keyframes glow-shadow {
-    0% {
-        box-shadow: 0 0 2em #8cddff, inset 0 0 1px rgba(140, 221, 255, .05);
-    }
-    100% {
-        box-shadow: 0 0 2em white, inset 0 0 1px rgba(255, 255, 255, .05);
-    }
-}
-
 @-webkit-keyframes glow-drastic {
     0% {
         color: rgba(140, 221, 255, .6);
@@ -982,6 +964,24 @@ pre {
     100% {
         color: #8cddff;
         text-shadow: 0 0 2rem #8cddff;
+    }
+}
+
+@-webkit-keyframes glow-shadow {
+    0% {
+        box-shadow: 0 0 2em #8cddff, inset 0 0 1px rgba(140, 221, 255, .05);
+    }
+    100% {
+        box-shadow: 0 0 2em white, inset 0 0 1px rgba(255, 255, 255, .05);
+    }
+}
+
+@keyframes glow-shadow {
+    0% {
+        box-shadow: 0 0 2em #8cddff, inset 0 0 1px rgba(140, 221, 255, .05);
+    }
+    100% {
+        box-shadow: 0 0 2em white, inset 0 0 1px rgba(255, 255, 255, .05);
     }
 }
 
