@@ -6,7 +6,7 @@ page_class: page-home
 <ol class="wrap  clear" role="list">
     {% for post in site.posts %}
         <li>
-            <a href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+            <a class="postLink" href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
         </li>
     {% endfor %}
 </ol>
