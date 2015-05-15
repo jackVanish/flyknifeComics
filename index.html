@@ -3,10 +3,10 @@ layout: default
 page_class: page-home
 ---
 
-<ol class="wrap  clear" role="list">
+<ol role="list">
     {% for post in site.posts %}
         <li>
-            <a class="postLink" href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </li>
     {% endfor %}
 </ol>

@@ -3,5 +3,18 @@
 \*------------------------------------*/
 
 aside {
-
+    @include media(">medium") {
+        width: $aside-width;
+        float: left;
+    }
+    @include media("<=medium") {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        order: 999;
+    }
+    p,
+    figcaption {
+        clear: both;
+    }
 }

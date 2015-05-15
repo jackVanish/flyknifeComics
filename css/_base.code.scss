@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #BASE - Code
+\*------------------------------------*/
+
+code,
+ins,
+kbd,
+mark,
+samp,
+var {
+    font-size: .875rem;
+    font-family: $code-font-stack;
+}
+    p code,
+    ol code,
+    ul code,
+    ins,
+    kbd,
+    mark,
+    samp,
+    var {
+        background-color: rgba($brand, 0.1);
+        padding: .25rem;
+        word-wrap: break-word;
+    }
+
+pre {
+    font-size: .875rem;
+    margin-top: 0;
+    margin-bottom: $default-margin;
+    white-space: pre-wrap;
+}

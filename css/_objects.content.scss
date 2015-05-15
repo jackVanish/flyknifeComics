@@ -3,7 +3,10 @@
 \*------------------------------------*/
 
 .content {
-    padding: 2rem 10%;
+    @include media("<=medium") {
+        display: flex;
+        flex-direction: column;
+    }
     a {
         font-weight: 600;
         &:hover,

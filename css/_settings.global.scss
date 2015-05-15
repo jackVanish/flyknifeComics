@@ -18,7 +18,7 @@ $default-margin:         $wrapper-padding  !default;
 $default-padding:        2.50rem           !default;
 $default-border:         0.25rem           !default;
 $default-border-radius:  0.25rem           !default;
-$aside-width:           16.00rem           !default;
+$aside-width:           17.50rem           !default;
 
 /// Opacity $variables
 $opacity-low:     0.10  !default;
@@ -44,6 +44,7 @@ $base-font-size:        16px !default;
 $primary-font-stack:    "Abel", Arial, 'Helvetica Neue', Helvetica, sans-serif  !default;
 $secondary-font-stack:  "Oswald", sans-serif                                    !default;
 $heading-font-stack:    "Englebert", sans-serif                                 !default;
+$code-font-stack:       Consolas, Monaco, "Courier New", monospace              !default;
 
 /// Transition $variables
 $transition-time:      0.2s  !default;
