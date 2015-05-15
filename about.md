@@ -55,10 +55,10 @@ such power, he fights on the side of good. He can be found at wolfbutler.com.
 **QUOTE:** "Better watch out when my katana's CYBER-D METER is full- critical strike! *Atari!*"   
   
 <h3 class="sectionHead">JON PYE</h3>
-**ORIGINAL APPEARANCE:** [REDACTED]
+**ORIGINAL APPEARANCE:** [REDACTED]  
 ...  
 **STRENGTH:** 000  
-**LATERAL ATTACK POWER:** 000  
+**LATERAL ATTACK POWER:** 000    
 **CYBER-DECK:** 000x000  
 **QUOTE:** "[REDACTED] THIRST AGAIN. [REDACTED] AGAIN."  
 
