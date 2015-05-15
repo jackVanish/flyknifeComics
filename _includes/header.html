@@ -17,6 +17,12 @@
         {% capture meta_description %}{{ site.description }}{% if paginator.page > 1 %} – Page {{ paginator.page }}{% endif %}{% endcapture %}
     {% endif %}
 
+    {% if page.thumbnail %}
+        {% capture meta_image %}{{ site.url }}{{ site.baseurl }}/images/thumbs/{{ page.thumbnail }}{% endcapture %}
+    {% else %}
+        {% capture meta_image %}{{ site.url }}{{ site.baseurl }}/images/logo@2x.png{% endcapture %}
+    {% endif %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, minimal-ui">
 
@@ -40,15 +46,14 @@
     <meta name="theme-color" content="#{{ site.color_brand }}">
 
     {% if page.page_class != "page-not-found" %}
-        <!-- Twitter Microdata and OpenGraph -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:creator" content="@{{ site.author_twitter }}">
         <meta name="twitter:title" content="{{ meta_title }}">
         <meta name="twitter:description" content="{{ meta_description }}">
-        <meta name="twitter:image:src" content="IMAGE"> <!-- CHANGE ME -->
+        <meta name="twitter:image:src" content="{{ meta_image }}">
         <meta name="twitter:domain" content="{{ site.url | replace: 'http://', '' }}">
         {% if page.twitter == true %}
-            <meta name="twitter:widgets:theme" content="light">
+            <meta name="twitter:widgets:theme" content="dark">
             <meta name="twitter:widgets:link-color" content="#{{ site.color_brand }}">
             <meta name="twitter:widgets:border-color" content="#{{ site.color_brand }}">
         {% endif %}
@@ -56,7 +61,7 @@
         <meta property="og:description" content="{{ meta_description }}">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/{% if page.page_class != "page-home" %}{{ page.url }}{% endif %}">
-        <meta property="og:image" content="IMAGE"> <!-- CHANGE ME -->
+        <meta property="og:image" content="{{ meta_image }}">
     {% else %}
         <meta name="robots" content="noindex,nofollow">
     {% endif %}
@@ -64,7 +69,7 @@
     {% include js-head.html %}
 
 </head>
-<body{% if body_class %} class="{{ body_class }}"{% endif %}>
+<body{% if page.page_class %} class="{{ page.page_class }}"{% endif %}>
 
     <header class="wrap  clear" role="banner">
 
