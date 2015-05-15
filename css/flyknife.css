@@ -1083,9 +1083,8 @@ pre {
 .color-block-list li[data-color="#8cddff"] {
     background-color: #8cddff;
 }
-.color-block-list li[data-color="#ffffff"] {
-    background-color: #ffffff;
-    color: #f8f8f8;
+.color-block-list li[data-color="#f473ff"] {
+    background-color: #f473ff;
 }
 .color-block-list li[data-color="#f8f8f8"] {
     background-color: #f8f8f8;
@@ -1093,8 +1092,8 @@ pre {
 .color-block-list li[data-color="#737373"] {
     background-color: #737373;
 }
-.color-block-list li[data-color="#dddddd"] {
-    background-color: #dddddd;
+.color-block-list li[data-color="#1d1d1d"] {
+    background-color: #1d1d1d;
     color: #f8f8f8;
 }
 @media (max-width: 500px) {
