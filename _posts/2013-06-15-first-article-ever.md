@@ -3,7 +3,24 @@ layout: default
 
 date: 2015-01-01 00:00:01
 
-title: First Article Ever
+title: Initialize flyknife.exe
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac elit enim, et tempus nulla. Donec id risus arcu. Nulla sagittis magna sem, eget tristique nisi. Maecenas at eros urna. Pellentesque quis risus elit. Duis venenatis, odio sit amet rhoncus aliquam, mauris mi sodales arcu, ac tincidunt eros ipsum eu lectus. Sed id eros et ante hendrerit malesuada ut sed metus. Nulla risus lectus, faucibus eget laoreet et, elementum id purus. Sed blandit semper porttitor. Sed cursus tincidunt purus, eget tincidunt magna luctus nec.
+**>_** login  
+**>_** p?:  
+**>_**  
+**>_** Welcome to VICTOR.SYS (C) DYNECORP 777,777  
+**>_** cd /data/sites/gridd/flyknife  
+**>_** sh flyknife.exe  
+**>_** WARNING: Minumum system requirements for flyknife.exe not met. You may experience system instability. Continue?
+**>_** y/n [y]  
+**>_**  
+**>_**  
+
+Hello and welcome to the redesigned Flyknife Comics website! We had to redesign after the old data sites were fragged when the Battery went pearwise, but we're set up in a much more stable webspace now. That means we can keep delivering high-quality content to you every week, without delay or pause.   
+
+I'll take this opportunity to welcome all you new deckers and deckettes to the Zone. I'm Bruce, and I run this outfit. From this webzone you can expect to see comics, GRIDD news, and all the hot tips and tricks to keep your lights on and your decks blinking.   
+
+I'll get right to it, kids and skids, so take it breezy and lock in your GRIDD-coordinates. It's gonna be hard firin' from here on out so don't waste any time- the Apocalypse Clock is tickin'.   
+
+- Bruce
