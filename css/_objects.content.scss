@@ -3,6 +3,8 @@
 \*------------------------------------*/
 
 .content {
+    padding-top:    2rem;
+    padding-bottom: 2rem;
     @include media("<=medium") {
         display: flex;
         flex-direction: column;

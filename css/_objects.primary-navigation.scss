@@ -11,7 +11,7 @@
         outline: none;
         font-size: 1.5rem;
         font-family: $primary-font-stack;
-        text-shadow: 0 0 .5rem rgba($brand, .5);
+        text-shadow: 0 0 .5rem rgba($brand, $opacity-medium);
         @include animation(glow 2.5s ease alternate infinite);
         &:hover,
         &:focus,
@@ -38,13 +38,13 @@
         }
         &:before {
             box-shadow: 0 0 2em $brand,
-                        inset 0 0 1px rgba($brand, .05);
+                        inset 0 0 1px rgba($brand, $opacity-low);
             @include animation(glow-shadow 2.5s ease alternate infinite);
         }
         &:after {
             top: -100%; // hidden
             box-shadow: 0 0 2em $brand-alt,
-                        inset 0 0 1px rgba($brand-alt, .05);
+                        inset 0 0 1px rgba($brand-alt, $opacity-low);
         }
     }
     li {
@@ -75,7 +75,7 @@
 @keyframes glow {
     0% {
         color: rgba($brand, .75);
-        text-shadow: 0 0 .5rem rgba($brand, .5);
+        text-shadow: 0 0 .5rem rgba($brand, $opacity-medium);
     }
     100% {
         color: $brand;
@@ -85,16 +85,16 @@
 @keyframes glow-shadow {
     0% {
         box-shadow: 0 0 2em $brand,
-                    inset 0 0 1px rgba($brand, .05);
+                    inset 0 0 1px rgba($brand, $opacity-low);
     }
     100% {
         box-shadow: 0 0 2em $brand-light,
-                    inset 0 0 1px rgba($brand-light, .05);
+                    inset 0 0 1px rgba($brand-light, $opacity-low);
     }
 }
 @keyframes glow-drastic {
     0% {
-        color: rgba($brand, .65);
+        color: rgba($brand, $opacity-medium);
         text-shadow: none;
     }
     100% {
@@ -108,6 +108,6 @@
     }
     100% {
         box-shadow: 0 0 2em $brand-light,
-                    inset 0 0 1px rgba($brand-light, .05);
+                    inset 0 0 1px rgba($brand-light, $opacity-low);
     }
 }

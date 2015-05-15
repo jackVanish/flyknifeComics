@@ -2,6 +2,16 @@
     #BASE - Typography
 \*------------------------------------*/
 
+html {
+    color: $text-color;
+    font: 400 normal #{$base-font-size}/1.5 $primary-font-stack;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+}
+
 h1, h2, h3, h4, h5, h6 {
     min-height: 1.2em; // so that elements can be floated inside headings
     padding: 0;
@@ -10,14 +20,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1.2;
 }
+h1,
+h2,
+h3 {
+    color: $brand;
+    text-shadow: 0 0 .5rem $brand;
+}
 h1 {
-
+    font-size: 2.5rem;
+    margin-bottom: $default-margin;
+    text-transform: uppercase;
 }
 h2 {
-
+    font-size: 1.5rem;
+    margin-bottom: $default-margin;
 }
 h3 {
-
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: $default-margin;
+    text-shadow: 0 0 .5rem rgba($brand, $opacity-medium);
+    :not(h2) + & {
+        padding-top: $default-margin;
+    }
 }
 h4 {
 
@@ -26,7 +51,30 @@ h4 {
 a {
     color: $brand;
     text-decoration: none;
+    span:not([class]) {
+        width:  1px;
+        height: 1px;
+        position: absolute;
+        overflow: hidden;
+    }
 }
+    .heading-anchor {
+        color: $brand-alt;
+        display: none;
+        padding-left: 1em;
+        font-family: $code-font-stack;
+        font-size: .875rem;
+        font-weight: 400 !important;
+        line-height: 1;
+        text-transform: lowercase;
+        text-shadow: none;
+        vertical-align: middle;
+        :hover > &,
+        :focus > &,
+        :active > & {
+            display: inline-block;
+        }
+    }
 
 p {
     margin: 0;
@@ -91,9 +139,10 @@ dl {
     }
     dt {
         width: auto;
-        min-width: 10rem;
+        min-width: 12rem;
         float: left;
         clear: left;
+        font-weight: 600;
         @include media("<=small") {
             float: none;
         }
@@ -149,7 +198,6 @@ ins {
 }
 
 q {
-    font-style: italic;
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
 blockquote {
@@ -158,11 +206,9 @@ blockquote {
         margin-bottom: 0 !important;
         &:before {
             content: open-quote;
-            padding-right: .1875rem;
         }
         &:after {
             content: close-quote;
-            padding-left: .1875rem;
         }
     }
     cite {
@@ -191,6 +237,7 @@ iframe {
 }
 
 ::selection {
-    background: $white;
-    color: $black;
+    background: $black;
+    color: $brand-alt;
+    text-shadow: none;
 }
