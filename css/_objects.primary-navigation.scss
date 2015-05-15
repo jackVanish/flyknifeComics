@@ -21,7 +21,7 @@
             @include animation(none);
             &:before {
                 top: -100%; // hidden
-                @include animation(none)
+                @include animation(none);
             }
             &:after {
                 top: 80%; // visible
