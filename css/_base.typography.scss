@@ -50,7 +50,47 @@ h4 {
 
 a {
     color: $brand;
+    padding: .125em .25em;
     text-decoration: none;
+    main & {
+        position: relative;
+        font-weight: 600;
+        white-space: nowrap;
+        &:before {
+            content: "";
+            background-color: $black-alt;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            border-radius: .0625em;
+            z-index: -1;
+            @include transition(width  $transition-time  $transition-function);
+            @include will-change(width);
+        }
+        &:not([class]):before {
+            border-bottom: .125em solid rgba($brand, $opacity-medium);
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $brand-alt;
+            &:before {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+        }
+        &:not([class]):before {
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom-color: rgba($brand-alt, $opacity-medium);
+            }
+        }
+    }
     span:not([class]) {
         width:  1px;
         height: 1px;
@@ -61,7 +101,7 @@ a {
     .heading-anchor {
         color: $brand-alt;
         display: none;
-        padding-left: 1em;
+        margin-left: 1em;
         font-family: $code-font-stack;
         font-size: .875rem;
         font-weight: 400 !important;

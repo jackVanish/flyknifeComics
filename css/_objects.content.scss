@@ -9,14 +9,6 @@
         display: flex;
         flex-direction: column;
     }
-    a {
-        font-weight: 600;
-        &:hover,
-        &:focus,
-        &:active {
-            text-decoration: underline;
-        }
-    }
 }
 
 .sectionHead {

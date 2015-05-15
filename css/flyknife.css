@@ -473,7 +473,48 @@ h3 {
 
 a {
     color: #8cddff;
+    padding: .125em .25em;
     text-decoration: none;
+}
+main a {
+    position: relative;
+    font-weight: 600;
+    white-space: nowrap;
+}
+main a:before {
+    content: "";
+    background-color: #0d0d0d;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    border-radius: .0625em;
+    z-index: -1;
+    -webkit-transition: width .2s ease;
+            transition: width .2s ease;
+    will-change: width;
+}
+main a:not([class]):before {
+    border-bottom: .125em solid rgba(140, 221, 255, .6);
+}
+main a:hover,
+main a:focus,
+main a:active {
+    color: #f473ff;
+}
+main a:hover:before,
+main a:focus:before,
+main a:active:before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+main a:not([class]):before:hover,
+main a:not([class]):before:focus,
+main a:not([class]):before:active {
+    border-bottom-color: rgba(244, 115, 255, .6);
 }
 a span:not([class]) {
     width: 1px;
@@ -485,7 +526,7 @@ a span:not([class]) {
 .heading-anchor {
     color: #f473ff;
     display: none;
-    padding-left: 1em;
+    margin-left: 1em;
     font-family: Consolas, Monaco, "Courier New", monospace;
     font-size: .875rem;
     font-weight: 400 !important;
@@ -687,6 +728,7 @@ iframe {
 /*------------------------------------*    #BASE - Header
 \*------------------------------------*/
 header {
+    background: rgba(29, 29, 29, .9);
     text-align: center;
 }
 
@@ -841,6 +883,36 @@ pre {
 
 /*------------------------------------*    #OBJECTS - Primary Navigation
 \*------------------------------------*/
+.primary-navigation {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-perspective: 200px;
+            perspective: 200px;
+}
+.primary-navigation:before {
+    content: "";
+    background-image: -webkit-linear-gradient(top, rgba(13, 13, 13, .05) 0%, rgba(13, 13, 13, .6) 100%);
+    background-image:         linear-gradient(to bottom, rgba(13, 13, 13, .05) 0%, rgba(13, 13, 13, .6) 100%);
+    width: 110%;
+    height: 40%;
+    position: absolute;
+    bottom: -2px;
+    left: -5%;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+    border-radius: 0 0 .25em .25em;
+}
+.primary-navigation:after {
+    content: "";
+    background-color: rgba(13, 13, 13, .6);
+    width: 115%;
+    height: 4px;
+    position: absolute;
+    bottom: -3px;
+    left: -7.5%;
+}
+
 .primary-navigation-list {
     overflow: hidden;
 }
@@ -866,21 +938,21 @@ pre {
 .primary-navigation-list a:hover:before,
 .primary-navigation-list a:focus:before,
 .primary-navigation-list a:active:before {
-    top: -100%;
+    top: -200%;
     -webkit-animation: none;
             animation: none;
 }
 .primary-navigation-list a:hover:after,
 .primary-navigation-list a:focus:after,
 .primary-navigation-list a:active:after {
-    top: 80%;
+    top: 100%;
 }
 .primary-navigation-list a:before,
 .primary-navigation-list a:after {
     content: "";
     height: 1px;
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 0;
     right: 0;
 }
@@ -890,7 +962,7 @@ pre {
             animation: glow-shadow 2.5s ease alternate infinite;
 }
 .primary-navigation-list a:after {
-    top: -100%;
+    top: -200%;
     box-shadow: 0 0 2em #f473ff, inset 0 0 1px rgba(244, 115, 255, .05);
 }
 .primary-navigation-list li {
@@ -909,8 +981,8 @@ pre {
 .primary-navigation-list li:nth-child(4) a {
     -webkit-animation-name: glow-drastic;
             animation-name: glow-drastic;
-    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1) !important;
-            animation-timing-function: cubic-bezier(1, 0, 0, 1) !important;
+    -webkit-animation-timing-function: linear !important;
+            animation-timing-function: linear !important;
 }
 .primary-navigation-list li:nth-child(4) a:before {
     -webkit-animation: glow-drastic-shadow 2.5s cubic-bezier(1, 0, 0, 1) alternate infinite;
@@ -1021,14 +1093,6 @@ pre {
             -ms-flex-direction: column;
                 flex-direction: column;
     }
-}
-.content a {
-    font-weight: 600;
-}
-.content a:hover,
-.content a:focus,
-.content a:active {
-    text-decoration: underline;
 }
 
 .sectionHead {

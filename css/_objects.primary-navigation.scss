@@ -2,6 +2,32 @@
     #OBJECTS - Primary Navigation
 \*------------------------------------*/
 
+.primary-navigation {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    perspective: 200px;
+    &:before {
+        content: "";
+        background-image: linear-gradient(to bottom, rgba($black-alt, $opacity-low) 0%, rgba($black-alt, $opacity-medium) 100%);
+        width: 110%;
+        height: 40%;
+        position: absolute;
+        bottom: -2px;
+        left: -5%;
+        transform: rotateX(45deg);
+        border-radius: 0 0 .25em .25em;
+    }
+    &:after {
+        content: "";
+        background-color: rgba($black-alt, $opacity-medium);
+        width: 115%;
+        height: 4px;
+        position: absolute;
+        bottom: -3px;
+        left: -7.5%;
+    }
+}
 .primary-navigation-list {
     overflow: hidden;
     a {
@@ -20,11 +46,11 @@
             text-shadow: 0 0 .75rem $brand-alt;
             @include animation(none);
             &:before {
-                top: -100%; // hidden
+                top: -200%; // hidden
                 @include animation(none);
             }
             &:after {
-                top: 80%; // visible
+                top: 100%; // visible
             }
         }
         &:before,
@@ -32,7 +58,7 @@
             content: "";
             height: 1px;
             position: absolute;
-            top: 80%;
+            top: 100%;
             left: 0;
             right: 0;
         }
@@ -42,7 +68,7 @@
             @include animation(glow-shadow 2.5s ease alternate infinite);
         }
         &:after {
-            top: -100%; // hidden
+            top: -200%; // hidden
             box-shadow: 0 0 2em $brand-alt,
                         inset 0 0 1px rgba($brand-alt, $opacity-low);
         }
@@ -58,7 +84,7 @@
         }
         &:nth-child(4) a {
             animation-name: glow-drastic;
-            animation-timing-function: cubic-bezier(1, 0, 0, 1) !important;
+            animation-timing-function: linear !important;
             &:before {
                 @include animation(glow-drastic-shadow 2.5s cubic-bezier(1, 0, 0, 1) alternate infinite);
             }

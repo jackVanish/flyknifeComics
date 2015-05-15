@@ -26,10 +26,12 @@ Hitch up your boots and grab your decks- the GRIDDZONE waits for no one, and the
     <dt>ORIGINAL APPEARANCE:</dt>
     <dd>*Hyper Punks Issue 881 - Mercenary Lunatics of Hypersector X-6-X*</dd>
 </dl>
-<p class="about-biography">Born and raised in the NETWORLD, Bruce is the product of a mind placed at ground zero for the simultaneous arrival of
+
+Born and raised in the NETWORLD, Bruce is the product of a mind placed at ground zero for the simultaneous arrival of
 the internet, imported anime, and readily available handheld video games. Armed with a CYBERLINK-8 TRIPLE-CORE DATADECK
 and an innate knowledge of the ebb and flow of the CYBERLANE, Delo fights the forces of COMMANDER ZETA by wiring comix
-made of neon and dying stars into the brains of a generation.</p>
+made of neon and dying stars into the brains of a generation.
+
 <dl class="about-details">
     <dt>STRENGTH:</dt>
     <dd>12</dd>
@@ -48,11 +50,13 @@ made of neon and dying stars into the brains of a generation.</p>
     <dt>ORIGINAL APPEARANCE:</dt>
     <dd>*Artificial Intelligence Comix Double-Digest: SWORD ISSUE*</dd>
 </dl>
-<p class="about-biography">Artificial Intelligence from the future and sworn enemy of R.A.N.C.O.U.R, the CYBER-HALBERD REACTIVE INTELLIGENCE SYSTEM
+
+Artificial Intelligence from the future and sworn enemy of R.A.N.C.O.U.R, the CYBER-HALBERD REACTIVE INTELLIGENCE SYSTEM
 (CHRIS for short) was sent back in time from the year 777,777 to save the past and halt COMMANDER ZETA'S plans. Existing
 in all computers simultaneously, CHRIS is never more than a doubleclick and a RAM-Swap away from delivering sweet read-
 only justice to COMMANDER ZETA'S Rogue Cryptograms. Fighting against ANCIENT_EVIL.EXE for a brighter, cleaner WEBZONE,
-CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).</p>
+CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).
+
 <dl class="about-details">
     <dt>STRENGTH:</dt>
     <dd>777</dd>
@@ -71,11 +75,13 @@ CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).</p
     <dt>ORIGINAL APPEARANCE:</dt>
     <dd>*Knifewolf//Hyper Punks Double Digest: ATTAXX! Assault on Gogol-1010*</dd>
 </dl>
-<p class="about-biography">Christian "The Wolf" DeWolf, owner and operator of Wolfbutler Comedy Server, is an international street cyber-
+
+Christian "The Wolf" DeWolf, owner and operator of Wolfbutler Comedy Server, is an international street cyber-
 samurai and business operator. By day, he puts his opponents in *atari* with sensible investments and dependable returns,
 but by night, The Wolf stalks the streets of HALIFAX_1, raising his sword to COMMANDER ZETA and striking back against
 the darkness with defiant swings of his katana. His mighty swing can cut the very fabric of the GRIDDZONE, but despite
-such power, he fights on the side of good. He can be found at [wolfbutler.com](http://wolfbutler.com).</p>
+such power, he fights on the side of good. He can be found at [wolfbutler.com](http://wolfbutler.com).
+
 <dl class="about-details">
     <dt>STRENGTH:</dt>
     <dd>8</dd>
@@ -94,7 +100,9 @@ such power, he fights on the side of good. He can be found at [wolfbutler.com](h
     <dt>ORIGINAL APPEARANCE:</dt>
     <dd>[REDACTED]</dd>
 </dl>
-<p class="about-biography">...</p>
+
+...
+
 <dl class="about-details">
     <dt>STRENGTH:</dt>
     <dd>000</dd>
