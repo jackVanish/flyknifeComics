@@ -992,3 +992,10 @@ button,
 {
     text-align:center;
 }
+
+.postLink
+{
+    color: #8cddff;
+    font-family: 'Abel';
+    font-weight: 600;
+}
