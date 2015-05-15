@@ -4,10 +4,9 @@
 
 - title: About
   url: "/about"
-  rel: "me"
-
-- title: Life Comix
-  url: "/life-comix"
 
 - title: Projects
   url: "/projects"
+
+- title: Life Comix
+  url: "/life-comix"
