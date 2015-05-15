@@ -83,10 +83,10 @@ a {
                 right: auto;
             }
         }
-        &:not([class]):before {
-            &:hover,
-            &:focus,
-            &:active {
+        &:not([class]) {
+            &:hover:before,
+            &:focus:before,
+            &:active:before {
                 border-bottom-color: rgba($brand-alt, $opacity-medium);
             }
         }

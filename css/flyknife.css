@@ -511,9 +511,9 @@ main a:active:before {
     left: 0;
     right: auto;
 }
-main a:not([class]):before:hover,
-main a:not([class]):before:focus,
-main a:not([class]):before:active {
+main a:not([class]):hover:before,
+main a:not([class]):focus:before,
+main a:not([class]):active:before {
     border-bottom-color: rgba(244, 115, 255, .6);
 }
 a span:not([class]) {
