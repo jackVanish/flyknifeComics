@@ -24,7 +24,7 @@ Hitch up your boots and grab your decks- the GRIDDZONE waits for no one, and the
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>
-    <dd>*Hyper Punks Issue 881 - Mercenary Lunatics of Hypersector X-6-X*</dd>
+    <dd><em>Hyper Punks Issue 881 - Mercenary Lunatics of Hypersector X-6-X</em></dd>
 </dl>
 
 Born and raised in the NETWORLD, Bruce is the product of a mind placed at ground zero for the simultaneous arrival of
@@ -48,7 +48,7 @@ made of neon and dying stars into the brains of a generation.
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>
-    <dd>*Artificial Intelligence Comix Double-Digest: SWORD ISSUE*</dd>
+    <dd><em>Artificial Intelligence Comix Double-Digest: SWORD ISSUE</em></dd>
 </dl>
 
 Artificial Intelligence from the future and sworn enemy of R.A.N.C.O.U.R, the CYBER-HALBERD REACTIVE INTELLIGENCE SYSTEM
@@ -73,7 +73,7 @@ CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>
-    <dd>*Knifewolf//Hyper Punks Double Digest: ATTAXX! Assault on Gogol-1010*</dd>
+    <dd><em>Knifewolf//Hyper Punks Double Digest: ATTAXX! Assault on Gogol-1010</em></dd>
 </dl>
 
 Christian "The Wolf" DeWolf, owner and operator of Wolfbutler Comedy Server, is an international street cyber-
