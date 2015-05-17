@@ -90,7 +90,7 @@ such power, he fights on the side of good. He can be found at [wolfbutler.com](h
     <dt>CYBER-DECK:</dt>
     <dd>2x8</dd>
     <dt>QUOTE:</dt>
-    <dd><q>Better watch out when my katana's CYBER-D METER is full- critical strike! *Atari!*</q></dd>
+    <dd><q>Better watch out when my katana's CYBER-D METER is full- critical strike! <em>Atari!</em></q></dd>
 </dl>
 
 
@@ -118,4 +118,4 @@ such power, he fights on the side of good. He can be found at [wolfbutler.com](h
 --------
 
 
-(Flyknife Comics is owned and operated by Bruce Delo, with semi-regular collaborations by Christian DeWolf and Stewart Delo. Site design by Chris Burnell. Flyknife Comics is based in Canada and produces small-press comic books for a wide audience. All work on the site, unless otherwise indicated, is licensed under a {{ site.copyright }}.)
+(Flyknife Comics is owned and operated by Bruce Delo, with semi-regular collaborations by Christian DeWolf, Jon Pye, and Stewart Delo. Site design by Chris Burnell. Flyknife Comics is based in Canada and produces small-press comic books for a wide audience. All work on the site, unless otherwise indicated, is licensed under a {{ site.copyright }}.)
