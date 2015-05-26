@@ -1,11 +1,11 @@
 title:       Flyknife Comics
 description: "All The Snakepunk that the Battery Can’t Stop"
+aside_message: "Welcome one and all to the FLYKNIFE COMIX WEBZONE. Here you will find all the neat deets and slick tricks you’ll need to fight R.A.N.C.O.U.R and Commander Zeta. Deck fast, Deckers, the Apocalypse Clock is ticking."
 
 author:         Bruce Delo
 author_twitter: FlyknifeComics
 
 url:     http://beta.flyknifecomics.com
-#url:     http://localhost:4000
 baseurl: ""
 
 url_twitter: https://twitter.com/FlyknifeComics
