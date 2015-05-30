@@ -1,36 +1,37 @@
 @charset "UTF-8";
 
-// #SETTINGS
-@import "settings.global";
-
-// #TOOLS
-@import "tools.include-media",
-        "tools.mixins";
-
 // #GENERIC
-@import "generic.normalize",
-        "generic.box-sizing";
+@import "generic/box-sizing",
+        "generic/normalize";
+
+// #UTILITIES
+@import "utils/variables",
+        "utils/include-media",
+        "utils/mixins";
 
 // #BASE
-@import "base.page",
-        "base.typography",
-        "base.header",
-        "base.article",
-        "base.aside",
-        "base.footer",
-        "base.buttons",
-        "base.code";
+@import "base/page",
+        "base/typography.global",
+        "base/typography.code",
+        "base/buttons";
 
-// #OBJECTS
-@import "objects.layout",
-        "objects.header",
-        "objects.primary-navigation",
-        "objects.content",
-        "objects.media",
-        "objects.print";
+// #LAYOUT
+@import "layout/wrap",
+        "layout/header",
+        "layout/article",
+        "layout/aside",
+        "layout/footer";
 
 // #COMPONENTS
-@import "components.styleguide";
+@import "components/logo",
+        "components/nav-primary",
+        "components/content",
+        "components/media",
+        "components/print";
 
-// #TRUMPS
-@import "trumps.helpers";
+// #PAGES
+@import "pages/styleguide";
+
+// #HELPERS
+@import "utils/placeholders",
+        "utils/helpers";
