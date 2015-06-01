@@ -76,7 +76,7 @@ CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).
     <dd><em>Knifewolf//Hyper Punks Double Digest: ATTAXX! Assault on Gogol-1010</em></dd>
 </dl>
 
-Christian "The Wolf" DeWolf, owner and operator of Wolfbutler Comedy Server, is an international street cyber-
+Christian "The Wolf" DeWolf, owner and operator of Wolf Butler Comedy Server, is an international street cyber-
 samurai and business operator. By day, he puts his opponents in *atari* with sensible investments and dependable returns,
 but by night, The Wolf stalks the streets of HALIFAX_1, raising his sword to COMMANDER ZETA and striking back against
 the darkness with defiant swings of his katana. His mighty swing can cut the very fabric of the GRIDDZONE, but despite
