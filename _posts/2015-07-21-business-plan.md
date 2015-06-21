@@ -16,7 +16,7 @@ Welcome to VICTOR.SYS (C) DYNECORP 777,777
 cat: business-plan.doc: No such file or directory
 > cd ..
 > ls
-highrisk/     pragmatic/      evil/      walrus.jpg
+highrisk/     pragmatic/      evil/
 > cd highrisk/
 > cat business-plan.doc  
 
