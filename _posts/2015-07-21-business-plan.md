@@ -1,25 +1,20 @@
 ---
-layout: default
+layout: article
 
 date: 2015-07-21 00:00:01
 
 title: View business-plan.doc
----
 
-{% highlight bash %}
-> login
-> p?:
->
-Welcome to VICTOR.SYS (C) DYNECORP 777,777
-> cd /secret/businessplans/pragmatic/
-> cat business-plan.doc
-cat: business-plan.doc: No such file or directory
-> cd ..
-> ls
-highrisk/     pragmatic/      evil/
-> cd highrisk/
-> cat business-plan.doc
-{% endhighlight %}
+bash: |
+  > cd /secret/businessplans/pragmatic/
+  > cat business-plan.doc
+  cat: business-plan.doc: No such file or directory
+  > cd ..
+  > ls
+  highrisk/     pragmatic/      evil/
+  > cd highrisk/
+  > cat business-plan.doc
+---
 
 I was mitigating some risk just the other day when my office door burst open.  In strode Bruce Delo, and if it weren't for the briefcase in his hand, I'd have berated him for not making an appointment.  I casually checked my suit for animal blood before standing up to shake his hand.
 
