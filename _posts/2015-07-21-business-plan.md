@@ -18,8 +18,7 @@ cat: business-plan.doc: No such file or directory
 > ls
 highrisk/     pragmatic/      evil/
 > cd highrisk/
-> cat business-plan.doc  
-
+> cat business-plan.doc
 {% endhighlight %}
 
 I was mitigating some risk just the other day when my office door burst open.  In strode Bruce Delo, and if it weren't for the briefcase in his hand, I'd have berated him for not making an appointment.  I casually checked my suit for animal blood before standing up to shake his hand.
@@ -56,7 +55,7 @@ I could do a lot of business with those, access more of the GRIDD than ever befo
 
 "Business," I said in the affirmative, and shook his hand.
 
-"Good," he said, and snapped the case shut, then slid it further across the desk.  It knocked into a paperclip sculpture I had been working on, but the sculpture was sturdy enough that it wasn't damaged.  
+"Good," he said, and snapped the case shut, then slid it further across the desk.  It knocked into a paperclip sculpture I had been working on, but the sculpture was sturdy enough that it wasn't damaged.
 
 He turned around and walked towards the door, which I wordlessly instructed that Lancaster re-open.  Before he left, though, Bruce turned around.
 
