@@ -4,4 +4,9 @@ layout: default
 title: Life Comix, Yo
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac elit enim, et tempus nulla. Donec id risus arcu. Nulla sagittis magna sem, eget tristique nisi. Maecenas at eros urna. Pellentesque quis risus elit. Duis venenatis, odio sit amet rhoncus aliquam, mauris mi sodales arcu, ac tincidunt eros ipsum eu lectus. Sed id eros et ante hendrerit malesuada ut sed metus. Nulla risus lectus, faucibus eget laoreet et, elementum id purus. Sed blandit semper porttitor. Sed cursus tincidunt purus, eget tincidunt magna luctus nec.
+Hey Gang! 
+
+So, rough times, but the Life Comix library got slagged when the Battery went nuclear (much like everything else in a 1km radius around the harbour), so we're still picking through what's left of those old HDDs to get everything back up and running. Don't worry, everyone's favourite scamps will be back in the game before too long. 
+
+Cheers, 
+- Bruce
