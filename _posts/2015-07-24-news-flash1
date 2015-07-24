@@ -1,0 +1,61 @@
+---
+layout: article
+
+date: 2015-07-24 00:00:01
+
+title: Run news.scan for July 24, 2015
+
+bash: |
+  > cd /util/scans
+  > ks
+  > ks: command not found
+  > ls
+  news.scan     badGuys.scan     dividends.scan     news.scan_BACKUP
+  > scan news.scan
+  VICTOR.SYS GENERATING NEWSFEED
+---
+
+GENERATED NEWSFEED: JULY 24, 2015
+DAILY STATISTICS:
+  - TEMPERATURE: 33.C
+  - HUMIDITY: 33%
+  - RADIATION: 33B <RADIATION WARNING: LEVEL 0>
+  
+TRAFFIC:
+  - BINARY ORDER ROAD CLOSURES ALONG MIRACLE MILE && BURN ST.
+
+STOCKS:
+  - BBS: +1.3%
+  - DOS: -1%
+  - HDD: -0.3%
+  - CBL: +2%
+  - 777: +1.3%
+
+LATEST BINARY ORDER DISPATCH:
+  Priest-Commander Militant to all Programmers-At-Arms,
+  
+  Decker activity has been detected along the main sections of Burn Street. Forensic Programmer teams are sweeping
+  residences in the area, but as always we suspect the Deckers have by now fled to the Miracle Mile. We have closed
+  the main roads to limit their movement but considering they have not been intercepted, we expect they have already
+  slipped the cordon. Maintain cordons until 0800 tomorrow morning, at which time, return to regular patrols. 
+  
+  Vigilance, 
+    Priest-Commander Militant Archibald Von Neumann
+
+CPU USAGE:
+  - 77%
+  
+DIVIDENDS:
+  - MODERATE TO FAVOURABLE
+  
+STREETER:
+  Word it is, I just wanna send a message to the [REDACTED]ing bake-brain who ripped me off those GT K-Vision 65i's.
+  Those cost me six-weeks pay at the data factory and I swear to [REDACTED] I'll find you and take it outta your hide!
+  You hear me, deck-head? I'm comin' after you!
+    - SOUNDCHEK
+
+QUOTE OF THE DAY:
+  "We should consider ourselves lucky that the pursuit of GLAI (Genius-Level Artificial Intelligence) is such folly.
+  If such a thing were ever to be spawned into our world, it would no doubt view us with the detached disgust we
+  reserve only for anatomically-uninteresting vermin."
+    - Dr. Chett Kiddrich-Schraeder Jr., _Genius-Level Artificial Intelligence: An Argument Against_
