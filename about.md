@@ -100,7 +100,7 @@ such power, he fights on the side of good. He can be found at [wolfbutler.com](h
     <dd><em>The Doom of Killganon: The Many Fanged Maw of Space</em></dd>
 </dl>
 
-Scion of Dead Stars. Last of the Ravenous Hearts. Gunzap Rebel Extraordinaire. He of many names, dimension-wrangling space bandit Stewart once rode his Starcycle to fortune and fame. Now, he rides it to glory in the long war against COMMANDER ZETA. But on his heels ride the Horsemen, the Jade Fortress, and the Galactic Rot that claimed Zargol Seven. Can he ditch his past, or has he just brought a whole new war to HALIFAX_1?
+Scion of Dead Stars. Last of the Ravenous Hearts. Gunzap Rebel Extraordinaire. He of many names, dimension-wrangling space bandit Stewart once rode his Starcycle to fortune and fame. Now, he rides it to glory in the long war against COMMANDER ZETA. But on his heels ride the Horsemen, the Jade Fortress, and the Diamondrot that claimed Zargol Seven. Can he ditch his past, or has he just brought a whole new war to HALIFAX_1?
 
 <dl class="about-details">
     <dt>STRENGTH:</dt>
