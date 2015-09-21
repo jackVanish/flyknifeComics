@@ -93,6 +93,25 @@ such power, he fights on the side of good. He can be found at [wolfbutler.com](h
     <dd><q>Better watch out when my katana's CYBER-D METER is full- critical strike! <em>Atari!</em></q></dd>
 </dl>
 
+{% include h3.html title="STEWART DELO" %}
+
+<dl class="about-details">
+    <dt>ORIGINAL APPEARANCE:</dt>
+    <dd><em>The Doom of Killganon: The Many Fanged Maw of Space</em></dd>
+</dl>
+
+Scion of Dead Stars. Last of the Ravenous Hearts. Gunzap Rebel Extraordinaire. He of many names, dimension-wrangling space bandit Stewart once rode his Starcycle to fortune and fame. Now, he rides it to glory in the long war against COMMANDER ZETA. But on his heels ride the Horsemen, the Jade Fortress, and the Galactic Rot that claimed Zargol Seven. Can he ditch his past, or has he just brought a whole new war to HALIFAX_1?
+
+<dl class="about-details">
+    <dt>STRENGTH:</dt>
+    <dd>99</dd>
+    <dt>LATERAL ATTACK POWER:</dt>
+    <dd>2</dd>
+    <dt>CYBER-DECK:</dt>
+    <dd>N/A</dd>
+    <dt>QUOTE:</dt>
+    <dd><q>Blue Oyster Cult is the BEST! THEY'RE THE BEST!</q></dd>
+</dl>
 
 {% include h3.html title="JON PYE" %}
 
