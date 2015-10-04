@@ -110,7 +110,7 @@ Scion of Supernovas. Last of the Ravenous Hearts. <em>Deadstarr</em>. He of many
     <dt>CYBER-DECK:</dt>
     <dd>N/A</dd>
     <dt>QUOTE:</dt>
-    <dd><q>Blue Oyster Cult is the BEST! THEY'RE THE BEST!</q></dd>
+    <dd><q>Hawkwind is the BEST! THEY'RE THE BEST!</q></dd>
 </dl>
 
 {% include h3.html title="JON PYE" %}
