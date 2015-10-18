@@ -64,4 +64,4 @@ He turned around and walked towards the door, which I wordlessly instructed that
 
 "Consider them guaranteed," I said, hoping he did not ask for a written, legal guarantee.
 
-He knocked over a stack of my books before walking out.  I sighed -- I'd just balanced those that morning.
+He knocked over a stack of my books before walking out.  I sighed -- I'd just finished balancing those.
