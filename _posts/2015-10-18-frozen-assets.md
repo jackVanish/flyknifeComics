@@ -3,7 +3,7 @@ layout: article
 
 date: 2015-10-18 00:00:01
 
-title: Frozen Assets
+title: Extract frozen_assets.zip
 
 bash: |
   > cd /secret/writing/novels/
