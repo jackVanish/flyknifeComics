@@ -42,10 +42,10 @@ $black-dark:        rgba($black, $opacity-medium)     !default;
 
 /// Font $variables
 $base-font-size:        16px !default;
-$primary-font-stack:    "Abel", Arial, 'Helvetica Neue', Helvetica, sans-serif  !default;
-$secondary-font-stack:  "Oswald", sans-serif                                    !default;
-$heading-font-stack:    "Englebert", sans-serif                                 !default;
-$code-font-stack:       Consolas, Monaco, "Courier New", monospace              !default;
+$primary-font-stack:    "PT Sans", Arial, 'Helvetica Neue', Helvetica, sans-serif      !default;
+$secondary-font-stack:  "Share Tech Mono", Consolas, Monaco, "Courier New", monospace  !default;
+$heading-font-stack:    "Condiment", cursive, fantasy, serif                           !default;
+$code-font-stack:       Consolas, Monaco, "Courier New", monospace                     !default;
 
 /// Transition $variables
 $transition-time:      0.2s  !default;
