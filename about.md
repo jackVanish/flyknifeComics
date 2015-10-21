@@ -76,7 +76,7 @@ CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).
     <dd><em>Knifewolf//Hyper Punks Double Digest: ATTAXX! Assault on Gogol-1010</em></dd>
 </dl>
 
-Christian "The Wolf" DeWolf, owner and operator of Wolfbutler Comedy Server, is an international street cyber-
+Christian "The Wolf" DeWolf, owner and operator of Wolf Butler Comedy Server, is an international street cyber-
 samurai and business operator. By day, he puts his opponents in *atari* with sensible investments and dependable returns,
 but by night, The Wolf stalks the streets of HALIFAX_1, raising his sword to COMMANDER ZETA and striking back against
 the darkness with defiant swings of his katana. His mighty swing can cut the very fabric of the GRIDDZONE, but despite
@@ -93,6 +93,25 @@ such power, he fights on the side of good. He can be found at [wolfbutler.com](h
     <dd><q>Better watch out when my katana's CYBER-D METER is full- critical strike! <em>Atari!</em></q></dd>
 </dl>
 
+{% include h3.html title="STEWART DELO" %}
+
+<dl class="about-details">
+    <dt>ORIGINAL APPEARANCE:</dt>
+    <dd><em>The Doom of Killganon: The Many Fanged Maw of Space</em></dd>
+</dl>
+
+Scion of Supernovas. Last of the Ravenous Hearts. <em>Deadstarr</em>. He of many names, dimension-wrangling space bandit Stewart once rode his Starcycle to fortune and fame. Now, he rides it to glory in the long war against COMMANDER ZETA. But on his heels ride the Horsemen, the Jade Fortress, and the Diamondrot that claimed Zargol Seven. Can he ditch his past, or has he just brought a whole new war to HALIFAX_1?
+
+<dl class="about-details">
+    <dt>STRENGTH:</dt>
+    <dd>99</dd>
+    <dt>LATERAL ATTACK POWER:</dt>
+    <dd>2</dd>
+    <dt>CYBER-DECK:</dt>
+    <dd>N/A</dd>
+    <dt>QUOTE:</dt>
+    <dd><q>Hawkwind is the BEST! THEY'RE THE BEST!</q></dd>
+</dl>
 
 {% include h3.html title="JON PYE" %}
 
