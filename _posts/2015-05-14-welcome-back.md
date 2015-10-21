@@ -3,7 +3,7 @@ layout: default
 
 date: 2015-05-14 00:00:01
 
-title: Initialize flyknife.exe
+title: initialize flyknife.exe
 ---
 
 {% highlight bash %}

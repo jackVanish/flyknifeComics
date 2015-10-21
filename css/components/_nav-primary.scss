@@ -9,22 +9,22 @@
     perspective: 200px;
     &:before {
         content: "";
-        background-image: linear-gradient(to bottom, rgba($black-alt, $opacity-low) 0%, rgba($black-alt, $opacity-medium) 100%);
+        background-image: linear-gradient(to bottom, #151358 0%, #57575c 50%,  #57575c 100%);
         width: 110%;
         height: 40%;
         position: absolute;
-        bottom: -2px;
+        bottom: -0.75em;
         left: -5%;
         transform: rotateX(45deg);
         border-radius: 0 0 .25em .25em;
     }
     &:after {
         content: "";
-        background-color: rgba($black-alt, $opacity-medium);
+        background-color: darken(#57575c, 10%);
         width: 115%;
         height: 4px;
         position: absolute;
-        bottom: -3px;
+        bottom: -0.75em;
         left: -7.5%;
     }
 }

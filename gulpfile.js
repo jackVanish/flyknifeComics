@@ -11,33 +11,39 @@ var gulp         = require('gulp'),
     notify       = require('gulp-notify'),
     rename       = require('gulp-rename'),
     sass         = require('gulp-sass'),
-    sourcemaps   = require('gulp-sourcemaps'),
     watch        = require('gulp-watch');
 
 // Define the locations of our assets
-var cssPath = 'css/';
+var cssPath      = 'css/';
 
 // -----------------------------------------------------------------------------
 
-// Compile SASS, autoprefix, generate sourcemaps, and minify
+// Compile main SCSS file
 gulp.task('css', function() {
     return gulp.src(cssPath + 'flyknife.scss')
         .pipe(plumber())
-        .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
             style: 'expanded'
         }))
-        .pipe(autoprefixer('last 2 versions', '> 1%'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', '> 1%']
+        }))
         .pipe(csscomb())
         .pipe(gulp.dest(cssPath))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(minifycss({
-            advanced: false
+        .pipe(rename({
+            suffix: '.min'
         }))
-        .pipe(sourcemaps.write('.'))
+        .pipe(minifycss({
+            advanced: false,
+            roundingPrecision: 3
+        }))
         .pipe(gulp.dest(cssPath))
-        .pipe(notify({ title: 'gulp', message: 'CSS compiled.', onLast: true }));
+        .pipe(notify({
+            title: 'gulp',
+            message: 'CSS compiled.',
+            onLast: true
+        }));
 });
 
 // -----------------------------------------------------------------------------
