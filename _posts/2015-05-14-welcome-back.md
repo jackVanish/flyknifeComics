@@ -3,12 +3,7 @@ layout: article
 
 date: 2015-05-14 00:00:01
 
-<<<<<<< HEAD
 title: initialize flyknife.exe
----
-=======
-title: Initialize flyknife.exe
->>>>>>> origin/gh-pages
 
 bash: |
   > cd /data/sites/gridd/flyknife

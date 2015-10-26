@@ -9,7 +9,7 @@
     perspective: 200px;
     &:before {
         content: "";
-        background-image: linear-gradient(to bottom, #151358 0%, #57575c 50%,  #57575c 100%);
+        background-image: linear-gradient(to bottom, #57575c 0%, darken(#57575c, 10%) 100%);
         width: 110%;
         height: 40%;
         position: absolute;

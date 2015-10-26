@@ -906,8 +906,8 @@ aside figcaption {
 }
 .primary-navigation:before {
     content: "";
-    background-image: -webkit-linear-gradient(top, #151358 0%, #57575c 50%, #57575c 100%);
-    background-image:         linear-gradient(to bottom, #151358 0%, #57575c 50%, #57575c 100%);
+    background-image: -webkit-linear-gradient(top, #57575c 0%, #3e3e42 100%);
+    background-image:         linear-gradient(to bottom, #57575c 0%, #3e3e42 100%);
     width: 110%;
     height: 40%;
     position: absolute;
@@ -1087,12 +1087,6 @@ aside figcaption {
     100% {
         box-shadow: 0 0 2em white, inset 0 0 1px rgba(255, 255, 255, .05);
     }
-}
-
-header {
-    background-color: #151358;
-    background-image: -webkit-linear-gradient(top, rgba(29, 29, 29, .9) 0%, transparent 100%);
-    background-image:         linear-gradient(to bottom, rgba(29, 29, 29, .9) 0%, transparent 100%);
 }
 
 .sectionHead {
