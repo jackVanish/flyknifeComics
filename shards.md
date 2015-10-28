@@ -17,9 +17,7 @@ we found this folder spun off the root that it'd periodically write new files to
 novel generator, but my thoughts tend towards some kind of diagnostic or logfile. Frankly, C.H.R.I.S himself has been pretty mum 
 on the subject, so I figured I'd toss 'em up on the Griddzone and see how he likes THAT. I've indexed them as best I can.
 
----
-bash: |
-  > cd shards/
-  > ls
----
+{% include h2.html title="> ls" %}
+
 <a href="/shards/kyletv.md">cd nostalgia/</a>
+
