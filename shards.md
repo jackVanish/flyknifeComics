@@ -1,4 +1,8 @@
 ---
+layout: default
+
+title: Shards
+
 bash: |
   > cd /home/users/CHRIS/aggregate/shards
   > ls
