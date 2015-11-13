@@ -1,0 +1,291 @@
+/*------------------------------------*\
+    #BASE - Typography
+\*------------------------------------*/
+
+html {
+    color: $text-color;
+    font: 400 normal #{$base-font-size}/1.5 $primary-font-stack;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    min-height: 1.2em; // so that elements can be floated inside headings
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-weight: 400;
+    line-height: 1.2;
+}
+h1,
+h2,
+h3 {
+    color: $brand;
+    text-shadow: 0 0 .5rem $brand;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: $default-margin;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: $default-margin;
+}
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: $default-margin;
+    text-shadow: 0 0 .5rem rgba($brand, $opacity-medium);
+    :not(h2) + & {
+        padding-top: $default-margin;
+    }
+}
+h4 {
+
+}
+
+a {
+    color: $brand;
+    padding: .125em .25em;
+    text-decoration: none;
+    main & {
+        position: relative;
+        font-weight: 600;
+        white-space: nowrap;
+        &:before {
+            content: "";
+            background-color: $black-alt;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            border-radius: .0625em;
+            z-index: -1;
+            @include transition(width  $transition-time  $transition-function);
+            @include will-change(width);
+        }
+        &:not([class]):before {
+            border-bottom: .125em solid rgba($brand, $opacity-medium);
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $brand-alt;
+            &:before {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+        }
+        &:not([class]) {
+            &:hover:before,
+            &:focus:before,
+            &:active:before {
+                border-bottom-color: rgba($brand-alt, $opacity-medium);
+            }
+        }
+    }
+    span:not([class]) {
+        width:  1px;
+        height: 1px;
+        position: absolute;
+        overflow: hidden;
+    }
+}
+    .heading-anchor {
+        color: $brand;
+        display: none;
+        margin-left: 1em;
+        font-family: $code-font-stack;
+        font-size: .875rem;
+        font-weight: 400 !important;
+        line-height: 1;
+        text-transform: lowercase;
+        text-shadow: none;
+        vertical-align: middle;
+        :hover > &,
+        :focus > &,
+        :active > & {
+            color: $brand-alt;
+            display: inline-block;
+        }
+    }
+
+p {
+    margin: 0;
+    &:not(:last-child) {
+        margin-bottom: $default-margin;
+    }
+    &:empty {
+        @extend .hidden;
+    }
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ol:not([class]),
+ul:not([class]),
+.default-list {
+    li {
+        padding-left: $default-padding;
+        margin-bottom: ($default-margin / 2);
+        position: relative;
+        &:last-child {
+            margin-bottom: $default-margin;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 600;
+        }
+    }
+    ol:not([class]),
+    ul:not([class]),
+    .default-list {
+        margin-top: 1rem;
+    }
+}
+ol:not([class]),
+ol.default-list {
+    counter-reset: ordered-list;
+    li {
+        counter-increment: ordered-list;
+        &:before {
+            content: counter(ordered-list) ".";
+        }
+    }
+}
+ul:not([class]) li:before,
+ul.default-list li:before {
+    content: "\2022";
+    font-size: 1.5rem;
+    line-height: 1;
+}
+dl {
+    width: 100%;
+    overflow: hidden;
+    &:not(:last-child) {
+        margin-bottom: $default-margin;
+    }
+    dt {
+        width: auto;
+        min-width: 12rem;
+        float: left;
+        clear: left;
+        font-weight: 600;
+        @include media("<=small") {
+            float: none;
+        }
+    }
+    dd {
+        width: $max-wrapper-width;
+        display: table-cell;
+        margin: 0;
+        overflow: hidden;
+        vertical-align: top;
+        @include media("<=small") {
+            width: auto;
+            display: block;
+            margin-left: $default-margin;
+        }
+    }
+}
+
+img,
+a img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+figure {
+    &:not(:last-child) {
+        margin-bottom: $default-margin;
+    }
+    img,
+    svg {
+        @extend %rounded;
+    }
+    a {
+        color: inherit;
+    }
+}
+    figcaption {
+
+    }
+
+abbr[title],
+blockquote,
+cite,
+dfn[title] {
+
+}
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+ins {
+    text-decoration: none;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    p {
+        margin-bottom: 0 !important;
+        &:before {
+            content: open-quote;
+        }
+        &:after {
+            content: close-quote;
+        }
+    }
+    cite {
+        display: block;
+        &:before {
+            content: "\2013\00a0";
+        }
+    }
+}
+
+hr {
+    background-color: $brand;
+    width: 100%;
+    height: 1px;
+    display: block;
+    border: 0;
+    margin: $default-padding 0;
+    box-shadow: 0 0 .5rem $brand,
+                0 1px 0 rgba($brand-alt, $opacity-medium),
+                0 1px .5rem rgba($brand-alt, $opacity-high);
+}
+
+/**
+ * Fix `iframe` and `video`
+ */
+iframe,
+video {
+    width: 100%;
+    border: none;
+    overflow-x: hidden;
+}
+iframe {
+    margin-bottom: $default-margin;
+}
+
+::selection {
+    background: $black;
+    color: $brand-alt;
+    text-shadow: none;
+}

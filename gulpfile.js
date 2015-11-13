@@ -1,40 +1,26 @@
-/*!
- * Flyknife Comics gulp Configuration
+/**
+ * Flyknife gulp Configuration
  */
-
 
 // Define gulp objects
 var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
-    concat       = require('gulp-concat'),
-    csslint      = require('gulp-csslint'),
-    cssnano      = require('gulp-cssnano'),
+    csscomb      = require('gulp-csscomb'),
+    minifycss    = require('gulp-minify-css'),
     plumber      = require('gulp-plumber'),
     notify       = require('gulp-notify'),
     rename       = require('gulp-rename'),
     sass         = require('gulp-sass'),
-    uglify       = require('gulp-uglify'),
     watch        = require('gulp-watch');
 
-// Define paths
-var paths = {
-    root: './',
-    src: {
-        css: 'src/css/',
-        js: 'src/js/'
-    },
-    dist: {
-        css: 'css/',
-        js: 'js/'
-    },
-    includes: '_includes/'
-};
+// Define the locations of our assets
+var cssPath      = 'css/';
 
 // -----------------------------------------------------------------------------
 
 // Compile main SCSS file
-gulp.task('css-main', function() {
-    return gulp.src([paths.src.css + '*.scss'])
+gulp.task('css', function() {
+    return gulp.src(cssPath + 'flyknife.scss')
         .pipe(plumber())
         .pipe(sass({
             errLogToConsole: true,
@@ -43,36 +29,19 @@ gulp.task('css-main', function() {
         .pipe(autoprefixer({
             browsers: ['last 2 versions', '> 1%']
         }))
-        .pipe(gulp.dest(paths.dist.css))
+        .pipe(csscomb())
+        .pipe(gulp.dest(cssPath))
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(cssnano())
-        .pipe(gulp.dest(paths.dist.css))
+        .pipe(minifycss({
+            advanced: false,
+            roundingPrecision: 3
+        }))
+        .pipe(gulp.dest(cssPath))
         .pipe(notify({
             title: 'gulp',
             message: 'CSS compiled.',
-            onLast: true
-        }));
-});
-
-// Minify JS
-gulp.task('js-main', function() {
-    return gulp.src([paths.src.js + '*.js'])
-        .pipe(plumber())
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest(paths.dist.js))
-        .pipe(uglify({
-            mangle: false,
-            preserveComments: 'some'
-        }))
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest(paths.dist.js))
-        .pipe(notify({
-            title: 'gulp',
-            message: 'JS compiled.',
             onLast: true
         }));
 });
@@ -82,27 +51,13 @@ gulp.task('js-main', function() {
 // Default task
 gulp.task('default', function() {
     gulp.start('css');
-    gulp.start('js');
-});
-
-// CSS task
-gulp.task('css', function() {
-    gulp.start('css-main');
-});
-
-// JS task
-gulp.task('js', function() {
-    gulp.start('js-main');
 });
 
 // -----------------------------------------------------------------------------
 
 // Watch files and perform the appropriate tasks
-gulp.task('watch', ['css', 'js'], function() {
-    watch(paths.src.css + '**/*.scss', function() {
+gulp.task('watch', ['css'], function() {
+    watch(cssPath + '**/*.scss', function() {
         gulp.start('css');
-    });
-    watch([paths.src.js + '**/*.js'], function() {
-        gulp.start('js');
     });
 });

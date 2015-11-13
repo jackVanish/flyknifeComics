@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #BASE - Page
+\*------------------------------------*/
+
+html {
+    background-color: $black;
+    background-image: url("/images/bg-body.png");
+    background-blend-mode: luminosity;
+    min-height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}

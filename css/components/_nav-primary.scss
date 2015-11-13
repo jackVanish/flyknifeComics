@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    #OBJECTS - Primary Navigation
+\*------------------------------------*/
+
+.primary-navigation {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    perspective: 200px;
+    &:before {
+        content: "";
+        background-image: linear-gradient(to bottom, #57575c 0%, darken(#57575c, 10%) 100%);
+        width: 110%;
+        height: 40%;
+        position: absolute;
+        bottom: -0.75em;
+        left: -5%;
+        transform: rotateX(45deg);
+        border-radius: 0 0 .25em .25em;
+    }
+    &:after {
+        content: "";
+        background-color: darken(#57575c, 10%);
+        width: 115%;
+        height: 4px;
+        position: absolute;
+        bottom: -0.75em;
+        left: -7.5%;
+    }
+}
+.primary-navigation-list {
+    overflow: hidden;
+    a {
+        display: block;
+        padding: 1rem;
+        position: relative;
+        outline: none;
+        font-size: 1.5rem;
+        font-family: $primary-font-stack;
+        text-shadow: 0 0 .5rem rgba($brand, $opacity-medium);
+        @include animation(glow 2.5s ease alternate infinite);
+        &:hover,
+        &:focus,
+        &:active {
+            color: $brand-alt;
+            text-shadow: 0 0 .75rem $brand-alt;
+            @include animation(none);
+            &:before {
+                top: -200%; // hidden
+                @include animation(none);
+            }
+            &:after {
+                top: 100%; // visible
+            }
+        }
+        &:before,
+        &:after {
+            content: "";
+            height: 1px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+        &:before {
+            box-shadow: 0 0 2em $brand,
+                        inset 0 0 1px rgba($brand, $opacity-low);
+            @include animation(glow-shadow 2.5s ease alternate infinite);
+        }
+        &:after {
+            top: -200%; // hidden
+            box-shadow: 0 0 2em $brand-alt,
+                        inset 0 0 1px rgba($brand-alt, $opacity-low);
+        }
+    }
+    li {
+        display: inline-block;
+        &:nth-child(2) a {
+            animation-duration: 5s;
+        }
+        &:nth-child(3) a {
+            animation-duration: 1;
+            animation-delay: 1.25s;
+        }
+        &:nth-child(4) a {
+            animation-name: glow-drastic;
+            animation-timing-function: linear !important;
+            &:before {
+                @include animation(glow-drastic-shadow 2.5s cubic-bezier(1, 0, 0, 1) alternate infinite);
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                &:before {
+                    @include animation(none);
+                }
+            }
+        }
+    }
+}
+@keyframes glow {
+    0% {
+        color: rgba($brand, .75);
+        text-shadow: 0 0 .5rem rgba($brand, $opacity-medium);
+    }
+    100% {
+        color: $brand;
+        text-shadow: 0 0 .75rem $brand;
+    }
+}
+@keyframes glow-drastic {
+    0% {
+        color: rgba($brand, $opacity-medium);
+        text-shadow: none;
+    }
+    100% {
+        color: $brand;
+        text-shadow: 0 0 2rem $brand;
+    }
+}
+@keyframes glow-shadow {
+    0% {
+        box-shadow: 0 0 2em $brand,
+                    inset 0 0 1px rgba($brand, $opacity-low);
+    }
+    100% {
+        box-shadow: 0 0 2em $brand-light,
+                    inset 0 0 1px rgba($brand-light, $opacity-low);
+    }
+}
+@keyframes glow-drastic-shadow {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 2em $brand-light,
+                    inset 0 0 1px rgba($brand-light, $opacity-low);
+    }
+}
