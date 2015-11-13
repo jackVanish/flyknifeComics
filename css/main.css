@@ -647,4 +647,4 @@ header {
 
 .border-radius-thin, .round-thin, .rounded-thin, a:not([class]):before {
   background-clip: padding-box;
-  border-radius: thin; }
+  border-radius: 0.125rem; }
