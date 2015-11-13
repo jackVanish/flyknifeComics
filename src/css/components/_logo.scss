@@ -1,0 +1,10 @@
+////
+/// Logo
+/// @group components
+////
+
+.logo {
+    @extend .non-selectable;
+    display: inline-block;
+    position: relative;
+}

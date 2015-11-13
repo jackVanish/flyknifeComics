@@ -1,0 +1,28 @@
+////
+/// Primary Navigation
+/// @group components
+////
+
+.nav-primary {
+    float: right;
+    padding: 3.25rem 0;
+    white-space: nowrap;
+    @include media("<=small") {
+        width: 100%;
+        padding-top: $spacing-medium;
+        text-align: center;
+    }
+}
+    .nav-primary-list {
+        font-size: 0;
+
+        li {
+            display: inline-block;
+            font-size: $font-size-large;
+        }
+
+        a {
+            display: block;
+            padding: $spacing-small $spacing-medium;
+        }
+    }

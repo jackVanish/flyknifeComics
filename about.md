@@ -4,7 +4,7 @@ layout: default
 title: About
 ---
 
-{% include h2.html title="Gamez 'n' Toyz From a Future Nobody Asked For" %}
+{% include content/heading.html type="h2" title="Gamez 'n' Toyz From a Future Nobody Asked For" %}
 
 Flyknife Comics is the greasy brain-spawn of a mind raised on the Grid. Wired into the NETWORLD from birth, cyber-failure
 BRUCE DELO uses his computer-augmented brain to beam hard truths and harder Comix into the mindspace of a blasted age.
@@ -15,12 +15,12 @@ Hitch up your boots and grab your decks- the GRIDDZONE waits for no one, and the
 
 
 
-{% include h2.html title="READ THE COMICS THE BATTERY COULDN’T STOP" %}
+{% include content/heading.html type="h2" title="READ THE COMICS THE BATTERY COULDN’T STOP" %}
 
-{% include h2.html title=">_ CHARACTERS" %}
+{% include content/heading.html type="h2" title=">_ CHARACTERS" %}
 
 
-{% include h3.html title="BRUCE DELO" %}
+{% include content/heading.html type="h3" title="BRUCE DELO" %}
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>
@@ -44,7 +44,7 @@ made of neon and dying stars into the brains of a generation.
 </dl>
 
 
-{% include h3.html title="C.H.R.I.S" %}
+{% include content/heading.html type="h3" title="C.H.R.I.S" %}
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>
@@ -69,7 +69,7 @@ CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).
 </dl>
 
 
-{% include h3.html title="CHRISTIAN DEWOLF" %}
+{% include content/heading.html type="h3" title="CHRISTIAN DEWOLF" %}
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>
@@ -93,7 +93,7 @@ such power, he fights on the side of good. He can be found at [wolfbutler.com](h
     <dd><q>Better watch out when my katana's CYBER-D METER is full- critical strike! <em>Atari!</em></q></dd>
 </dl>
 
-{% include h3.html title="STEWART DELO" %}
+{% include content/heading.html type="h3" title="STEWART DELO" %}
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>
@@ -113,7 +113,7 @@ Scion of Supernovas. Last of the Ravenous Hearts. <em>Deadstarr</em>. He of many
     <dd><q>Hawkwind is the BEST! THEY'RE THE BEST!</q></dd>
 </dl>
 
-{% include h3.html title="JON PYE" %}
+{% include content/heading.html type="h3" title="JON PYE" %}
 
 <dl class="about-details">
     <dt>ORIGINAL APPEARANCE:</dt>

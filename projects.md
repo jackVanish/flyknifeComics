@@ -4,11 +4,11 @@ layout: default
 title: Projects
 ---
 
-{% include h2.html title="GUNSMOKE DAYS, ROCK AND ROLL NIGHTS" %}
+{% include content/heading.html type="h2" title="GUNSMOKE DAYS, ROCK AND ROLL NIGHTS" %}
 
 
 
-{% include h3.html title="The Flyknife Comix Cyber-Librarium" %}
+{% include content/heading.html type="h3" title="The Flyknife Comix Cyber-Librarium" %}
 
 Check this webzone for all the hot tips and slick deets you need to survive out there in the GRIDD. Deck fast, decker-
 the Apocalypse Clock is ticking.

@@ -1,0 +1,198 @@
+////
+/// Mixins
+/// @group utils
+////
+
+
+///
+/// Generate transitions based on flexible input parameters.
+/// Pass zero or more properties and zero to two further parameters.
+/// Relies on defaults `all`, `$transition-time`, and `$transtion-function`.
+///
+/// @author Chris Burnell
+///
+/// @param {String} $values - Values
+///
+/// @example scss - Zero parameters
+///   @include transition();
+///   // transition: all .2s ease;
+///
+/// @example scss - One property
+///   @include transition(color);
+///   // transition: color .2s ease;
+///
+/// @example scss - Two properties
+///   @include transition(color, border);
+///   // transition: color .2s ease, border .2s ease;
+///
+/// @example scss - One property, one duration
+///   @include transition(color .5s);
+///   // transition: color .5s ease;
+///
+/// @example scss - One property, one duration, one timing function
+///   @include transition(color 1s linear);
+///   // transition: color 1s linear;
+///
+/// @example scss - Two properties, two durations, two timing functions
+///   @include transition(color 2s ease-in-out, border 1s linear);
+///   // transition: color 2s ease-in-out, border 1s linear;
+///
+/// @require {variable} $transition-time
+/// @require {variable} $transition-function
+///
+@mixin transition($values...) {
+
+    $transition: ();
+
+    @if( length($values) == 0 ) {
+        $transition: all #{$transition-time} #{$transition-function};
+    }
+
+    @else if( str-index(""+$values+"", " ") == null and str-index(""+$values+"", ",") == null and $values != "none" ) {
+        $transition: #{$values} #{$transition-time} #{$transition-function};
+    }
+
+    @else if( str-index(""+$values+"", ",") != null ) {
+        @each $value in $values {
+
+            @if( str-index(""+$value+"", " ") == null ) {
+                $transition: append($transition, unquote("#{$value} #{$transition-time} #{$transition-function}"), comma);
+            }
+
+            @else if( str-index(""+$value+"", " ") == 1 ) {
+                $transition: append($transition, unquote("#{$value} #{$transition-function}"), comma);
+            }
+
+            @else {
+                $transition: append($transition, unquote("#{$value}"), comma);
+            }
+
+        }
+    }
+
+    @else {
+        $transition: #{$values};
+    }
+
+    transition: #{$transition};
+
+}
+
+
+///
+/// Describes CSS changes to the browser; to be coupled with any transitions.
+///
+/// @param {String} $values - Values
+///
+/// @example scss - One parameter
+///   @include will-change(color);
+///   // will-change: color;
+///
+/// @example scss - Multiple parameters
+///   @include will-change(color, border);
+///   // will-change: color, border;
+///
+/// @throw Error if no parameters are passed.
+///
+@mixin will-change($values...) {
+
+    @if( length($values) == 0 ) {
+        @error "will-change() expects one or more parameters.";
+    }
+
+    will-change: #{$values};
+
+}
+
+
+///
+/// Add a border-radius.
+///
+/// @param {String} $values - Values
+///
+/// @example scss - One parameter
+///   @include radius(color);
+///   // border-radius: color;
+///
+/// @throw Error if no parameters are passed.
+///
+@mixin border-radius($values...) {
+
+    @if( length($values) == 0 ) {
+        $values: #{$border-radius-default};
+    }
+    @else if( $values == "thin" ) {
+        $values: #{$border-radius-thin};
+    }
+
+    background-clip: padding-box;
+    border-radius: #{$values};
+
+}
+
+
+///
+/// Absolutely position an element.
+///
+/// @param {String} $position - Position of the element
+///
+/// @example scss - Zero parameters
+///   @include absolute;
+///   // position: absolute;
+///   // top:  0;
+///   // left: 0;
+///
+/// @example scss - One parameter
+///   @include absolute(bottom);
+///   // position: absolute;
+///   // bottom: 0;
+///   // left:   0;
+///   // right:  0;
+///
+@mixin absolute($position: "topleft") {
+
+    position: absolute;
+
+    @if( $position == "topleft" ) {
+        top:  0;
+        left: 0;
+    }
+
+    @else if( $position == "bottom" ) {
+        bottom: 0;
+        left:   0;
+        right:  0;
+    }
+
+    @else if( $position == "center") {
+        top:  50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+}
+
+
+///
+/// Define characters for quotes
+///
+/// @example scss
+///   @include quotes;
+///   // quotes: "“" "”" "‘" "’";
+///
+@mixin quotes() {
+
+    &,
+    :lang(en) & {
+        quotes: "“" "”" "‘" "’";
+    }
+
+    :lang(de) & {
+        quotes: "„" "“" "‚" "‘";
+    }
+
+    :lang(fr) & {
+        quotes: "« " " »" "‹ " " ›";
+    }
+
+}

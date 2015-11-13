@@ -1,0 +1,26 @@
+{% comment %}
+*
+* This include lets you easily add a heading element with an ID anchor.
+*
+* @param {String} title *
+* @param {String} id [title | slugify]
+* @param {Element} type [h3]
+*
+* @example
+*   {% include content/heading.html title='I Can’t Think Of A Title' %}
+*   // <h3 id="i-cant-think-of-a-title">
+*   //     I Can’t Think Of A Title
+*   //     <a href="#i-cant-think-of-a-title" class="heading-anchor" aria-hidden="true">#i-cant-think-of-a-title</a>
+*   // </h3>
+*
+{% endcomment %}
+{% capture heading_type %}
+    {% if include.type %}{{ include.type }}{% else %}h3{% endif %}
+{% endcapture %}
+{% capture heading_id %}
+    {% if include.id %}{{ include.id }}{% else %}{{ include.title | slugify }}{% endif %}
+{% endcapture %}
+<{{ heading_type }} id="{{ heading_id }}">
+    {{ include.title }}
+    <a href="#{{ heading_id }}" class="heading-anchor" aria-hidden="true">#{{ heading_id }}</a>
+</{{ heading_type }}>

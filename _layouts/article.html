@@ -1,26 +1,13 @@
-{% include header.html %}
+{% include layout/header.html %}
 
 
-<main class="wrap  clear  content" role="main">
-
-    <aside>{{ site.aside_message }}</aside>
-
-    <article>
-
-        <h1>{{ page.title }}</h1>
-
-        <div class="login-details">
-            <pre><code class="language-bash" data-lang="bash">> login
-> p?:
-> Welcome to VICTOR.SYS © DYNECORP 777,777{% if page.bash %}
-{{ page.bash }}{% endif %}</code></pre>
-        </div>
+<main class="wrap  clear" role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
 
         {{ content }}
 
     </article>
-
 </main>
 
 
-{% include footer.html %}
+{% include layout/footer.html %}

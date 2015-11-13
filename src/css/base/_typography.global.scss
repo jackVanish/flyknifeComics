@@ -1,0 +1,248 @@
+////
+/// Typography (Global)
+/// @group base
+////
+
+html {
+    background-color: $color-black;
+    background-image: url("/images/bg-body.png");
+    color: $color-white;
+    font: $base-font-weight $base-font-style #{$base-font-size}/#{$base-line-height} $font-stack-primary;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+}
+
+%heading {
+
+}
+h1, h2, h3, h4, h5, h6 {
+    @extend %heading;
+}
+
+%alpha {
+
+}
+h1 {
+    @extend %alpha;
+}
+
+%beta {
+
+}
+h2 {
+    @extend %beta;
+}
+
+%delta {
+
+}
+h3 {
+    @extend %delta;
+}
+
+%gamma {
+
+}
+h4 {
+    @extend %gamma;
+}
+
+%anchor {
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+    &:not([class]) {
+        padding: .125em .25em;
+    }
+    &,
+    &:link,
+    &:visited {
+        color: $color-brand;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-brand-alt;
+        text-decoration: none;
+    }
+    &:not([class]):before {
+        @extend .rounded-thin;
+        @include transition(width);
+        @include will-change(width);
+        content: "";
+        background-color: $color-black-alt;
+        width: 0;
+        height: 100%;
+        border-bottom-width: .125em;
+        border-bottom-style: solid;
+        border-bottom-color: $color-brand;
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        z-index: z-index(below);
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        &:before {
+            width: 100%;
+            left: 0;
+            right: auto;
+            border-bottom-color: $color-brand-alt;
+        }
+    }
+    span:not([class]):not([itemprop]) {
+        @extend .hidden;
+    }
+}
+a {
+    @extend %anchor;
+}
+
+.heading-anchor {
+    display: none;
+    vertical-align: middle;
+    :hover > &,
+    :focus > &,
+    :active > & {
+        display: inline-block;
+    }
+}
+
+p {
+
+    &:empty {
+        @extend .removed;
+    }
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ol:not([class]),
+ul:not([class]),
+.default-list {
+    li {
+        padding-left: $spacing-large;
+        margin-bottom: $spacing-small;
+        position: relative;
+        &:last-child {
+            margin-bottom: $spacing-medium;
+        }
+        &:before {
+            @include absolute;
+            font-family: $font-stack-secondary;
+            font-weight: 600;
+        }
+    }
+
+    ol:not([class]),
+    ul:not([class]),
+    .default-list {
+        margin-top: $spacing-medium;
+    }
+}
+ol:not([class]),
+ol.default-list {
+    counter-reset: ordered-list;
+
+    li {
+        counter-increment: ordered-list;
+        &:before {
+            content: counter(ordered-list) ".";
+        }
+    }
+}
+ul:not([class]) li:before,
+ul.default-list li:before {
+    // BULLET
+    content: "•";
+    // 24px
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+img,
+a img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+figure {
+
+    img,
+    svg {
+
+    }
+
+    a:link,
+    a:visited,
+    figcaption {
+
+    }
+}
+
+blockquote {
+    @include quotes;
+
+    p {
+        margin-bottom: 0 !important;
+        &:before {
+            content: open-quote;
+        }
+        &:after {
+            content: close-quote;
+        }
+    }
+
+    cite {
+
+        &:before {
+            // HYPHEN, NO-BREAK SPACE
+            content: "‐ ";
+        }
+    }
+}
+
+q {
+    @include quotes;
+    font-style: italic;
+}
+
+abbr[title],
+blockquote,
+cite,
+dfn[title] {
+    font-style: italic;
+}
+abbr[title],
+dfn[title] {
+    border-bottom-width: 1px dotted;
+    border-bottom-style: dotted;
+    cursor: help;
+}
+ins {
+    text-decoration: none;
+}
+
+hr {
+
+}
+
+/**
+ * Fix `iframe` and `video`
+ */
+iframe,
+video {
+    width: 100%;
+    border: none;
+    overflow-x: hidden;
+}
+
+::selection {
+
+}

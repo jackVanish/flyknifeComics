@@ -1,9 +1,0 @@
-/*------------------------------------*\
-    #BASE - Article
-\*------------------------------------*/
-
-article {
-    @include media(">medium") {
-        padding-left: ($aside-width + $default-padding);
-    }
-}
