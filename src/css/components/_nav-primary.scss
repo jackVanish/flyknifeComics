@@ -7,11 +7,14 @@
     float: right;
     padding: 3.25rem 0;
     white-space: nowrap;
+    overflow: hidden;
+
     @include media("<=medium") {
         float: none;
         padding-top:    $spacing-medium;
         padding-bottom: $spacing-medium;
     }
+
     @include media("<=small") {
         width: 100%;
         padding-bottom: 0;
@@ -23,11 +26,20 @@
         li {
             display: inline-block;
             font-size: $font-size-medium;
+
+            @include media("<=small") {
+                width: 33.333%;
+            }
         }
 
         a {
             display: block;
             padding: $spacing-small $spacing-medium;
+
+            @include media("<=small") {
+                padding: $spacing-small 0;
+                text-align: center;
+            }
         }
     }
 

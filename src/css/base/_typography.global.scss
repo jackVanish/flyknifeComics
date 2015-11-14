@@ -133,7 +133,10 @@ a {
 }
 
 p {
-
+    margin: 0 0 $spacing-medium;
+    &:last-child {
+        margin-bottom: 0;
+    }
     &:empty {
         @extend .removed;
     }

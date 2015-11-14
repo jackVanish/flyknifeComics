@@ -456,6 +456,11 @@ a {
   :active > .heading-anchor {
     display: inline-block; }
 
+p {
+  margin: 0 0 1.5rem; }
+  p:last-child {
+    margin-bottom: 0; }
+
 ol,
 ul {
   padding: 0;
@@ -721,11 +726,14 @@ footer {
 .logo {
   display: inline-block;
   position: relative; }
+  .logo img {
+    margin: 0; }
 
 .nav-primary {
   float: right;
   padding: 3.25rem 0;
-  white-space: nowrap; }
+  white-space: nowrap;
+  overflow: hidden; }
   @media (max-width: 800px) {
     .nav-primary {
       float: none;
@@ -741,9 +749,16 @@ footer {
   .nav-primary-list li {
     display: inline-block;
     font-size: 1.125rem; }
+    @media (max-width: 500px) {
+      .nav-primary-list li {
+        width: 33.333%; } }
   .nav-primary-list a {
     display: block;
     padding: 0.75rem 1.5rem; }
+    @media (max-width: 500px) {
+      .nav-primary-list a {
+        padding: 0.75rem 0;
+        text-align: center; } }
 
 .title,
 .tagline {
@@ -809,10 +824,12 @@ footer {
   border: 0.25em solid rgba(248, 248, 248, 0.05); }
   .highlight code::-moz-selection {
     background-color: #f473ff;
-    color: #0d0d0d; }
+    color: #0d0d0d;
+    text-shadow: none; }
   .highlight code::selection {
     background-color: #f473ff;
-    color: #0d0d0d; }
+    color: #0d0d0d;
+    text-shadow: none; }
 
 @-webkit-keyframes shell-scroll-colors {
   0%,
@@ -923,7 +940,7 @@ footer {
 .remove, .removed, p:empty {
   display: none !important; }
 
-.non-selectable, button, .button, .logo, .lede--shell code {
+.non-selectable, button, .button, .logo {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

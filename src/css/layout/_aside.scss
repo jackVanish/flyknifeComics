@@ -25,6 +25,7 @@ aside {
             }
         }
     }
+
     @include media("<=medium") {
         width: 100%;
         &:not([class*="main-aside"]) {
@@ -41,6 +42,7 @@ aside {
     p,
     figcaption {
         clear: both;
+
         @include media(">small") {
             font-size: $font-size-small;
         }

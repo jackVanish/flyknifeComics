@@ -16,7 +16,6 @@
     }
 
     code {
-        @extend .non-selectable;
         text-shadow: 0 0 .125rem $color-brand-alt;
         animation: shell-scroll-colors 8s linear infinite;
 
@@ -70,6 +69,7 @@
     &::selection {
         background-color: $color-brand-alt;
         color: $color-black-alt;
+        text-shadow: none;
     }
 }
 

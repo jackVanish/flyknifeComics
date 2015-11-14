@@ -7,4 +7,8 @@
     @extend .non-selectable;
     display: inline-block;
     position: relative;
+
+    img {
+        margin: 0;
+    }
 }
