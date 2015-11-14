@@ -4,6 +4,15 @@
 <main class="wrap  clear" role="main">
     <article itemscope itemtype="http://schema.org/BlogPosting">
 
+        {% if page.shell %}
+            <div class="lede--shell">
+                <pre><code>> login
+p?:
+Welcome to VICTOR.SYS © DYNECORP 777,777
+{{ page.shell }}</code></pre>
+            </div>
+        {% endif %}
+
         {{ content }}
 
     </article>

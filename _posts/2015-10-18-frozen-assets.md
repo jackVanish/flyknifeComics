@@ -5,7 +5,7 @@ date: 2015-10-18 00:00:01
 
 title: Extract frozen_assets.zip
 
-bash: |
+shell: |
   > cd /secret/writing/novels/
   > ls
   ghostcrime/     gray/      snapback/

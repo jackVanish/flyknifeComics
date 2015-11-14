@@ -1,0 +1,160 @@
+////
+/// Code
+/// @group components
+////
+
+/**
+ * Article Special Login-style Lede
+ */
+.lede--shell {
+    font-size: $font-size-large;
+    code {
+        @include border-radius(.5em);
+        background-color: $color-black-alt;
+        color: limegreen;
+        display: table;
+        position: relative;
+        padding: $spacing-medium;
+        margin: 0 auto;
+
+        &:before {
+            @include absolute;
+            @include border-radius(.5em);
+            content: "";
+            background-image: repeating-linear-gradient(to bottom,
+                                                        transparent 0%,
+                                                        rgba($color-white, .05) 50%,
+                                                        transparent 100%);
+            background-size: 100% 20%;
+            width:  100%;
+            height: 100%;
+            animation: shell-scroll 2s linear infinite;
+        }
+
+        &::selection {
+            background-color: limegreen;
+            color: $color-black-alt;
+        }
+    }
+}
+@keyframes shell-scroll {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -25%;
+    }
+}
+
+/**
+ * Github-style Code Highlighting
+ */
+.highlight {
+    position: relative;
+
+    .err {                              // Error
+        background-color: lightcoral;
+        color: firebrick;
+        font-weight: 600;
+    }
+
+    .c,                                 // Comment
+    .cm,                                // Comment - Multiline
+    .cp,                                // Comment - Preproc
+    .c1,                                // Comment - Single
+    .cs {                               // Comment - Special
+        color: $color-text-alt;
+        font-style: italic;
+    }
+
+    .gs,                                // Generic - Strong
+    .k,                                 // Keyword
+    .kc,                                // Keyword - Constant
+    .kd,                                // Keyword - Declaration
+    .kp,                                // Keyword - Pseudo
+    .kr,                                // Keyword - Reserved
+    .kt,                                // Keyword - Type
+    .nc,                                // Name - Class
+    .ne,                                // Name - Exception
+    .nf,                                // Name - Function
+    .o,                                 // Operator
+    .ow {                               // Operator - Word
+        font-weight: 600;
+    }
+
+    .gr,                                // Generic - Error
+    .gt,                                // Generic - Traceback
+    .ne,                                // Name - Exception
+    .nf,                                // Name - Function
+    .s,                                 // Literal - String
+    .sb,                                // Literal - String Backtick
+    .sc,                                // Literal - String Char
+    .sd,                                // Literal - String Doc
+    .s1,                                // Literal - String Single
+    .s2,                                // Literal - String Double
+    .se,                                // Literal - String Escape
+    .sh,                                // Literal - String Heredoc
+    .si,                                // Literal - String Interpol
+    .sx {                               // Literal - String Other
+        color: firebrick;
+    }
+
+    .gi,                                // Generic - Inserted
+    .gi .x {                            // Generic - Inserted Specific
+        background-color: turquoise;
+    }
+
+    .gd,                                // Generic - Deleted
+    .gd .x {                            // Generic - Deleted Specific
+        background-color: lightcoral;
+    }
+
+    .ge {                               // Generic - Emph
+        font-style: italic;
+    }
+
+    .m,                                 // Literal - Number
+    .il,                                // Literal - Number Integer Long
+    .mf,                                // Literal - Number Float
+    .mh,                                // Literal - Number Hex
+    .mi,                                // Literal - Number Integer
+    .mo,                                // Literal - Number Oct
+    .nb,                                // Name - Builtin
+    .no,                                // Name - Constant
+    .nv,                                // Name - Variable
+    .vc,                                // Name - Variable Class
+    .vg,                                // Name - Variable Global
+    .vi {                               // Name - Variable Instance
+        color: cadetblue;
+    }
+
+    .sr {                               // Literal - String Regex
+        color: forestgreen;
+    }
+
+    .bp,                                // Name - Builtin Pseudo
+    .gh,                                // Generic - Heading
+    .go,                                // Generic - Output
+    .gp,                                // Generic - Prompt
+    .nn {                               // Name - Namespace
+        color: $color-text-alt;
+    }
+
+    .gu,                                // Generic - Subheading
+    .w {                                // Text - Whitespace
+        color: $color-text-light;
+    }
+
+    .kt,                                // Keyword - Type
+    .na,                                // Name - Attribute
+    .nc,                                // Name - Class
+    .nt {                               // Name - Tag
+        color: $color-brand;
+    }
+
+    .ni,                                // Name - Entity
+    .ss {                               // Literal - String Symbol
+        color: slateblue;
+        color: rebeccapurple;
+    }
+}

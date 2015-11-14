@@ -5,7 +5,7 @@ date: 2015-07-21 00:00:01
 
 title: View business-plan.doc
 
-bash: |
+shell: |
   > cd /secret/businessplans/pragmatic/
   > cat business-plan.doc
   cat: business-plan.doc: No such file or directory

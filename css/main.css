@@ -471,6 +471,9 @@ a img {
   max-width: 100%;
   height: auto; }
 
+figure {
+  margin: 0 0 1.5rem; }
+
 blockquote,
 :lang(en) blockquote {
   quotes: "“" "”" "‘" "’"; }
@@ -524,6 +527,10 @@ video {
   width: 100%;
   border: none;
   overflow-x: hidden; }
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1.5rem; }
 
 button, .button {
   display: inline-block;
@@ -593,6 +600,139 @@ header {
   .nav-primary-list a {
     display: block;
     padding: 0.75rem 1.5rem; }
+
+/**
+ * Article Special Login-style Lede
+ */
+.lede--shell {
+  font-size: 1.25rem; }
+  .lede--shell code {
+    background-clip: padding-box;
+    border-radius: 0.5em;
+    background-color: #0d0d0d;
+    color: limegreen;
+    display: table;
+    position: relative;
+    padding: 1.5rem;
+    margin: 0 auto; }
+    .lede--shell code:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-clip: padding-box;
+      border-radius: 0.5em;
+      content: "";
+      background-image: -webkit-repeating-linear-gradient(top, transparent 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%);
+      background-image: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%);
+      background-size: 100% 20%;
+      width: 100%;
+      height: 100%;
+      -webkit-animation: shell-scroll 2s linear infinite;
+              animation: shell-scroll 2s linear infinite; }
+    .lede--shell code::-moz-selection {
+      background-color: limegreen;
+      color: #0d0d0d; }
+    .lede--shell code::selection {
+      background-color: limegreen;
+      color: #0d0d0d; }
+
+@-webkit-keyframes shell-scroll {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -25%; } }
+
+@keyframes shell-scroll {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -25%; } }
+
+/**
+ * Github-style Code Highlighting
+ */
+.highlight {
+  position: relative; }
+  .highlight .err {
+    background-color: lightcoral;
+    color: firebrick;
+    font-weight: 600; }
+  .highlight .c,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .c1,
+  .highlight .cs {
+    color: #777777;
+    font-style: italic; }
+  .highlight .gs,
+  .highlight .k,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt,
+  .highlight .nc,
+  .highlight .ne,
+  .highlight .nf,
+  .highlight .o,
+  .highlight .ow {
+    font-weight: 600; }
+  .highlight .gr,
+  .highlight .gt,
+  .highlight .ne,
+  .highlight .nf,
+  .highlight .s,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sx {
+    color: firebrick; }
+  .highlight .gi,
+  .highlight .gi .x {
+    background-color: turquoise; }
+  .highlight .gd,
+  .highlight .gd .x {
+    background-color: lightcoral; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .m,
+  .highlight .il,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .nb,
+  .highlight .no,
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi {
+    color: cadetblue; }
+  .highlight .sr {
+    color: forestgreen; }
+  .highlight .bp,
+  .highlight .gh,
+  .highlight .go,
+  .highlight .gp,
+  .highlight .nn {
+    color: #777777; }
+  .highlight .gu,
+  .highlight .w {
+    color: #cccccc; }
+  .highlight .kt,
+  .highlight .na,
+  .highlight .nc,
+  .highlight .nt {
+    color: #8cddff; }
+  .highlight .ni,
+  .highlight .ss {
+    color: slateblue;
+    color: rebeccapurple; }
 
 /**
  * Contains embedded media properly and allows them to be dynamically resized.

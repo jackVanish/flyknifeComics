@@ -1,5 +1,5 @@
 {
-    "name": "FlyknifeComics",
+    "name": "flyknifeComics",
     "author": "Chris Burnell (@iamchrisburnell)",
     "version": "1.0.0",
     "license": "Creative Commons BY-NC-SA 4.0",
@@ -16,5 +16,12 @@
         "gulp-sass": "^2.1.0",
         "gulp-uglify": "^1.4.2",
         "gulp-watch": "^4.3.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:jackVanish/flyknifeComics"
+    },
+    "bugs": {
+        "url": "https://github.com/jackVanish/flyknifeComics/issues"
     }
 }
