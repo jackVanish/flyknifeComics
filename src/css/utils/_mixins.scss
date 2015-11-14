@@ -158,6 +158,12 @@
         left: 0;
     }
 
+    @if( $position == "topcenter" ) {
+        top:  0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     @else if( $position == "bottom" ) {
         bottom: 0;
         left:   0;

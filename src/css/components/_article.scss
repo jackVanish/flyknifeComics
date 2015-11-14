@@ -3,6 +3,19 @@
 /// @group components
 ////
 
+article {
+    position: relative;
+    &:before {
+        @include absolute(topcenter);
+        content: "";
+        background-color: $color-brand;
+        width: 100%;
+        max-width: $wrapper-width-small;
+        height: .125rem;
+        box-shadow: 0 0 .5rem $color-brand-alt;
+    }
+}
+
 .title,
 .tagline {
     width: 100%;

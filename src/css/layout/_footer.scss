@@ -4,10 +4,37 @@
 ////
 
 footer {
-    color: $color-text-alt;
-    padding-bottom: $spacing-medium;
+    color: $color-text-light;
+    padding-top:    $spacing-large;
+    padding-bottom: $spacing-large;
+    position: relative;
 
-    &.wrap {
+    &:before {
+        @include absolute;
+        content: "";
+        background-color: rgba($color-black-alt, opacity(ultra));
+        width:  100%;
+        height: 100%;
+        display: block;
+        z-index: z-index(below);
+    }
+
+    section {
         max-width: $wrapper-width-medium !important;
+        /* autoprefixer: off */
+        background-image: -webkit-linear-gradient(top,
+                                                  #7795B0 0,
+                                                  #7795B0 3px,
+                                                  #6581B0 4px,
+                                                  #6380AE 30%,
+                                                  #DDC4C3 50%,
+                                                  #B9957F 50%,
+                                                  #B9957F 53%,
+                                                  #D18B2D 53%,
+                                                  #DDC4C3 80%);
+        /* autoprefixer: off */
+        -webkit-background-clip: text;
+        /* autoprefixer: off */
+        -webkit-text-fill-color: transparent;
     }
 }

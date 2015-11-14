@@ -5,6 +5,7 @@
 
 .logo {
     @extend .non-selectable;
+    @include transition;
     display: inline-block;
     position: relative;
     &:hover,

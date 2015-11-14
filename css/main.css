@@ -528,7 +528,7 @@ dl {
       dl dt {
         float: none; } }
   dl dd {
-    width: 1200px;
+    width: 1160px;
     display: table-cell;
     margin: 0;
     overflow: hidden;
@@ -596,11 +596,12 @@ ins {
 hr {
   background-color: #8cddff;
   width: 100%;
-  height: 1px;
+  max-width: 500px;
+  height: .125rem;
   display: block;
   border: 0;
-  margin: 2.25rem 0;
-  box-shadow: 0 0 0.5rem #8cddff, 0 1px 0 rgba(244, 115, 255, 0.6), 0 1px 0.5rem rgba(244, 115, 255, 0.9); }
+  margin: 2.25rem auto;
+  box-shadow: 0 0 0.5rem #f473ff; }
 
 /**
  * Fix `iframe` and `video`
@@ -641,7 +642,7 @@ main {
 
 .wrap, .wrap--full-width {
   width: auto;
-  max-width: 1200px;
+  max-width: 1160px;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   margin-right: auto;
@@ -667,7 +668,8 @@ header {
       text-align: center; } }
 
 article {
-  padding-top: 1.5rem; }
+  padding-top: 2.25rem;
+  margin-top: 1.5rem; }
   @media (min-width: 801px) {
     article {
       padding-left: 18.25rem; } }
@@ -718,12 +720,32 @@ aside figcaption {
       font-size: 0.875rem; } }
 
 footer {
-  color: #777777;
-  padding-bottom: 1.5rem; }
-  footer.wrap, footer.wrap--full-width {
-    max-width: 800px !important; }
+  color: #cccccc;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  position: relative; }
+  footer:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(13, 13, 13, 0.7);
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1; }
+  footer section {
+    max-width: 800px !important;
+    /* autoprefixer: off */
+    background-image: -webkit-linear-gradient(top, #7795B0 0, #7795B0 3px, #6581B0 4px, #6380AE 30%, #DDC4C3 50%, #B9957F 50%, #B9957F 53%, #D18B2D 53%, #DDC4C3 80%);
+    /* autoprefixer: off */
+    -webkit-background-clip: text;
+    /* autoprefixer: off */
+    -webkit-text-fill-color: transparent; }
 
 .logo {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   display: inline-block;
   position: relative; }
   .logo:hover, .logo:focus {
@@ -767,6 +789,22 @@ footer {
       .nav-primary-list a {
         padding: 0.75rem 0;
         text-align: center; } }
+
+article {
+  position: relative; }
+  article:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: "";
+    background-color: #8cddff;
+    width: 100%;
+    max-width: 500px;
+    height: .125rem;
+    box-shadow: 0 0 0.5rem #f473ff; }
 
 .title,
 .tagline {
