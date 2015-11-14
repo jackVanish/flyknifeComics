@@ -71,7 +71,7 @@ $color-text-alt: #777777 !default;
 /// @type Color
 $color-text-light: #cccccc !default;
 /// @type Color
-$color-white: #ffffff !default;
+$color-white: #f8f8f8 !default;
 /// @type Color
 $color-black: #1d1d1d !default;
 /// @type Color
@@ -97,7 +97,9 @@ $font-size-smaller: .8125rem !default;
 /// @type Length
 $font-size-small: .875rem !default;
 /// @type Length
-$font-size-large: 1.125rem !default;
+$font-size-medium: 1.125rem !default;
+/// @type Length
+$font-size-large: 1.5rem !default;
 /// @type Length
 $font-size-larger: 2.25rem !default;
 /// @type Map

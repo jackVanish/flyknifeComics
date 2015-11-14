@@ -7,7 +7,7 @@
  * Article Special Login-style Lede
  */
 .lede--shell {
-    font-size: $font-size-large;
+    font-size: $font-size-medium;
 
     pre {
         @include media(">medium") {
@@ -17,7 +17,6 @@
 
     code {
         @extend .non-selectable;
-        white-space: pre-wrap;
         text-shadow: 0 0 .125rem $color-brand-alt;
         animation: shell-scroll-colors 8s linear infinite;
 
@@ -29,9 +28,17 @@
             max-width: ($aside-width * 1.5);
         }
 
-        @include media("<=medium") {
-            width: 100%;
+        .main-aside--full & {
+            width: auto;
             max-width: 100%;
+        }
+
+        &,
+        .main-aside--full & {
+            @include media("<=medium") {
+                width: 100%;
+                max-width: 100%;
+            }
         }
 
         &:before {

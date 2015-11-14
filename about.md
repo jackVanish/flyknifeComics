@@ -140,4 +140,4 @@ Scion of Supernovas. Last of the Ravenous Hearts. <em>Deadstarr</em>. He of many
 --------
 
 
-(Flyknife Comics is owned and operated by Bruce Delo, with semi-regular collaborations by Christian DeWolf, Jon Pye, and Stewart Delo. Site design by Chris Burnell. Flyknife Comics is based in Canada and produces small-press comic books for a wide audience. All work on the site, unless otherwise indicated, is licensed under a {{ site.copyright }}.)
+(Flyknife Comics is owned and operated by Bruce Delo, with semi-regular collaborations by <a href="http://christiandewolf.com/" title="">Christian DeWolf</a>, Jon Pye, and Stewart Delo. Site design by <a href="https://chrisburnell.com/" title="">Chris Burnell</a>. Flyknife Comics is based in Canada and produces small-press comic books for a wide audience. All work on the site, unless otherwise indicated, is licensed under a {{ site.copyright }}.)

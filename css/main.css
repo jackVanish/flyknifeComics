@@ -370,7 +370,7 @@ html {
 html {
   background-color: #1d1d1d;
   background-image: url("/images/bg-body.png");
-  color: #ffffff;
+  color: #f8f8f8;
   font: 400 normal 100% / 1.618 "Abel", Arial, "Helvetica Neue", Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
@@ -383,23 +383,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.25; }
 
-h1 {
+h1,
+h2,
+h3 {
   color: #8cddff;
-  font-size: 2.25rem;
   font-weight: 600;
-  text-transform: uppercase;
   text-shadow: 0 0 0.5rem #8cddff; }
 
-h2 {
-  color: #8cddff;
-  font-weight: 600;
-  text-shadow: 0 0 0.35rem #8cddff; }
+h1 {
+  font-size: 2.25rem;
+  text-transform: uppercase; }
 
 h2 {
-  margin-bottom: 1.5rem; }
+  font-size: 1.5rem; }
+
+h2 {
+  padding-bottom: 1.5rem; }
 
 h3 {
-  margin-bottom: 0.75rem; }
+  font-size: 1.125rem;
+  text-shadow: 0 0 0.5rem rgba(140, 221, 255, 0.7); }
+
+h3 {
+  padding-bottom: 0.75rem; }
+  :not(h2) + h3 {
+    padding-top: 0.75rem; }
 
 a {
   position: relative;
@@ -500,6 +508,32 @@ ul.default-list li:before {
   font-size: 1.5rem;
   line-height: 1; }
 
+dl {
+  width: 100%;
+  overflow: hidden; }
+  dl:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  dl dt {
+    width: auto;
+    min-width: 12rem;
+    float: left;
+    clear: left;
+    font-weight: 600; }
+    @media (max-width: 500px) {
+      dl dt {
+        float: none; } }
+  dl dd {
+    width: 1200px;
+    display: table-cell;
+    margin: 0;
+    overflow: hidden;
+    vertical-align: top; }
+    @media (max-width: 500px) {
+      dl dd {
+        width: auto;
+        display: block;
+        margin-left: 1.5rem; } }
+
 img,
 a img {
   width: auto;
@@ -574,7 +608,8 @@ video {
 
 pre {
   margin-top: 0;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  white-space: pre-wrap; }
 
 button, .button {
   display: inline-block;
@@ -648,20 +683,25 @@ article {
     width: 16rem;
     float: left;
     margin-left: -18.25rem; }
-    aside.main-aside {
+    aside[class*="main-aside"] {
       width: auto;
       max-width: 32rem;
       margin-right: 2.25rem;
-      margin-bottom: 2.25rem; } }
+      margin-bottom: 2.25rem; }
+      aside[class*="main-aside"][class*="main-aside--full"] {
+        max-width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0; } }
 
 @media (max-width: 800px) {
   aside {
     width: 100%; }
-    aside:not(.main-aside) {
+    aside:not([class*="main-aside"]) {
       background: red;
       padding: 1rem;
       margin-bottom: 1.5rem; }
-      aside:not(.main-aside):last-child {
+      aside:not([class*="main-aside"]):last-child {
         margin-bottom: 0; } }
 
 aside p,
@@ -708,7 +748,7 @@ footer {
 .title,
 .tagline {
   width: 100%;
-  margin-bottom: 2.25rem; }
+  padding-bottom: 2.25rem; }
 
 .farewell {
   font-size: 1.125rem;
@@ -724,7 +764,6 @@ footer {
     .lede--shell pre {
       margin-bottom: 0; } }
   .lede--shell code {
-    white-space: pre-wrap;
     text-shadow: 0 0 0.125rem #f473ff;
     -webkit-animation: shell-scroll-colors 8s linear infinite;
             animation: shell-scroll-colors 8s linear infinite; }
@@ -735,8 +774,12 @@ footer {
 @media (max-width: 1000px) and (min-width: 801px) {
   .lede--shell code {
     max-width: 24rem; } }
+    .main-aside--full .lede--shell code {
+      width: auto;
+      max-width: 100%; }
     @media (max-width: 800px) {
-      .lede--shell code {
+      .lede--shell code,
+      .main-aside--full .lede--shell code {
         width: 100%;
         max-width: 100%; } }
     .lede--shell code:before {
@@ -746,8 +789,8 @@ footer {
       background-clip: padding-box;
       border-radius: 0.5em;
       content: "";
-      background-image: -webkit-repeating-linear-gradient(top, transparent 0, rgba(255, 255, 255, 0.05) 2em, transparent 4em);
-      background-image: repeating-linear-gradient(to bottom, transparent 0, rgba(255, 255, 255, 0.05) 2em, transparent 4em);
+      background-image: -webkit-repeating-linear-gradient(top, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
+      background-image: repeating-linear-gradient(to bottom, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
       background-size: 100% 4em;
       background-repeat: repeat-y;
       width: 100%;
@@ -763,7 +806,7 @@ footer {
   display: table;
   position: relative;
   padding: 1.5rem;
-  border: 0.25em solid rgba(255, 255, 255, 0.05); }
+  border: 0.25em solid rgba(248, 248, 248, 0.05); }
   .highlight code::-moz-selection {
     background-color: #f473ff;
     color: #0d0d0d; }
@@ -896,7 +939,7 @@ footer {
       -ms-hyphens: auto;
           hyphens: auto; }
 
-.border-radius, .round, .rounded, aside:not(.main-aside) {
+.border-radius, .round, .rounded, aside:not([class*="main-aside"]) {
   background-clip: padding-box;
   border-radius: 0.25rem; }
 

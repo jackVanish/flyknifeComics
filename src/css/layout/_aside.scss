@@ -11,16 +11,23 @@ aside {
         width: $aside-width;
         float: left;
         margin-left: -($aside-width + $spacing-large);
-        &.main-aside {
+        &[class*="main-aside"] {
             width: auto;
             max-width: ($aside-width * 2);
             margin-right:  $spacing-large;
             margin-bottom: $spacing-large;
+
+            &[class*="main-aside--full"] {
+                max-width: 100%;
+                float: none;
+                margin-left:  0;
+                margin-right: 0;
+            }
         }
     }
     @include media("<=medium") {
         width: 100%;
-        &:not(.main-aside) {
+        &:not([class*="main-aside"]) {
             @extend .rounded;
             background: red;
             padding: 1rem;

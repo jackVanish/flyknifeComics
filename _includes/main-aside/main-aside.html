@@ -1,5 +1,10 @@
 {% if page.shell %}
-    <aside class="main-aside">
+    {% if page.aside_full == true %}
+        {% assign aside_class = "main-aside--full" %}
+    {% else %}
+        {% assign aside_class = "main-aside" %}
+    {% endif %}
+    <aside class="{{ aside_class }}">
         <div class="lede--shell  highlight">
             <pre><code class="language-shell" data-lang="shell">> login
 p?:

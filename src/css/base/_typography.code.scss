@@ -15,4 +15,5 @@ pre {
     // override `normalize.css`
     margin-top: 0;
     margin-bottom: $spacing-medium;
+    white-space: pre-wrap;
 }
