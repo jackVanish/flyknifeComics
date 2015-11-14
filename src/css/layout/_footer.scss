@@ -4,5 +4,10 @@
 ////
 
 footer {
+    color: $color-text-alt;
+    padding-bottom: $spacing-medium;
 
+    &.wrap {
+        max-width: $wrapper-width-medium !important;
+    }
 }

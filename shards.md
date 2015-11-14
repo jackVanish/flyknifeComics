@@ -1,5 +1,8 @@
 ---
 layout: article
+page_class: page-shards
+sitemap:
+  priority: 1.0
 
 title: Shards
 

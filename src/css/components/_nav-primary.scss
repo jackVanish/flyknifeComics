@@ -7,10 +7,14 @@
     float: right;
     padding: 3.25rem 0;
     white-space: nowrap;
+    @include media("<=medium") {
+        float: none;
+        padding-top:    $spacing-medium;
+        padding-bottom: $spacing-medium;
+    }
     @include media("<=small") {
         width: 100%;
-        padding-top: $spacing-medium;
-        text-align: center;
+        padding-bottom: 0;
     }
 }
     .nav-primary-list {
@@ -26,3 +30,12 @@
             padding: $spacing-small $spacing-medium;
         }
     }
+
+    .page-home .nav-primary-home a,
+    .page-about .nav-primary-about a,
+    .page-projects .nav-primary-projects a,
+    .page-life-comix .nav-primary-life-comix a {
+        @extend a:active;
+    }
+
+

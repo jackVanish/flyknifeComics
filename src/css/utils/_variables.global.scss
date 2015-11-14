@@ -9,6 +9,8 @@ $wrapper-width-small:  500px !default;
 /// @type Length
 $wrapper-width-medium: 800px !default;
 /// @type Length
+$wrapper-width-medium-large: 1000px !default;
+/// @type Length
 $wrapper-width-large: 1200px !default;
 /// @type Map
 /// @prop {String} key - Breakpoint name
@@ -16,6 +18,7 @@ $wrapper-width-large: 1200px !default;
 $breakpoints: (
     "small":  $wrapper-width-small,
     "medium": $wrapper-width-medium,
+    "medium-large": $wrapper-width-medium-large,
     "large":  $wrapper-width-large
 ) !default;
 /// @type Length
@@ -94,9 +97,9 @@ $font-size-smaller: .8125rem !default;
 /// @type Length
 $font-size-small: .875rem !default;
 /// @type Length
-$font-size-large: 1.25rem !default;
+$font-size-large: 1.125rem !default;
 /// @type Length
-$font-size-larger: 1.375rem !default;
+$font-size-larger: 2.25rem !default;
 /// @type Map
 /// @prop {String} key - Font Size name
 /// @prop {Number} value - Font Size value

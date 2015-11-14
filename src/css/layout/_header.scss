@@ -4,5 +4,10 @@
 ////
 
 header {
+    padding-top: $spacing-medium;
     overflow-y: hidden;
+
+    @include media("<=medium") {
+        text-align: center;
+    }
 }

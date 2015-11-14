@@ -3,6 +3,39 @@
 /// @group layout
 ////
 
+// The width of the asides is static above the medium breakpoint and always
+// floated within an article or list of articles. The math is calculated as in
+// `layout/_article.scss`.
 aside {
+    @include media(">medium") {
+        width: $aside-width;
+        float: left;
+        margin-left: -($aside-width + $spacing-large);
+        &.main-aside {
+            width: auto;
+            max-width: ($aside-width * 2);
+            margin-right:  $spacing-large;
+            margin-bottom: $spacing-large;
+        }
+    }
+    @include media("<=medium") {
+        width: 100%;
+        &:not(.main-aside) {
+            @extend .rounded;
+            background: red;
+            padding: 1rem;
+            margin-bottom: $spacing-medium;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 
+    p,
+    figcaption {
+        clear: both;
+        @include media(">small") {
+            font-size: $font-size-small;
+        }
+    }
 }

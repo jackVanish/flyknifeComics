@@ -4,5 +4,14 @@
 ////
 
 article {
-
+    padding-top: $spacing-medium;
+    @include media(">medium") {
+        padding-left: ($aside-width + $spacing-large);
+    }
+    @include media("<=medium") {
+        // Below the medium breakpoint, `article`, `articles-list`, and `aside`
+        // become full width.
+        display: flex;
+        flex-direction: column;
+    }
 }
