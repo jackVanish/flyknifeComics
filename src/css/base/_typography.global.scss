@@ -73,6 +73,7 @@ h4 {
     position: relative;
     font-weight: 600;
     text-decoration: none;
+    white-space: nowrap;
     &:not([class]) {
         padding: .125em .25em;
     }
