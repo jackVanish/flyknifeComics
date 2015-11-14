@@ -7,9 +7,8 @@ sitemap:
 title: Projects
 ---
 
+
 {% include content/heading.html type="h2" title="GUNSMOKE DAYS, ROCK AND ROLL NIGHTS" %}
-
-
 
 {% include content/heading.html type="h3" title="The Flyknife Comix Cyber-Librarium" %}
 
