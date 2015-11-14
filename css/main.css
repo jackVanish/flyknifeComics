@@ -726,6 +726,14 @@ footer {
 .logo {
   display: inline-block;
   position: relative; }
+  .logo:hover, .logo:focus {
+    -webkit-transform: translateY(-0.25rem);
+        -ms-transform: translateY(-0.25rem);
+            transform: translateY(-0.25rem); }
+  .logo:active {
+    -webkit-transform: translateY(0.25rem);
+        -ms-transform: translateY(0.25rem);
+            transform: translateY(0.25rem); }
   .logo img {
     margin: 0; }
 
