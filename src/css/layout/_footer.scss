@@ -9,7 +9,7 @@ footer {
     padding-bottom: $spacing-large;
     position: relative;
 
-    &:before {
+    &:after {
         @include absolute;
         content: "";
         background-color: rgba($color-black-alt, opacity(ultra));

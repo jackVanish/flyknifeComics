@@ -725,7 +725,7 @@ footer {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   position: relative; }
-  footer:before {
+  footer:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -826,6 +826,11 @@ article {
     .lede--shell pre {
       margin-bottom: 0; } }
   .lede--shell code {
+    background-clip: padding-box;
+    border-radius: 0.5em;
+    color: #f473ff;
+    display: table;
+    border: 0.25em solid rgba(248, 248, 248, 0.05);
     text-shadow: 0 0 0.125rem #f473ff;
     -webkit-animation: shell-scroll-colors 8s linear infinite;
             animation: shell-scroll-colors 8s linear infinite; }
@@ -836,6 +841,9 @@ article {
 @media (max-width: 1000px) and (min-width: 801px) {
   .lede--shell code {
     max-width: 24rem; } }
+    .lede--shell code:before {
+      background-clip: padding-box;
+      border-radius: 0.5em; }
     .main-aside--full .lede--shell code {
       width: auto;
       max-width: 100%; }
@@ -844,39 +852,34 @@ article {
       .main-aside--full .lede--shell code {
         width: 100%;
         max-width: 100%; } }
-    .lede--shell code:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-clip: padding-box;
-      border-radius: 0.5em;
-      content: "";
-      background-image: -webkit-repeating-linear-gradient(top, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
-      background-image: repeating-linear-gradient(to bottom, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
-      background-size: 100% 4em;
-      background-repeat: repeat-y;
-      width: 100%;
-      height: 100%;
-      -webkit-animation: shell-scroll-scanlines 8s linear infinite;
-              animation: shell-scroll-scanlines 8s linear infinite; }
 
-.highlight code {
-  background-clip: padding-box;
-  border-radius: 0.5em;
-  background-color: rgba(13, 13, 13, 0.95);
-  color: #f473ff;
-  display: table;
-  position: relative;
-  padding: 1.5rem;
-  border: 0.25em solid rgba(248, 248, 248, 0.05); }
-  .highlight code::-moz-selection {
+.shell {
+  position: relative; }
+  .shell:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-repeating-linear-gradient(top, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
+    background-image: repeating-linear-gradient(to bottom, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
+    background-size: 100% 4em;
+    background-repeat: repeat-y;
+    pointer-events: none;
+    -webkit-animation: shell-scroll-scanlines 8s linear infinite;
+            animation: shell-scroll-scanlines 8s linear infinite;
+    z-index: 2; }
+  .shell::-moz-selection {
     background-color: #f473ff;
     color: #0d0d0d;
     text-shadow: none; }
-  .highlight code::selection {
+  .shell::selection {
     background-color: #f473ff;
     color: #0d0d0d;
     text-shadow: none; }
+  .shell code {
+    padding: 1.5rem; }
 
 @-webkit-keyframes shell-scroll-colors {
   0%,
@@ -949,12 +952,6 @@ article {
     background-position: 0 0; }
   100% {
     background-position: 0 -12em; } }
-
-/**
- * Github-style Code Highlighting
- */
-.highlight {
-  position: relative; }
 
 /**
  * Contains embedded media properly and allows them to be dynamically resized.
