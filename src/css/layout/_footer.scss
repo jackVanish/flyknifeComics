@@ -5,6 +5,7 @@
 
 footer {
     color: $color-text-light;
+    border-top:     $border-thick solid rgba($color-white, .05);
     padding-top:    $spacing-large;
     padding-bottom: $spacing-large;
     position: relative;

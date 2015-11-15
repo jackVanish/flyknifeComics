@@ -19,7 +19,7 @@
         @include border-radius(.5em);
         color: $color-brand-alt;
         display: table;
-        border: .25em solid rgba($color-white, .05);
+        border: $border-thick solid rgba($color-white, .05);
         text-shadow: 0 0 .125rem $color-brand-alt;
         animation: shell-scroll-colors 8s linear infinite;
 

@@ -11,7 +11,7 @@ article {
         background-color: $color-brand;
         width: 100%;
         max-width: 530px; // it just works, lines up with <h1>
-        height: .125rem;
+        height: $border-default;
         box-shadow: 0 0 .5rem $color-brand-alt;
     }
 }

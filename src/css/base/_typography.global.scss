@@ -289,7 +289,7 @@ hr {
     background-color: $color-brand;
     width: 100%;
     max-width: 530px; // it just works, lines up with <h1>
-    height: .125rem;
+    height: $border-default;
     display: block;
     border: 0;
     margin: $spacing-large auto;
