@@ -10,7 +10,7 @@ article {
         content: "";
         background-color: $color-brand;
         width: 100%;
-        max-width: $wrapper-width-small;
+        max-width: 530px; // it just works, lines up with <h1>
         height: .125rem;
         box-shadow: 0 0 .5rem $color-brand-alt;
     }

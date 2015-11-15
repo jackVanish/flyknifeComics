@@ -597,7 +597,7 @@ ins {
 hr {
   background-color: #8cddff;
   width: 100%;
-  max-width: 500px;
+  max-width: 530px;
   height: .125rem;
   display: block;
   border: 0;
@@ -803,7 +803,7 @@ article {
     content: "";
     background-color: #8cddff;
     width: 100%;
-    max-width: 500px;
+    max-width: 530px;
     height: .125rem;
     box-shadow: 0 0 0.5rem #f473ff; }
 
