@@ -288,7 +288,7 @@ ins {
 hr {
     background-color: $color-brand;
     width: 100%;
-    max-width: $wrapper-width-small;
+    max-width: 530px; // it just works, lines up with <h1>
     height: .125rem;
     display: block;
     border: 0;
