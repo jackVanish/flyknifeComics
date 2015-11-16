@@ -96,10 +96,10 @@
         overflow: hidden;
         outline: none;
         visibility: visible;
-        animation: shell-input-delay 1ms linear 2s;
+        animation: shell-input-delay 2.2s ease;
 
         &:before {
-            content: "> \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A >";
+            content: "> \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A >";
             position: absolute;
             top:  0;
             left: 0;
@@ -108,11 +108,14 @@
 }
 
 @keyframes shell-input-delay {
-    0% {
-        visibility: hidden;
+    0%,
+    99.999% {
+        opacity: 0;
+        pointer-events: none
     }
     100% {
-        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
     }
 }
 
