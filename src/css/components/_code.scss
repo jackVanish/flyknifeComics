@@ -50,11 +50,12 @@
  * Article Special Login-style Lede
  */
 .lede--shell {
-    @include border-radius(.5em);
+    @include border-radius;
     color: $color-brand-alt;
     border: $border-thick solid rgba($color-white, .1);
     font-size: $font-size-medium;
     text-shadow: 0 0 .125rem $color-brand-alt;
+    box-shadow: 0 .5rem .5rem rgba($color-black-alt, .5);
     animation: shell-scroll-colors 8s linear infinite;
 
     pre {
@@ -143,7 +144,11 @@
 }
 
 @keyframes shell-loader {
-    0% {
+    0%,
+    49.999% {
+        width: 0;
+    }
+    50% {
         width: .6em;
     }
     100% {

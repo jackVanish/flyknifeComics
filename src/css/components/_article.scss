@@ -23,7 +23,8 @@ article {
 }
 
 @keyframes article-loader {
-    0%, 75% {
+    0%,
+    66.666% {
         opacity: 0;
     }
     100% {
