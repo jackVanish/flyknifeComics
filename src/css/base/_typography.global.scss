@@ -90,31 +90,33 @@ h4 {
         color: $color-brand-alt;
         text-decoration: none;
     }
-    &:not([class]):before {
-        @extend .rounded-thin;
-        @include transition(width);
-        @include will-change(width);
-        content: "";
-        background-color: $color-black-alt;
-        width: 0;
-        height: 100%;
-        border-bottom-width: .125em;
-        border-bottom-style: solid;
-        border-bottom-color: $color-brand;
-        position: absolute;
-        top: 0;
-        left: auto;
-        right: 0;
-        z-index: z-index(below);
-    }
-    &:hover,
-    &:focus,
-    &:active {
+    &:not([class]) {
         &:before {
-            width: 100%;
-            left: 0;
-            right: auto;
-            border-bottom-color: $color-brand-alt;
+            @extend .rounded-thin;
+            @include transition(width);
+            @include will-change(width);
+            content: "";
+            background-color: $color-black-alt;
+            width: 0;
+            height: 100%;
+            border-bottom-width: $border-default;
+            border-bottom-style: solid;
+            border-bottom-color: $color-brand;
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            z-index: z-index(below);
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            &:before {
+                width: 100%;
+                left: 0;
+                right: auto;
+                border-bottom-color: $color-brand-alt;
+            }
         }
     }
     span:not([class]):not([itemprop]) {

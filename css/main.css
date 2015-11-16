@@ -432,7 +432,7 @@ a {
     background-color: #0d0d0d;
     width: 0;
     height: 100%;
-    border-bottom-width: .125em;
+    border-bottom-width: 0.125rem;
     border-bottom-style: solid;
     border-bottom-color: #8cddff;
     position: absolute;
@@ -440,10 +440,10 @@ a {
     left: auto;
     right: 0;
     z-index: -1; }
-  a:hover:before, a:focus:before, a:active:before, .page-home .nav-primary-home a:before,
-  .page-about .nav-primary-about a:before,
-  .page-projects .nav-primary-projects a:before,
-  .page-life-comix .nav-primary-life-comix a:before {
+  a:not([class]):hover:before, a:not([class]):focus:before, a:not([class]):active:before, .page-home .nav-primary-home a:not([class]):before,
+  .page-about .nav-primary-about a:not([class]):before,
+  .page-projects .nav-primary-projects a:not([class]):before,
+  .page-life-comix .nav-primary-life-comix a:not([class]):before {
     width: 100%;
     left: 0;
     right: auto;
@@ -776,7 +776,8 @@ footer {
         width: 33.333%; } }
   .nav-primary-list a {
     display: block;
-    padding: 0.75rem 1.5rem; }
+    padding: 0.75rem 1.5rem;
+    border-radius: 0; }
     @media (max-width: 500px) {
       .nav-primary-list a {
         padding: 0.75rem 0;
