@@ -885,7 +885,8 @@ article {
   .lede--shell pre {
     margin-bottom: 0; }
   .lede--shell code {
-    display: table; }
+    display: table;
+    padding-bottom: 0; }
     @media (min-width: 1001px) {
       .lede--shell code {
         max-width: 32rem; } }
@@ -901,6 +902,32 @@ article {
       .main-aside--full .lede--shell code {
         width: 100%;
         max-width: 100%; } }
+  .lede--shell .lede--shell-input {
+    max-width: 100%;
+    padding-left: 1.2em;
+    margin: 0 1.5rem 1.5rem;
+    position: relative;
+    outline: none;
+    visibility: visible;
+    -webkit-animation: shell-input-delay 1ms linear 2s;
+            animation: shell-input-delay 1ms linear 2s; }
+    .lede--shell .lede--shell-input:before {
+      content: ">";
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+@-webkit-keyframes shell-input-delay {
+  0% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+
+@keyframes shell-input-delay {
+  0% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
 
 /**
  * Create a loading effect at the bottom of the .lede-shell if it's a page class

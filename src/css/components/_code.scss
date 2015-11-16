@@ -64,6 +64,7 @@
 
     code {
         display: table;
+        padding-bottom: 0;
 
         @include media(">medium-large") {
             max-width: ($aside-width * 2);
@@ -85,6 +86,32 @@
                 max-width: 100%;
             }
         }
+    }
+
+    .lede--shell-input {
+        max-width: 100%;
+        padding-left: 1.2em;
+        margin: 0 $spacing-medium $spacing-medium;
+        position: relative;
+        outline: none;
+        visibility: visible;
+        animation: shell-input-delay 1ms linear 2s;
+
+        &:before {
+            content: ">";
+            position: absolute;
+            top:  0;
+            left: 0;
+        }
+    }
+}
+
+@keyframes shell-input-delay {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
     }
 }
 
