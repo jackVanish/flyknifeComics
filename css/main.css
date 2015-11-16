@@ -806,16 +806,24 @@ article {
 @-webkit-keyframes article-loader {
   0%,
   66.666% {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 @keyframes article-loader {
   0%,
   66.666% {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 .title,
 .tagline {
@@ -907,12 +915,13 @@ article {
     padding-left: 1.2em;
     margin: 0 1.5rem 1.5rem;
     position: relative;
+    overflow: hidden;
     outline: none;
     visibility: visible;
     -webkit-animation: shell-input-delay 1ms linear 2s;
             animation: shell-input-delay 1ms linear 2s; }
     .lede--shell .lede--shell-input:before {
-      content: ">";
+      content: "> \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A >";
       position: absolute;
       top: 0;
       left: 0; }

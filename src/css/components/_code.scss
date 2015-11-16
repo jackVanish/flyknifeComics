@@ -93,12 +93,13 @@
         padding-left: 1.2em;
         margin: 0 $spacing-medium $spacing-medium;
         position: relative;
+        overflow: hidden;
         outline: none;
         visibility: visible;
         animation: shell-input-delay 1ms linear 2s;
 
         &:before {
-            content: ">";
+            content: "> \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A >";
             position: absolute;
             top:  0;
             left: 0;
