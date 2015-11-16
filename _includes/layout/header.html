@@ -4,6 +4,14 @@
 
 {% include head/head.html %}
 
+{% capture body_class %}
+    {% for class in page.page_class %}
+        {{ class }}
+    {% endfor %}
+    {% if page.layout contains 'article' and page.shell %}loader{% endif %}
+{% endcapture %}
+{% assign body_class_array = body_class | split: ' ' %}
+
 <body{% if body_class != "" %} class="{{ body_class_array | join:'  ' }}"{% endif %} itemscope itemtype="http://data-vocabulary.org/WebPage">
 
     <header class="wrap  clear" role="banner">

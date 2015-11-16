@@ -7,6 +7,8 @@
 // floated within an article or list of articles. The math is calculated as in
 // `layout/_article.scss`.
 aside {
+    animation: none !important;
+
     @include media(">medium") {
         width: $aside-width;
         float: left;
@@ -28,11 +30,12 @@ aside {
 
     @include media("<=medium") {
         width: 100%;
+        margin-bottom: $spacing-medium;
+
         &:not([class*="main-aside"]) {
             @extend .rounded;
             background: red;
-            padding: 1rem;
-            margin-bottom: $spacing-medium;
+            padding: $spacing-small;
             &:last-child {
                 margin-bottom: 0;
             }

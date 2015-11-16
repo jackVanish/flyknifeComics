@@ -20,13 +20,6 @@
         {% capture meta_image %}{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
     {% endif %}
 
-    {% capture body_class %}
-        {% for class in page.page_class %}
-            {{ class }}
-        {% endfor %}
-    {% endcapture %}
-    {% assign body_class_array = body_class | split: ' ' %}
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 

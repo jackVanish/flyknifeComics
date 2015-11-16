@@ -686,56 +686,46 @@ article {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
-@media (min-width: 801px) {
-  aside {
-    width: 16rem;
-    float: left;
-    margin-left: -18.25rem; }
-    aside[class*="main-aside"] {
-      width: auto;
-      max-width: 32rem;
-      margin-right: 2.25rem;
-      margin-bottom: 2.25rem; }
-      aside[class*="main-aside"][class*="main-aside--full"] {
-        max-width: 100%;
-        float: none;
-        margin-left: 0;
-        margin-right: 0; } }
-
-@media (max-width: 800px) {
-  aside {
-    width: 100%; }
-    aside:not([class*="main-aside"]) {
-      background: red;
-      padding: 1rem;
+aside {
+  -webkit-animation: none !important;
+          animation: none !important; }
+  @media (min-width: 801px) {
+    aside {
+      width: 16rem;
+      float: left;
+      margin-left: -18.25rem; }
+      aside[class*="main-aside"] {
+        width: auto;
+        max-width: 32rem;
+        margin-right: 2.25rem;
+        margin-bottom: 2.25rem; }
+        aside[class*="main-aside"][class*="main-aside--full"] {
+          max-width: 100%;
+          float: none;
+          margin-left: 0;
+          margin-right: 0; } }
+  @media (max-width: 800px) {
+    aside {
+      width: 100%;
       margin-bottom: 1.5rem; }
-      aside:not([class*="main-aside"]):last-child {
-        margin-bottom: 0; } }
-
-aside p,
-aside figcaption {
-  clear: both; }
-  @media (min-width: 501px) {
-    aside p,
-    aside figcaption {
-      font-size: 0.875rem; } }
+      aside:not([class*="main-aside"]) {
+        background: red;
+        padding: 0.75rem; }
+        aside:not([class*="main-aside"]):last-child {
+          margin-bottom: 0; } }
+  aside p,
+  aside figcaption {
+    clear: both; }
+    @media (min-width: 501px) {
+      aside p,
+      aside figcaption {
+        font-size: 0.875rem; } }
 
 footer {
-  color: #cccccc;
-  border-top: 0.3125rem solid rgba(248, 248, 248, 0.05);
+  color: #f473ff;
+  border-top: 0.3125rem solid rgba(248, 248, 248, 0.1);
   padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-  position: relative; }
-  footer:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background-color: rgba(13, 13, 13, 0.7);
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: -1; }
+  padding-bottom: 2.25rem; }
   footer section {
     max-width: 800px !important;
     /* autoprefixer: off */
@@ -807,6 +797,22 @@ article {
     max-width: 530px;
     height: 0.125rem;
     box-shadow: 0 0 0.5rem #f473ff; }
+  .loader article > h1:nth-child(-n+11), .loader article > h2:nth-child(-n+11), .loader article > h3:nth-child(-n+11), .loader article > h4:nth-child(-n+11), .loader article > h5:nth-child(-n+11), .loader article > h6:nth-child(-n+11), .loader article > p:nth-child(-n+11), .loader article > ol:nth-child(-n+11), .loader article >
+  ul:nth-child(-n+11), .loader article > dl:nth-child(-n+11), .loader article > figure:nth-child(-n+11), .loader article > blockquote:nth-child(-n+11), .loader article > hr:nth-child(-n+11) {
+    -webkit-animation: article-loader 1.5s ease;
+            animation: article-loader 1.5s ease; }
+
+@-webkit-keyframes article-loader {
+  0%, 75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes article-loader {
+  0%, 75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .title,
 .tagline {
@@ -818,55 +824,21 @@ article {
   font-style: italic;
   line-height: 1.25; }
 
-/**
- * Article Special Login-style Lede
- */
-.lede--shell {
-  font-size: 1.125rem; }
-  @media (min-width: 801px) {
-    .lede--shell pre {
-      margin-bottom: 0; } }
-  .lede--shell code {
-    background-clip: padding-box;
-    border-radius: 0.5em;
-    color: #f473ff;
-    display: table;
-    border: 0.3125rem solid rgba(248, 248, 248, 0.05);
-    text-shadow: 0 0 0.125rem #f473ff;
-    -webkit-animation: shell-scroll-colors 8s linear infinite;
-            animation: shell-scroll-colors 8s linear infinite; }
-    @media (min-width: 1001px) {
-      .lede--shell code {
-        max-width: 32rem; } }
-
-@media (max-width: 1000px) and (min-width: 801px) {
-  .lede--shell code {
-    max-width: 24rem; } }
-    .lede--shell code:before {
-      background-clip: padding-box;
-      border-radius: 0.5em; }
-    .main-aside--full .lede--shell code {
-      width: auto;
-      max-width: 100%; }
-    @media (max-width: 800px) {
-      .lede--shell code,
-      .main-aside--full .lede--shell code {
-        width: 100%;
-        max-width: 100%; } }
-
 .shell {
-  position: relative; }
+  background-color: rgba(13, 13, 13, 0.7);
+  position: relative;
+  line-height: 1.5; }
   .shell:before {
-    position: absolute;
-    top: 0;
-    left: 0;
     content: "";
-    width: 100%;
-    height: 100%;
     background-image: -webkit-repeating-linear-gradient(top, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
     background-image: repeating-linear-gradient(to bottom, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
     background-size: 100% 4em;
     background-repeat: repeat-y;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     pointer-events: none;
     -webkit-animation: shell-scroll-scanlines 8s linear infinite;
             animation: shell-scroll-scanlines 8s linear infinite;
@@ -881,6 +853,64 @@ article {
     text-shadow: none; }
   .shell code {
     padding: 1.5rem; }
+
+@-webkit-keyframes shell-scroll-scanlines {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -12em; } }
+
+@keyframes shell-scroll-scanlines {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -12em; } }
+
+/**
+ * Article Special Login-style Lede
+ */
+.lede--shell {
+  background-clip: padding-box;
+  border-radius: 0.5em;
+  color: #f473ff;
+  border: 0.3125rem solid rgba(248, 248, 248, 0.1);
+  font-size: 1.125rem;
+  text-shadow: 0 0 0.125rem #f473ff;
+  -webkit-animation: shell-scroll-colors 8s linear infinite;
+          animation: shell-scroll-colors 8s linear infinite; }
+  .lede--shell pre {
+    margin-bottom: 0; }
+  .lede--shell code {
+    display: table; }
+    @media (min-width: 1001px) {
+      .lede--shell code {
+        max-width: 32rem; } }
+
+@media (max-width: 1000px) and (min-width: 801px) {
+  .lede--shell code {
+    max-width: 24rem; } }
+    .main-aside--full .lede--shell code {
+      width: auto;
+      max-width: 100%; }
+    @media (max-width: 800px) {
+      .lede--shell code,
+      .main-aside--full .lede--shell code {
+        width: 100%;
+        max-width: 100%; } }
+
+/**
+ * Create a loading effect at the bottom of the .lede-shell if it's a page class
+ */
+/*body*/
+.loader .lede--shell code:after {
+  content: "████████████████████";
+  width: 12em;
+  display: block;
+  overflow: hidden;
+  pointer-events: none;
+  font-family: Monaco, Consolas, Courier, monospace;
+  -webkit-animation: shell-loader 1s steps(19, end);
+          animation: shell-loader 1s steps(19, end); }
 
 @-webkit-keyframes shell-scroll-colors {
   0%,
@@ -942,17 +972,17 @@ article {
     color: #f473ff;
     text-shadow: 0 0 0.125rem #f473ff; } }
 
-@-webkit-keyframes shell-scroll-scanlines {
+@-webkit-keyframes shell-loader {
   0% {
-    background-position: 0 0; }
+    width: .6em; }
   100% {
-    background-position: 0 -12em; } }
+    width: 12em; } }
 
-@keyframes shell-scroll-scanlines {
+@keyframes shell-loader {
   0% {
-    background-position: 0 0; }
+    width: .6em; }
   100% {
-    background-position: 0 -12em; } }
+    width: 12em; } }
 
 /**
  * Contains embedded media properly and allows them to be dynamically resized.

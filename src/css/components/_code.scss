@@ -3,25 +3,66 @@
 /// @group components
 ////
 
+.shell {
+    background-color: rgba($color-black-alt, opacity(ultra));
+    position: relative;
+    line-height: 1.5;
+
+    &:before {
+        content: "";
+        background-image: repeating-linear-gradient(to bottom,
+                                                    transparent 0,
+                                                    rgba($color-white, .05) 2em,
+                                                    transparent 4em);
+        background-size: 100% 4em;
+        background-repeat: repeat-y;
+        position: absolute;
+        top:    0;
+        bottom: 0;
+        left:   0;
+        right:  0;
+        pointer-events: none;
+        animation: shell-scroll-scanlines 8s linear infinite;
+        z-index: z-index(above);
+    }
+
+    &::selection {
+        background-color: $color-brand-alt;
+        color: $color-black-alt;
+        text-shadow: none;
+    }
+
+    code {
+        padding: $spacing-medium;
+    }
+}
+
+@keyframes shell-scroll-scanlines {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -12em;
+    }
+}
+
 /**
  * Article Special Login-style Lede
  */
 .lede--shell {
+    @include border-radius(.5em);
+    color: $color-brand-alt;
+    border: $border-thick solid rgba($color-white, .1);
     font-size: $font-size-medium;
+    text-shadow: 0 0 .125rem $color-brand-alt;
+    animation: shell-scroll-colors 8s linear infinite;
 
     pre {
-        @include media(">medium") {
-            margin-bottom: 0;
-        }
+        margin-bottom: 0;
     }
 
     code {
-        @include border-radius(.5em);
-        color: $color-brand-alt;
         display: table;
-        border: $border-thick solid rgba($color-white, .05);
-        text-shadow: 0 0 .125rem $color-brand-alt;
-        animation: shell-scroll-colors 8s linear infinite;
 
         @include media(">medium-large") {
             max-width: ($aside-width * 2);
@@ -29,10 +70,6 @@
 
         @include media("<=medium-large", ">medium") {
             max-width: ($aside-width * 1.5);
-        }
-
-        &:before {
-            @include border-radius(.5em);
         }
 
         .main-aside--full & {
@@ -50,33 +87,20 @@
     }
 }
 
-.shell {
-    position: relative;
-
-    &:before {
-        @include absolute;
-        content: "";
-        width:  100%;
-        height: 100%;
-        background-image: repeating-linear-gradient(to bottom,
-                                                    transparent 0,
-                                                    rgba($color-white, .05) 2em,
-                                                    transparent 4em);
-        background-size: 100% 4em;
-        background-repeat: repeat-y;
-        pointer-events: none;
-        animation: shell-scroll-scanlines 8s linear infinite;
-        z-index: z-index(above);
-    }
-
-    &::selection {
-        background-color: $color-brand-alt;
-        color: $color-black-alt;
-        text-shadow: none;
-    }
-
+/**
+ * Create a loading effect at the bottom of the .lede-shell if it's a page class
+ */
+/*body*/.loader .lede--shell {
     code {
-        padding: $spacing-medium;
+        &:after {
+            content: "████████████████████";
+            width: 12em;
+            display: block;
+            overflow: hidden;
+            pointer-events: none;
+            font-family: $font-stack-code;
+            animation: shell-loader 1s steps(19, end);
+        }
     }
 }
 
@@ -118,11 +142,11 @@
     }
 }
 
-@keyframes shell-scroll-scanlines {
+@keyframes shell-loader {
     0% {
-        background-position: 0 0;
+        width: .6em;
     }
     100% {
-        background-position: 0 -12em;
+        width: 12em;
     }
 }

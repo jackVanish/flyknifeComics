@@ -5,6 +5,7 @@
 
 article {
     position: relative;
+
     &:before {
         @include absolute(topcenter);
         content: "";
@@ -13,6 +14,20 @@ article {
         max-width: 530px; // it just works, lines up with <h1>
         height: $border-default;
         box-shadow: 0 0 .5rem $color-brand-alt;
+    }
+
+    // only fade in the first 10 elements (besides .main-aside)
+    .loader & > %content-element:nth-child(-n+11) {
+        animation: article-loader 1.5s ease;
+    }
+}
+
+@keyframes article-loader {
+    0%, 75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
