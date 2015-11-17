@@ -566,8 +566,10 @@ blockquote p {
   blockquote p:after {
     content: close-quote; }
 
-blockquote cite:before {
-  content: "‐ "; }
+blockquote cite {
+  display: block; }
+  blockquote cite:before {
+    content: "‐ "; }
 
 q {
   font-style: italic; }
