@@ -12,6 +12,7 @@ var,
 }
 
 pre {
+    @extend %content-element;
     // override `normalize.css`
     margin-top: 0;
     margin-bottom: $spacing-medium;
