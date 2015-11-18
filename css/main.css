@@ -800,8 +800,8 @@ article {
     max-width: 530px;
     height: 0.125rem;
     box-shadow: 0 0 0.5rem #f473ff; }
-  .loader article > h1:nth-child(-n+11), .loader article > h2:nth-child(-n+11), .loader article > h3:nth-child(-n+11), .loader article > h4:nth-child(-n+11), .loader article > h5:nth-child(-n+11), .loader article > h6:nth-child(-n+11), .loader article > p:nth-child(-n+11), .loader article > ol:nth-child(-n+11), .loader article >
-  ul:nth-child(-n+11), .loader article > dl:nth-child(-n+11), .loader article > figure:nth-child(-n+11), .loader article > blockquote:nth-child(-n+11), .loader article > hr:nth-child(-n+11), .loader article > pre:nth-child(-n+11) {
+  .loader article > h1, .loader article > h2, .loader article > h3, .loader article > h4, .loader article > h5, .loader article > h6, .loader article > p, .loader article > ol, .loader article >
+  ul, .loader article > dl, .loader article > figure, .loader article > blockquote, .loader article > hr, .loader article > pre {
     -webkit-animation: article-loader 1.5s ease;
             animation: article-loader 1.5s ease; }
 

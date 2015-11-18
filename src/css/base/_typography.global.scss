@@ -165,6 +165,7 @@ ul:not([class]),
         &:last-child {
             margin-bottom: $spacing-medium;
         }
+
         &:before {
             @include absolute;
             font-family: $font-stack-secondary;
@@ -184,6 +185,7 @@ ol.default-list {
 
     li {
         counter-increment: ordered-list;
+
         &:before {
             content: counter(ordered-list) ".";
         }
@@ -204,6 +206,7 @@ dl {
     &:not(:last-child) {
         margin-bottom: $spacing-medium;
     }
+
     dt {
         width: auto;
         min-width: 12rem;
@@ -214,6 +217,7 @@ dl {
             float: none;
         }
     }
+
     dd {
         width: $wrapper-width-large;
         display: table-cell;

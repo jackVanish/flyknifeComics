@@ -17,7 +17,7 @@ article {
     }
 
     // only fade in the first 10 elements (besides .main-aside)
-    .loader & > %content-element:nth-child(-n+11) {
+    .loader & > %content-element {
         animation: article-loader 1.5s ease;
     }
 }
