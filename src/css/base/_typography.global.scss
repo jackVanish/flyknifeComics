@@ -168,7 +168,6 @@ ul:not([class]),
 
         &:before {
             @include absolute;
-            font-family: $font-stack-secondary;
             font-weight: 600;
         }
     }
@@ -187,7 +186,7 @@ ol.default-list {
         counter-increment: ordered-list;
 
         &:before {
-            content: counter(ordered-list) ".";
+            content: "# " counter(ordered-list);
         }
     }
 }

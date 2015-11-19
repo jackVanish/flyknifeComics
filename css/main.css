@@ -484,7 +484,6 @@ ul:not([class]) li,
     position: absolute;
     top: 0;
     left: 0;
-    font-family: "Oswald", sans-serif;
     font-weight: 600; }
 
 ol:not([class]) ol:not([class]),
@@ -506,7 +505,7 @@ ol.default-list {
     counter-increment: ordered-list; }
     ol:not([class]) li:before,
     ol.default-list li:before {
-      content: counter(ordered-list) "."; }
+      content: "# " counter(ordered-list); }
 
 ul:not([class]) li:before,
 ul.default-list li:before {
