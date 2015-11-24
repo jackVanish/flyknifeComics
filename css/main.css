@@ -1037,6 +1037,45 @@ article {
   100% {
     width: 12em; } }
 
+.modal-toggle {
+  margin-bottom: 2.25rem; }
+
+.modal-toggle-box {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3; }
+  .modal-toggle-input:checked + .modal-toggle-box {
+    background: #1d1d1d;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; }
+  .modal-toggle-box figure {
+    margin: 0; }
+  .modal-toggle-box img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; }
+  .modal-toggle-input:not(:checked) + .modal-toggle-box img {
+    opacity: .5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+
+.modal-toggle-label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer; }
+
 /**
  * Contains embedded media properly and allows them to be dynamically resized.
  */

@@ -1,0 +1,28 @@
+{% comment %}
+*
+* This include lets you easily add a toggleable modal for comics.
+*
+* @param {String} file name *
+* @param {String} alt
+*
+* @example
+*   {% include content/toggle.html file="/images/comic.png" alt="This is a comic." %}
+*   // <input class="hidden  modal-toggle-input" id="modal-toggle-input-1" type="checkbox" />
+*   // <div class="modal-toggle">
+*   //     <figure>
+*   //         <img src="/images/comic.png" alt="This is a comic.">
+*   //         <label class="modal-toggle-label" for="modal-toggle-input-1" role="button"></label>
+*   //     </figure>
+*   // </div>
+*
+{% endcomment %}
+{% assign modal_toggle_count = modal_toggle_count | plus: 1 %}
+<section class="modal-toggle">
+    <input class="hidden  modal-toggle-input" type="checkbox" name="modal-toggle-input-{{ modal_toggle_count }}" id="modal-toggle-input-{{ modal_toggle_count }}" aria-hidden="true">
+    <div class="modal-toggle-box">
+        <figure>
+            <img src="/images/{{ include.file }}" alt="{{ include.alt }}">
+            <label class="modal-toggle-label" for="modal-toggle-input-{{ modal_toggle_count }}"></label>
+        </figure>
+    </div>
+</section>
