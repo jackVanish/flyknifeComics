@@ -7,13 +7,15 @@
 *
 * @example
 *   {% include content/toggle.html file="/images/comic.png" alt="This is a comic." %}
-*   // <input class="hidden  modal-toggle-input" id="modal-toggle-input-1" type="checkbox" />
-*   // <div class="modal-toggle">
-*   //     <figure>
-*   //         <img src="/images/comic.png" alt="This is a comic.">
-*   //         <label class="modal-toggle-label" for="modal-toggle-input-1" role="button"></label>
-*   //     </figure>
-*   // </div>
+*   // <section class="modal-toggle">
+*   //    <input class="hidden  modal-toggle-input" id="modal-toggle-input-1" type="checkbox" />
+*   //    <div class="modal-toggle-box">
+*   //      <figure>
+*   //        <img src="/images/comic.png" alt="This is a comic.">
+*   //        <label class="modal-toggle-label" for="modal-toggle-input-1" role="button"></label>
+*   //      </figure>
+*   //    </div>
+*   // </section>
 *
 {% endcomment %}
 {% assign modal_toggle_count = modal_toggle_count | plus: 1 %}
