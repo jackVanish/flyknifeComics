@@ -8,13 +8,13 @@
 * @example
 *   {% include content/toggle.html file="/images/comic.png" alt="This is a comic." %}
 *   // <section class="modal-toggle">
-*   //    <input class="hidden  modal-toggle-input" id="modal-toggle-input-1" type="checkbox" />
-*   //    <div class="modal-toggle-box">
-*   //      <figure>
-*   //        <img src="/images/comic.png" alt="This is a comic.">
-*   //        <label class="modal-toggle-label" for="modal-toggle-input-1" role="button"></label>
-*   //      </figure>
-*   //    </div>
+*   //   <input class="hidden  modal-toggle-input" type="checkbox" name="modal-toggle-input-1" id="modal-toggle-input-1" aria-hidden="true">
+*   //   <div class="modal-toggle-box">
+*   //     <figure>
+*   //       <img src="/images/comic.png" alt="This is a comic.">
+*   //       <label class="modal-toggle-label" for="modal-toggle-input-1" role="button"></label>
+*   //     </figure>
+*   //   </div>
 *   // </section>
 *
 {% endcomment %}
@@ -24,7 +24,7 @@
     <div class="modal-toggle-box">
         <figure>
             <img src="/images/{{ include.file }}" alt="{{ include.alt }}">
-            <label class="modal-toggle-label" for="modal-toggle-input-{{ modal_toggle_count }}"></label>
+            <label class="modal-toggle-label" for="modal-toggle-input-{{ modal_toggle_count }}" role="button"></label>
         </figure>
     </div>
 </section>
