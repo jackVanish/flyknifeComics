@@ -16,4 +16,4 @@ shell: |
   > cat shd10029.txt
 ---
 
-<DESC. GENERATING>
+DESC. GENERATING
