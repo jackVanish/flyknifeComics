@@ -23,5 +23,5 @@ on the subject, so I figured I'd toss 'em up on the Griddzone and see how he lik
 
 {% include content/heading.html type="h2" title="> ls" %}
 
-<a href="/shards/kyletv.md">cd nostalgia/</a>
+<a href="/shards/nostalgia/nostalgia-index.md">cd nostalgia/</a>
 
