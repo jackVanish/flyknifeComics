@@ -31,7 +31,7 @@ OK, so at last year's Hal-Con Cobalt and I were getting pretty goofy by the end,
 
 I'm still working on getting issue 1 spun up, but expect it sometime this Spring.
 
-**STONR GARBAGE: THE VICTORY SHADOWTUFT ADVENTURES**
+**THE VICTORY SHADOWTUFT ADVENTURES**
 
 Alright, so I got *really* depressed a few nights ago and, to cheer myself up, I started drawing the absolute dumbest thing I could think of. I'm gonna level with you- it's an extended *SWAT Kats* sendup about the 420th Squadron operating out of Cuddles AFB, under the command of the cocaine-addled Colonel Victory Shadowtuft. It chronicles the adventures of lovable characters like Wing Commander Cryogenics Rectangular-Prism, Captain Armadillo Wingcommander, and Super Colonel Skinner Riggs. I'm not going to pretend it's good, funny, or anything other than the comic book equivalent of white noise; as such, when it's done, I'll be making it available for free on the site. It's like Hanna-Barbera got the rights to Gravity's Rainbow. It is, somehow, miraculously, even dumber than STONR GARBAGE, with which it shares nothing other than a name. I may not even do it. Stay tuned.
 
