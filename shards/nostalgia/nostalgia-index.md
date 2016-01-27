@@ -17,3 +17,7 @@ shell: |
 ---
 
 DESC. GENERATING
+
+<ol role="list">
+  <a href="2016-01-27-snaxx-kash.md">????-??-??: SNAXX & KASH</a>
+</ol>
