@@ -1,6 +1,8 @@
 ---
 layout: article
 
+date: 2016-01-27
+
 title: ????-??-??: Snaxx & Kash
 
 author: KyleTV
