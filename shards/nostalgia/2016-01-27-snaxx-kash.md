@@ -3,7 +3,7 @@ layout: article
 
 date: 2016-01-27 00:00:01
 
-title: ????-??-??: SNAXX & KASH
+title: ????-??-??- SNAXX & KASH
 
 author: KyleTV
 author_farewell: Be Seeing You,
