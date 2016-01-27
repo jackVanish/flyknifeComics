@@ -1,15 +1,16 @@
 ---
 layout: article
 
-date: 2016-01-27
+date: 2015-05-14 00:00:01
 
-title: ????-??-??: Snaxx & Kash
+title: initialize flyknife.exe
 
-author: KyleTV
-author_farewell: Be Seeing You,
+author: Bruce
+author_farewell: Cheers
 
 shell: |
-  > fetch shard[0x8773] -> s_ktv.shrd
-  >
-  > ./process s_ktv.shrd
+  > cd /data/sites/gridd/flyknife
+  > open flyknife.exe
+  > WARNING: Minumum system requirements for flyknife.exe not met. You may experience system instability. Continue?
+  > y/n [y]
 ---
