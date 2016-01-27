@@ -1,16 +1,11 @@
 ---
-layout: article
+layout: default
 page_class: page-shards
 sitemap:
   priority: 1.0
 
 title: Shards
 
-shell: |
-  > cd /home/users/CHRIS/aggregate/shards
-  > ls
-  about.txt shards/
-  > cat about.txt
 ---
 
 
