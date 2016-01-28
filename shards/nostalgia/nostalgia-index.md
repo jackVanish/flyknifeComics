@@ -1,8 +1,6 @@
 ---
 layout: default
 page_class: page-shard-nostalgia
-sitemap:
-  priority: 2.0
 
 title: Nostalgia with KyleTV
 
