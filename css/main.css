@@ -409,54 +409,6 @@ h3 {
   :not(h2) + h3 {
     padding-top: 0.75rem; }
 
-a {
-  position: relative;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap; }
-  a:not([class]) {
-    padding: .125em .25em; }
-  a, a:link, a:visited {
-    color: #8cddff; }
-  a:hover, a:focus, a:active, .page-home .nav-primary-home a,
-  .page-about .nav-primary-about a,
-  .page-projects .nav-primary-projects a,
-  .page-life-comix .nav-primary-life-comix a {
-    color: #f473ff;
-    text-decoration: none; }
-  a:not([class]):before {
-    -webkit-transition: width 0.2s ease;
-    transition: width 0.2s ease;
-    will-change: width;
-    content: "";
-    background-color: #0d0d0d;
-    width: 0;
-    height: 100%;
-    border-bottom-width: 0.125rem;
-    border-bottom-style: solid;
-    border-bottom-color: #8cddff;
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 0;
-    z-index: -1; }
-  a:not([class]):hover:before, a:not([class]):focus:before, a:not([class]):active:before, .page-home .nav-primary-home a:not([class]):before,
-  .page-about .nav-primary-about a:not([class]):before,
-  .page-projects .nav-primary-projects a:not([class]):before,
-  .page-life-comix .nav-primary-life-comix a:not([class]):before {
-    width: 100%;
-    left: 0;
-    right: auto;
-    border-bottom-color: #f473ff; }
-
-.heading-anchor {
-  display: none;
-  vertical-align: middle; }
-  :hover > .heading-anchor,
-  :focus > .heading-anchor,
-  :active > .heading-anchor {
-    display: inline-block; }
-
 p {
   margin: 0 0 1.5rem; }
   p:last-child {
@@ -618,6 +570,54 @@ pre {
   margin-top: 0;
   margin-bottom: 1.5rem;
   white-space: pre-wrap; }
+
+a {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap; }
+  a:not([class]) {
+    padding: .125em .25em; }
+  a, a:link, a:visited {
+    color: #8cddff; }
+  a:hover, a:focus, a:active, .page-home .nav-primary-home a,
+  .page-about .nav-primary-about a,
+  .page-projects .nav-primary-projects a,
+  .page-life-comix .nav-primary-life-comix a {
+    color: #f473ff;
+    text-decoration: none; }
+  a:not([class]):before {
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
+    will-change: width;
+    content: "";
+    background-color: #0d0d0d;
+    width: 0;
+    height: 100%;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: #8cddff;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: -1; }
+  a:not([class]):hover:before, a:not([class]):focus:before, a:not([class]):active:before, .page-home .nav-primary-home a:not([class]):before,
+  .page-about .nav-primary-about a:not([class]):before,
+  .page-projects .nav-primary-projects a:not([class]):before,
+  .page-life-comix .nav-primary-life-comix a:not([class]):before {
+    width: 100%;
+    left: 0;
+    right: auto;
+    border-bottom-color: #f473ff; }
+
+.heading-anchor {
+  display: none;
+  vertical-align: middle; }
+  :hover > .heading-anchor,
+  :focus > .heading-anchor,
+  :active > .heading-anchor {
+    display: inline-block; }
 
 button, .button {
   display: inline-block;
@@ -787,12 +787,6 @@ footer {
 article {
   position: relative; }
   article:before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
     content: "";
     background-color: #8cddff;
     width: 100%;
@@ -1095,7 +1089,10 @@ article {
     width: 100%;
     height: 100%; }
 
-.hide, .hidden, .svg--master, a span:not([class]):not([itemprop]) {
+.hide,
+.hidden,
+.svg--master,
+a span:not([class]):not([itemprop]) {
   width: 1px !important;
   height: 1px !important;
   padding: 0 !important;
@@ -1104,7 +1101,9 @@ article {
   overflow: hidden !important;
   clip: rect(1px, 1px, 1px, 1px) !important; }
 
-.remove, .removed, p:empty {
+.remove,
+.removed,
+p:empty {
   display: none !important; }
 
 .non-selectable, button, .button, .logo {
@@ -1115,18 +1114,11 @@ article {
   -webkit-touch-callout: default;
   -webkit-touch-callout: none; }
 
-.hyphen, .hyphenate {
+.hyphen,
+.hyphenate {
   overflow-wrap: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto; }
-
-.border-radius, .round, .rounded, aside:not([class*="main-aside"]) {
-  background-clip: padding-box;
-  border-radius: 0.25rem; }
-
-.border-radius-thin, .round-thin, .rounded-thin, a:not([class]):before {
-  background-clip: padding-box;
-  border-radius: 0.125rem; }

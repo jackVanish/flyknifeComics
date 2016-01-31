@@ -16,9 +16,11 @@ input[type="week"],
 textarea {
     box-sizing: inherit !important;
     outline-style: none;
+
     &:focus {
 
     }
+
     &[disabled] {
 
     }

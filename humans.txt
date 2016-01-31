@@ -1,1 +1,35 @@
+---
+layout: null
+searchable: false
+---
+
 # humanstxt.org
+
+/* CONTRIBUTORS */
+
+    Bruce Delo
+    @FlyknifeComics
+
+    Christian DeWolf
+    @comedyserver
+
+    Stewart Delo
+
+    Chris Burnell
+    @iamchrisburnell
+
+
+/* SITE */
+
+    URL:      {{ site.url }}
+    Language: English
+    Doctype:  HTML5
+
+/* LANGUAGES */
+
+    HTML
+    CSS (SCSS)
+    JavaScript
+    JSON
+    Markdown
+    XML

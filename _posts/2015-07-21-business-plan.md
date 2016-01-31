@@ -16,6 +16,7 @@ shell: |
   > cat business-plan.doc
 ---
 
+
 I was mitigating some risk just the other day when my office door burst open.  In strode Bruce Delo, and if it weren't for the briefcase in his hand, I'd have berated him for not making an appointment.  I casually checked my suit for animal blood before standing up to shake his hand.
 
 "Bruce," I said, measuring my words.  "Hello."

@@ -12,8 +12,6 @@ article {
     }
 
     @include media("<=medium") {
-        // Below the medium breakpoint, `article`, `articles-list`, and `aside`
-        // become full width.
         display: flex;
         flex-direction: column;
     }

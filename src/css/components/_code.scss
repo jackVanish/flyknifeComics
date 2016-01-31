@@ -130,7 +130,7 @@
             display: block;
             overflow: hidden;
             pointer-events: none;
-            font-family: $font-stack-code;
+            font-family: $font-family-code;
             animation: shell-loader 1s steps(19, end);
         }
     }

@@ -1,5 +1,29 @@
 <!DOCTYPE html>
 
+
+
+                                                       <!--```
+                 `````````````     ``````           ``````––```
+         ````````````````````````````..```        ``````/hh:````
+       `````````...–/oso+sys```````.+hs.``````````–/:`–sds.````````
+      ```/yy+++ooyyhysydddd/``````–ydo..`````````–ss//hd+...––::```
+      ```–/+++++hdh//ydddy:....../hdo::–:///++:/ss:–ody:–:+yhyy+```
+      ````..––+hds:odddhs//–:oo:oddshdsodmdddysdds+yddssohmds/–.```
+     ```./ossyddhssdmdy+hdo+hdoydmdhs+ydddddssdhyddhhdmoydy++sy:```
+     ```:++yddo::oddy+oddshdhohddmy/ohdsoddsyddyddy+yds+hhsss/–```
+     ````–sdh/..–hmy+ydmddmdhddoshhyyy/–/sssosyddsohh+–.––..``````
+     ```:hdo–....syysyyydmdy+/:–––:––......––+hdyhho:–......```````
+    ````–––.```...––:/yddy+:–––.........––––:hddds/:––:/+++/:.`````
+   ``````...––...––:+hmds/::+ooo–:osss:/sso–+hhyyyhy/+hdhsyys–.`````
+  ``````–+ssssso–:syhyyhhh/oddddoymmmd:smms/dmd/:oyy+ohddddhy–.`````
+  `````:ddh/:yhh/hmmo::ymmssmmmmdddmmd:ydd++dmh//ydd/yddyymmd–`````
+ `````.odds––syy/dmmo/+dmd/hmmyNNmyNNh:dNN/–ymNmmmh+–+yhhhyo:``````
+ ``````:dmmddNdo–/hmmmmds:–yhh/yyo/so/–+//...–––––.........```````
+ ```````–/++/:–....––––.............````````````````````````````
+  ```````````````````````````````````````````````````````````
+    `````````````````````````````````
+        ```-->
+
 <html lang="en">
 
 {% include head/head.html %}
@@ -8,7 +32,7 @@
     {% for class in page.page_class %}
         {{ class }}
     {% endfor %}
-    {% if page.layout contains 'article' and page.shell %}loader{% endif %}
+    {% if page.shell %}loader{% endif %}
 {% endcapture %}
 {% assign body_class_array = body_class | split: ' ' %}
 

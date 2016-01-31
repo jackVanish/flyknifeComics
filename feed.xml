@@ -1,6 +1,8 @@
 ---
 layout: null
-description: All of my articles and pens.
+searchable: false
+
+lede: All of my articles and pens.
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -9,15 +11,15 @@ description: All of my articles and pens.
     <channel>
 
         <title>{{ site.title | xml_escape }}</title>
-        <description>{{ page.description | xml_escape }}</description>
-        <link>{{ site.url }}{{ site.baseurl }}</link>
-        <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml"/>
+        <description>{{ page.lede | xml_escape }}</description>
+        <link>{{ site.baseurl | prepend: site.url }}</link>
+        <atom:link href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
         <language>en</language>
 
         <image>
-            <url>{{ site.url }}{{ site.baseurl }}/favicon.png</url>
+            <url>{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}</url>
             <title>{{ site.author }}</title>
-            <link>{{ site.url }}{{ site.baseurl }}</link>
+            <link>{{ site.baseurl | prepend: site.url }}</link>
         </image>
 
         {% for post in site.posts %}
@@ -25,8 +27,8 @@ description: All of my articles and pens.
                 <title>{{ post.title }}</title>
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
                 <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-                <category>{{ post.category }}</category>
-                {% if post.introduction %}<description>{{ post.introduction }}</description>{% endif %}
+                <category>{{ post.categories }}</category>
+                {% if post.lede %}<description>{{ post.lede }}</description>{% endif %}
             </item>
         {% endfor %}
 

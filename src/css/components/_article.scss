@@ -7,7 +7,7 @@ article {
     position: relative;
 
     &:before {
-        @include absolute(topcenter);
+        @include position(top-center);
         content: "";
         background-color: $color-brand;
         width: 100%;

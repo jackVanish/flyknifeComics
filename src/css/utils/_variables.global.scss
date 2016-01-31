@@ -21,6 +21,8 @@ $breakpoints: (
     "medium-large": $wrapper-width-medium-large,
     "large":  $wrapper-width-large
 ) !default;
+
+
 /// @type Length
 $wrapper-padding: 1.5rem !default;
 /// @type Length
@@ -28,11 +30,11 @@ $aside-width: 16rem !default;
 
 
 /// @type Length
-$spacing-small: ($wrapper-padding / 2) !default;
+$spacing-small:  0.750rem !default;
 /// @type Length
-$spacing-medium: $wrapper-padding !default;
+$spacing-medium: 1.500rem !default;
 /// @type Length
-$spacing-large: 2.25rem !default;
+$spacing-large:  2.250rem !default;
 
 
 /// @type Length
@@ -79,19 +81,19 @@ $color-black-alt: #0d0d0d !default;
 
 
 /// @type Length
-$base-font-size: 100% !default;
+$font-size-default: 100% !default;
 /// @type Number
-$base-line-height: 1.618 !default;
+$line-height-default: 1.618 !default;
 /// @type String
-$base-font-style: normal !default;
+$font-style-default: normal !default;
 /// @type String
-$base-font-weight: 400 !default;
+$font-weight-default: 400 !default;
 /// @type List
-$font-stack-primary: "Abel", Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-family-default: "Abel", Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
 /// @type List
-$font-stack-secondary: "Oswald", sans-serif !default;
+$font-family-beta: "Oswald", sans-serif !default;
 /// @type List
-$font-stack-heading: "Englebert", sans-serif !default;
+$font-family-alpha: "Englebert", sans-serif !default;
 /// @type Length
 $font-size-smaller: .8125rem !default;
 /// @type Length

@@ -1,7 +1,7 @@
 <head>
 
     {% if page.page_class contains 'page-home' %}
-        {% capture meta_title %}{{ site.title }} - {{ site.tagline }}{% if paginator.page > 1 %} - Page {{ paginator.page }}{% endif %}{% endcapture %}
+        {% capture meta_title %}{{ site.title }} - {{ site.tagline }}{% endcapture %}
     {% else %}
         {% capture meta_title %}{{ page.title }} - {{ site.title }}{% endcapture %}
     {% endif %}
@@ -9,7 +9,7 @@
     {% if page.lede %}
         {% capture meta_lede %}{{ page.lede | strip_html }}{% endcapture %}
     {% else %}
-        {% capture meta_lede %}{{ site.lede | strip_html }}{% if paginator.page > 1 %} - Page {{ paginator.page }}{% endif %}{% endcapture %}
+        {% capture meta_lede %}{{ site.lede | strip_html }}{% endcapture %}
     {% endif %}
 
     {% if page.banner_mobile %}

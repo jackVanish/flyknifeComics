@@ -4,8 +4,8 @@ page_class: page-shard-nostalgia
 
 title: Nostalgia with KyleTV
 
-author: SHARD_SCRAPE.gen
 author_farewell: ENDPROG
+author: SHARD_SCRAPE.gen
 
 shell: |
   > fetch SHARD.10029
@@ -17,5 +17,5 @@ shell: |
 DESC. GENERATING
 
 <ol role="list">
-  <a href="2016-01-27-snaxx-kash">????-??-??: SNAXX & KASH</a>
+  <a href="/shards/nostalgia/2016-01-27-snaxx-kash">????-??-??: SNAXX & KASH</a>
 </ol>

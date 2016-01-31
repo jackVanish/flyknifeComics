@@ -5,16 +5,129 @@
 
 
 ///
+/// Absolutely position an element.
+///
+/// @param {String} $value - Position of the element
+///
+/// @example scss - One parameter
+///   @include position(bottom);
+///   // position: absolute;
+///   // bottom: 0;
+///   // left:   0;
+///   // right:  0;
+///
+@mixin position( $value ) {
+
+    @if( $value == "top-left" ) {
+        position: absolute;
+        top:  0;
+        left: 0;
+    }
+
+    @else if( $value == "bottom" ) {
+        position: absolute;
+        bottom: 0;
+        left:   0;
+        right:  0;
+    }
+
+    @else if( $value == "center" ) {
+        position: absolute;
+        top:  50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    @else if( $value == "none" or $value == "reset" ) {
+        position: relative;
+        top:  0;
+        left: 0;
+    }
+
+}
+
+
+///
+/// Add a border-radius.
+///
+/// @param {String} $values - Values
+///
+/// @require {Variable} $border-radius-default
+/// @require {Variable} $border-radius-thin
+///
+/// @example scss - One parameter
+///   @include radius(color);
+///   // border-radius: color;
+///
+/// @throw Error if no parameters are passed.
+///
+@mixin border-radius( $values... ) {
+
+    @if( length($values) == 0 ) {
+        $values: $border-radius-default;
+    }
+    @else if( #{$values} == "thin" ) {
+        $values: $border-radius-thin;
+    }
+
+    background-clip: padding-box;
+    border-radius: #{$values};
+
+}
+
+
+///
+/// Specify font-family and associated font-display
+///
+/// @param {String} $family - Font Family value
+/// @param {String} $display - Font Display value
+///
+/// @require {Variable} $font-families
+///
+/// @example scss
+///   @include font-family(default);
+///   // font-family: "ff-meta-serif-web-pro", Georgia, serif;
+///
+/// @example scss
+///   @include font-family(beta, swap);
+///   // font-family: "proxima-nova", sans-serif;
+///   // font-display: swap;
+///
+/// @throw Error if no parameters are passed.
+///
+@mixin font-family( $family, $display ) {
+
+    @if( length($family) == 0 ) {
+        @error "font-family() expects at least one parameter."
+    }
+
+    @if not map-has-key($font-families, $family) {
+        @error "There is no font-family named `#{$family}` in $font-families. Font Family should be one of #{map-keys($font-families)}.";
+    }
+
+    font-family: map-get($font-families, $family);
+
+    @if( length($display) != 0 ) {
+        font-display: $display;
+    }
+
+}
+
+
+///
 /// Generate transitions based on flexible input parameters.
 /// Pass zero or more properties and zero to two further parameters.
-/// Relies on defaults `all`, `$transition-time`, and `$transtion-function`.
+/// If passing two or more properties, quotation marks must be used.
 ///
 /// @author Chris Burnell
 ///
 /// @param {String} $values - Values
 ///
+/// @require {Variable} $transition-time
+/// @require {Variable} $transition-function
+///
 /// @example scss - Zero parameters
-///   @include transition();
+///   @include transition;
 ///   // transition: all .2s ease;
 ///
 /// @example scss - One property
@@ -37,10 +150,7 @@
 ///   @include transition(color 2s ease-in-out, border 1s linear);
 ///   // transition: color 2s ease-in-out, border 1s linear;
 ///
-/// @require {variable} $transition-time
-/// @require {variable} $transition-function
-///
-@mixin transition($values...) {
+@mixin transition( $values... ) {
 
     $transition: ();
 
@@ -80,106 +190,6 @@
 
 
 ///
-/// Describes CSS changes to the browser; to be coupled with any transitions.
-///
-/// @param {String} $values - Values
-///
-/// @example scss - One parameter
-///   @include will-change(color);
-///   // will-change: color;
-///
-/// @example scss - Multiple parameters
-///   @include will-change(color, border);
-///   // will-change: color, border;
-///
-/// @throw Error if no parameters are passed.
-///
-@mixin will-change($values...) {
-
-    @if( length($values) == 0 ) {
-        @error "will-change() expects one or more parameters.";
-    }
-
-    will-change: #{$values};
-
-}
-
-
-///
-/// Add a border-radius.
-///
-/// @param {String} $values - Values
-///
-/// @example scss - One parameter
-///   @include radius(color);
-///   // border-radius: color;
-///
-/// @throw Error if no parameters are passed.
-///
-@mixin border-radius($values...) {
-
-    @if( length($values) == 0 ) {
-        $values: $border-radius-default;
-    }
-    @else if( #{$values} == "thin" ) {
-        $values: $border-radius-thin;
-    }
-
-    background-clip: padding-box;
-    border-radius: #{$values};
-
-}
-
-
-///
-/// Absolutely position an element.
-///
-/// @param {String} $position - Position of the element
-///
-/// @example scss - Zero parameters
-///   @include absolute;
-///   // position: absolute;
-///   // top:  0;
-///   // left: 0;
-///
-/// @example scss - One parameter
-///   @include absolute(bottom);
-///   // position: absolute;
-///   // bottom: 0;
-///   // left:   0;
-///   // right:  0;
-///
-@mixin absolute($position: "topleft") {
-
-    position: absolute;
-
-    @if( $position == "topleft" ) {
-        top:  0;
-        left: 0;
-    }
-
-    @if( $position == "topcenter" ) {
-        top:  0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    @else if( $position == "bottom" ) {
-        bottom: 0;
-        left:   0;
-        right:  0;
-    }
-
-    @else if( $position == "center") {
-        top:  50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-}
-
-
-///
 /// Define characters for quotes
 ///
 /// @example scss
@@ -200,5 +210,31 @@
     :lang(fr) & {
         quotes: "« " " »" "‹ " " ›";
     }
+
+}
+
+
+///
+/// Describes CSS changes to the browser; to be coupled with any transitions.
+///
+/// @param {String} $values - Values
+///
+/// @example scss - One parameter
+///   @include will-change(color);
+///   // will-change: color;
+///
+/// @example scss - Multiple parameters
+///   @include will-change(color, border);
+///   // will-change: color, border;
+///
+/// @throw Error if no parameters are passed.
+///
+@mixin will-change( $values... ) {
+
+    @if( length($values) == 0 ) {
+        @error "will-change() expects one or more parameters.";
+    }
+
+    will-change: #{$values};
 
 }

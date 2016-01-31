@@ -13,6 +13,7 @@ shell: |
   > nano ghostcrime.txt
 ---
 
+
 Before they put me into cryo-sleep back in 2015 for being too inspiring, I took one last look at the boxes of books I'd gotten printed.  Without me peddling them to sidewalk passers-by, could _Ghostcrime_ still make it big, and rocket me to post-cryothumous fame?
 
 It was literally the second thing I checked after they thawed me out.  Alas, every last copy had been burned shortly after I'd been put on ice.  Doesn't matter by who.  He didn't make it out of the century.  But the fact remains: I spent the last 775,762 years in obscurity.

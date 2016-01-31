@@ -3,9 +3,6 @@
 /// @group layout
 ////
 
-// The width of the asides is static above the medium breakpoint and always
-// floated within an article or list of articles. The math is calculated as in
-// `layout/_article.scss`.
 aside {
     animation: none !important;
 
@@ -13,6 +10,7 @@ aside {
         width: $aside-width;
         float: left;
         margin-left: -($aside-width + $spacing-large);
+
         &[class*="main-aside"] {
             width: auto;
             max-width: ($aside-width * 2);

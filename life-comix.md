@@ -6,9 +6,10 @@ sitemap:
 
 title: Life Comix, Yo
 
+author_farewell: Cheers,
 author: Bruce
-author_farewell: Cheers
 ---
+
 
 Hey Gang!
 

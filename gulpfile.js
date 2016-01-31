@@ -7,10 +7,8 @@
 var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat       = require('gulp-concat'),
-    csslint      = require('gulp-csslint'),
     cssnano      = require('gulp-cssnano'),
     plumber      = require('gulp-plumber'),
-    notify       = require('gulp-notify'),
     rename       = require('gulp-rename'),
     sass         = require('gulp-sass'),
     uglify       = require('gulp-uglify'),
@@ -48,12 +46,7 @@ gulp.task('css-main', function() {
             suffix: '.min'
         }))
         .pipe(cssnano())
-        .pipe(gulp.dest(paths.dist.css))
-        .pipe(notify({
-            title: 'gulp',
-            message: 'CSS compiled.',
-            onLast: true
-        }));
+        .pipe(gulp.dest(paths.dist.css));
 });
 
 // Minify JS
@@ -63,18 +56,12 @@ gulp.task('js-main', function() {
         .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.dist.js))
         .pipe(uglify({
-            mangle: false,
-            preserveComments: 'some'
+            mangle: false
         }))
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest(paths.dist.js))
-        .pipe(notify({
-            title: 'gulp',
-            message: 'JS compiled.',
-            onLast: true
-        }));
+        .pipe(gulp.dest(paths.dist.js));
 });
 
 // -----------------------------------------------------------------------------

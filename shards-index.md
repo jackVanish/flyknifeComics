@@ -5,7 +5,6 @@ sitemap:
   priority: 1.0
 
 title: Shards
-
 ---
 
 
@@ -18,7 +17,4 @@ on the subject, so I figured I'd toss 'em up on the Griddzone and see how he lik
 
 {% include content/heading.html type="h2" title="> ls" %}
 
-<ol role="list">
-  <a href="/shards/nostalgia/nostalgia-index">cd nostalgia/</a>
-</ol>
-
+0. [cd nostalgia/](/shards/nostalgia/nostalgia-index)
