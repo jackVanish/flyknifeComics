@@ -1,0 +1,23 @@
+---
+layout: default
+page_class: page-search
+searchable: false
+
+title: Search
+---
+
+
+<h2 class="lede" class="search-meta">Search for something</h2>
+
+<div class="search-main  js-main" id="search">
+    <form class="search-form  js-search-form" method="get" action="/search" role="search">
+        <label class="search-label  hidden" for="query">Search</label>
+        <input class="search-input  js-search-input" type="search" name="query" maxlength="30" placeholder="Search" disabled required>
+        <button class="button--small  search-submit  js-search-submit" type="submit" aria-label="Submit" disabled>Submit</button>
+    </form>
+    <noscript>Please enable JavaScript to search.</noscript>
+</div>
+
+<div class="search-results  js-search-results">
+    <ul class="js-search-results-list" role="list"></ul>
+</div>
