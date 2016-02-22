@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 %beta,
 %delta {
     color: $color-brand;
-    font-weight: 600;
+    font-weight: $font-weight-bold;
     text-shadow: 0 0 .5rem $color-brand;
 }
 
@@ -111,8 +111,10 @@ ul:not([class]),
         }
 
         &::before {
-            @include position(top-left);
-            font-weight: 600;
+            @include position(left);
+            color: $color-text-alt;
+            font-style: italic;
+            font-weight: $font-weight-bold;
         }
     }
 
@@ -128,7 +130,7 @@ ol.default-list {
         counter-increment: ordered-list;
 
         &::before {
-            content: "# " counter(ordered-list);
+            content: "#" counter(ordered-list);
         }
     }
 }
@@ -153,7 +155,7 @@ dl {
         min-width: 12rem;
         float: left;
         clear: left;
-        font-weight: 600;
+        font-weight: $font-weight-bold;
 
         @include media("<=small") {
             float: none;

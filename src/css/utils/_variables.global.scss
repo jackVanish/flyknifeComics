@@ -82,6 +82,8 @@ $border-radius-thin: $border-default !default;
 
 /// @type String
 $font-weight-default: 400 !default;
+/// @type String
+$font-weight-bold:    600 !default;
 
 
 /// @type String
@@ -106,6 +108,7 @@ $font-size-larger: 2.25rem !default;
 $font-sizes: (
     "smaller": $font-size-smaller,
     "small":   $font-size-small,
+    "medium":  $font-size-medium,
     "large":   $font-size-large,
     "larger":  $font-size-larger
 ) !default;

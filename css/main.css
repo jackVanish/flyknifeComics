@@ -434,8 +434,12 @@ ul:not([class]) li,
   ul:not([class]) li::before,
   .default-list li::before {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #777777;
+    font-style: italic;
     font-weight: 600; }
 
 ol:not([class]) ol:not([class]),
@@ -461,7 +465,7 @@ ol.default-list {
     counter-increment: ordered-list; }
     ol:not([class]) li::before,
     ol.default-list li::before {
-      content: "# " counter(ordered-list); }
+      content: "#" counter(ordered-list); }
 
 ul:not([class]) li::before,
 ul.default-list li::before {
@@ -846,6 +850,16 @@ article {
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.25; }
+
+.articles-list li {
+  margin-bottom: 1.5rem; }
+
+.articles-list a {
+  font-size: 1.125rem; }
+
+.articles-list time {
+  font-style: italic;
+  font-weight: 600; }
 
 .shell {
   background-color: rgba(13, 13, 13, 0.7);
