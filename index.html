@@ -9,11 +9,13 @@ title: COBALT AND ELECTRICITY
 
 <p>Welcome one and all to the FLYKNIFE COMIX WEBZONE. Here you will find all the neat deets and slick tricks you’ll need to fight R.A.N.C.O.U.R and Commander Zeta. Deck fast, Deckers, the Apocalypse Clock is ticking.</p>
 
-<ol class="default-list  articles-list" role="list">
+<ol class="default-list  articles-list" role="list" reversed>
     {% for post in site.posts %}
         <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}">- {{ post.date | date: '%d %B, %Y' }}</time>
+            <a href="{{ post.url }}">
+                {{ post.title }}
+                <time datetime="{{ post.date | date_to_xmlschema }}">- {{ post.date | date: '%d %B, %Y' }}</time>
+            </a>
         </li>
     {% endfor %}
 </ol>

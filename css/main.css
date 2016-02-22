@@ -851,11 +851,12 @@ article {
   font-style: italic;
   line-height: 1.25; }
 
-.articles-list li {
-  margin-bottom: 1.5rem; }
-
 .articles-list a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
   font-size: 1.125rem; }
+  .articles-list a::before {
+    border-bottom-width: 0.3125rem; }
 
 .articles-list time {
   font-style: italic;
