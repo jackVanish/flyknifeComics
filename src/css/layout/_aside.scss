@@ -9,13 +9,13 @@ aside {
     @include media(">medium") {
         width: $aside-width;
         float: left;
-        margin-left: -($aside-width + $spacing-large);
+        margin-left: -($aside-width + $measure-large);
 
         &[class*="main-aside"] {
             width: auto;
             max-width: ($aside-width * 2);
-            margin-right:  $spacing-large;
-            margin-bottom: $spacing-large;
+            margin-right:  $measure-large;
+            margin-bottom: $measure-large;
 
             &[class*="main-aside--full"] {
                 max-width: 100%;
@@ -28,12 +28,12 @@ aside {
 
     @include media("<=medium") {
         width: 100%;
-        margin-bottom: $spacing-medium;
+        margin-bottom: $measure-medium;
 
         &:not([class*="main-aside"]) {
             @extend .rounded;
             background: red;
-            padding: $spacing-small;
+            padding: $measure-small;
             &:last-child {
                 margin-bottom: 0;
             }

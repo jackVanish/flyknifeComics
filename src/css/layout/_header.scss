@@ -3,8 +3,9 @@
 /// @group layout
 ////
 
+
 header {
-    padding-top: $spacing-medium;
+    padding-top: $measure-medium;
     overflow-y: hidden;
 
     @include media("<=medium") {

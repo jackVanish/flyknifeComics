@@ -6,7 +6,7 @@
 article {
     position: relative;
 
-    &:before {
+    &::before {
         @include position(top-center);
         content: "";
         background-color: $color-brand;
@@ -37,7 +37,7 @@ article {
 .title,
 .tagline {
     width: 100%;
-    padding-bottom: $spacing-large;
+    padding-bottom: $measure-large;
 }
 
 .farewell {

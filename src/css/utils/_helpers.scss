@@ -3,10 +3,11 @@
 /// @group utils
 ////
 
+
 // Hide elements visually
 // Still treated as normal content by text-to-speech software
-.hide,
-.hidden {
+.hidden,
+.hide {
     width:  1px !important;
     height: 1px !important;
     padding: 0 !important;
@@ -35,4 +36,16 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
+}
+
+// We're goin' up around the bend
+.border-radius,
+.round,
+.rounded {
+    @include border-radius;
+}
+.border-radius-thin,
+.round-thin,
+.rounded-thin {
+    @include border-radius(thin);
 }

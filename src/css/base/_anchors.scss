@@ -28,7 +28,7 @@
     }
 
     &:not([class]) {
-        &:before {
+        &::before {
             @extend .rounded-thin;
             @include transition(width);
             @include will-change(width);
@@ -49,7 +49,7 @@
         &:hover,
         &:focus,
         &:active {
-            &:before {
+            &::before {
                 width: 100%;
                 left: 0;
                 right: auto;
@@ -71,9 +71,9 @@ a {
     display: none;
     vertical-align: middle;
 
-    :hover > &,
-    :focus > &,
-    :active > & {
+    %heading:hover > &,
+    %heading:focus > &,
+    %heading:active > & {
         display: inline-block;
     }
 }

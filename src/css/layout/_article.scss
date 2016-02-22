@@ -4,11 +4,11 @@
 ////
 
 article {
-    padding-top: $spacing-large;
-    margin-top: $spacing-medium;
+    padding-top: $measure-large;
+    margin-top: $measure-medium;
 
     @include media(">medium") {
-        padding-left: ($aside-width + $spacing-large);
+        padding-left: ($aside-width + $measure-large);
     }
 
     @include media("<=medium") {

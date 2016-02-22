@@ -16,49 +16,35 @@ $wrapper-width-large: 1160px !default;
 /// @prop {String} key - Breakpoint name
 /// @prop {Length} value - Breakpoint value
 $breakpoints: (
-    "small":  $wrapper-width-small,
-    "medium": $wrapper-width-medium,
+    "small":        $wrapper-width-small,
+    "medium":       $wrapper-width-medium,
     "medium-large": $wrapper-width-medium-large,
-    "large":  $wrapper-width-large
+    "large":        $wrapper-width-large
 ) !default;
 
 
 /// @type Length
 $wrapper-padding: 1.5rem !default;
 /// @type Length
-$aside-width: 16rem !default;
+$aside-width:      16rem !default;
 
 
 /// @type Length
-$spacing-small:  0.750rem !default;
+$measure-small:  0.750rem !default;
 /// @type Length
-$spacing-medium: 1.500rem !default;
+$measure-medium: 1.500rem !default;
 /// @type Length
-$spacing-large:  2.250rem !default;
-
-
-/// @type Length
-$border-default: 0.125rem !default;
-/// half of $border-default
-/// @type Length
-$border-thick: 0.3125rem !default;
-
-
-/// @type Length
-$border-radius-default: 0.25rem !default;
-/// same length as $border-default
-/// @type Length
-$border-radius-thin: $border-default !default;
+$measure-large:  2.250rem !default;
 
 
 /// @type Map
 /// @prop {String} key - Opacity name
 /// @prop {Number} value - Opacity value
 $opacities: (
-    'low':    0.05,
-    'medium': 0.10,
-    'high':   0.25,
-    'ultra':  0.70
+    '5-percent':  0.05,
+    '10-ercent':  0.10,
+    '25-percent': 0.25,
+    '70-percent': 0.70
 ) !default;
 
 
@@ -81,19 +67,29 @@ $color-black-alt: #0d0d0d !default;
 
 
 /// @type Length
-$font-size-default: 100% !default;
-/// @type Number
-$line-height-default: 1.618 !default;
-/// @type String
-$font-style-default: normal !default;
+$border-default: 0.125rem !default;
+/// half of $border-default
+/// @type Length
+$border-thick: 0.3125rem !default;
+
+
+/// @type Length
+$border-radius-default: 0.25rem !default;
+/// same length as $border-default
+/// @type Length
+$border-radius-thin: $border-default !default;
+
+
 /// @type String
 $font-weight-default: 400 !default;
-/// @type List
-$font-family-default: "Abel", Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
-/// @type List
-$font-family-beta: "Oswald", sans-serif !default;
-/// @type List
-$font-family-alpha: "Englebert", sans-serif !default;
+
+
+/// @type String
+$font-style-default: normal !default;
+
+
+/// @type Length
+$font-size-default: 100% !default;
 /// @type Length
 $font-size-smaller: .8125rem !default;
 /// @type Length
@@ -113,6 +109,34 @@ $font-sizes: (
     "large":   $font-size-large,
     "larger":  $font-size-larger
 ) !default;
+
+
+/// @type List
+$font-family-default: "Abel", Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+/// @type List
+$font-family-alpha: "Englebert", sans-serif !default;
+/// @type List
+$font-family-beta: "Oswald", sans-serif !default;
+/// @type List
+$font-family-monospace: Monaco, Consolas, Courier, monospace !default;
+/// @type Map
+/// @prop {String} key - Font Family name
+/// @prop {Number} value - Font Family value
+/// @require {Variable} $font-family-default
+/// @require {Variable} $font-family-alpha
+/// @require {Variable} $font-family-beta
+/// @require {Variable} $font-family-monospace
+/// @see {Mixin} font-family
+$font-families: (
+    "default":   $font-family-default,
+    "alpha":     $font-family-alpha,
+    "beta":      $font-family-beta,
+    "monospace": $font-family-monospace
+) !default;
+
+
+/// @type Number
+$line-height-default: 1.618 !default;
 
 
 /// @type Length

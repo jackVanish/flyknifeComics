@@ -1,18 +1,23 @@
 /*!
- * Flyknife Comics gulp Configuration
+ * Chris Burnell gulp Configuration
  */
 
 
 // Define gulp objects
 var gulp         = require('gulp'),
-    autoprefixer = require('gulp-autoprefixer'),
+    gutil        = require('gulp-util'),
     concat       = require('gulp-concat'),
-    cssnano      = require('gulp-cssnano'),
     plumber      = require('gulp-plumber'),
+    postcss      = require('gulp-postcss'),
     rename       = require('gulp-rename'),
     sass         = require('gulp-sass'),
     uglify       = require('gulp-uglify'),
     watch        = require('gulp-watch');
+
+// Define external objects
+var autoprefixer = require('autoprefixer'),
+    cssnano      = require('cssnano'),
+    reporter     = require('postcss-reporter');
 
 // Define paths
 var paths = {
@@ -31,27 +36,31 @@ var paths = {
 // -----------------------------------------------------------------------------
 
 // Compile main SCSS file
-gulp.task('css-main', function() {
+gulp.task('css-compile', function() {
     return gulp.src([paths.src.css + '*.scss'])
         .pipe(plumber())
         .pipe(sass({
             errLogToConsole: true,
             style: 'expanded'
         }))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions', '> 1%']
-        }))
+        .pipe(postcss([
+            autoprefixer({
+                browsers: ['last 2 versions', '> 1%']
+            })
+        ]))
         .pipe(gulp.dest(paths.dist.css))
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(cssnano())
+        .pipe(postcss([
+            cssnano()
+        ]))
         .pipe(gulp.dest(paths.dist.css));
 });
 
 // Minify JS
-gulp.task('js-main', function() {
-    return gulp.src([paths.src.js + '*.js'])
+gulp.task('js-compile', function() {
+    return gulp.src([paths.src.js + '**/*.js'])
         .pipe(plumber())
         .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.dist.js))
@@ -73,13 +82,13 @@ gulp.task('default', function() {
 });
 
 // CSS task
-gulp.task('css', function() {
-    gulp.start('css-main');
+gulp.task('css', ['css-compile'], function() {
+    // Nah we're good
 });
 
 // JS task
-gulp.task('js', function() {
-    gulp.start('js-main');
+gulp.task('js', ['js-compile'], function() {
+    // Nah we're good
 });
 
 // -----------------------------------------------------------------------------

@@ -12,6 +12,16 @@ html {
      -webkit-font-smoothing: antialiased;
 }
 
+// Content Elements
+blockquote,
+dl,
+ol,
+ul,
+figure:not([class]),
+p {
+    @extend %content-elements;
+}
+
 
 %heading {
     // so that elements can be floated inside headings
@@ -19,11 +29,10 @@ html {
     padding: 0;
     margin: 0;
     position: relative;
-    font-weight: 400;
+    font-weight: $font-weight-default;
     line-height: 1.25;
 }
 h1, h2, h3, h4, h5, h6 {
-    @extend %content-element;
     @extend %heading;
 }
 
@@ -48,19 +57,19 @@ h1 {
 }
 h2 {
     @extend %beta;
-    padding-bottom: $spacing-medium;
+    padding-bottom: $measure-medium;
 }
 
 %delta {
     font-size: $font-size-medium;
-    text-shadow: 0 0 .5rem rgba($color-brand, opacity(ultra));
+    text-shadow: 0 0 .5rem rgba($color-brand, opacity("70-percent"));
 }
 h3 {
     @extend %delta;
-    padding-bottom: $spacing-small;
+    padding-bottom: $measure-small;
 
     :not(h2) + & {
-        padding-top: $spacing-small;
+        padding-top: $measure-small;
     }
 }
 
@@ -72,8 +81,7 @@ h4 {
 }
 
 p {
-    @extend %content-element;
-    margin: 0 0 $spacing-medium;
+    margin: 0 0 $measure-medium;
 
     &:last-child {
         margin-bottom: 0;
@@ -86,7 +94,6 @@ p {
 
 ol,
 ul {
-    @extend %content-element;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -95,24 +102,22 @@ ol:not([class]),
 ul:not([class]),
 .default-list {
     li {
-        padding-left: $spacing-large;
-        margin-bottom: $spacing-small;
+        padding-left: $measure-large;
+        margin-bottom: $measure-small;
         position: relative;
 
         &:last-child {
-            margin-bottom: $spacing-medium;
+            margin-bottom: $measure-medium;
         }
 
-        &:before {
+        &::before {
             @include position(top-left);
             font-weight: 600;
         }
     }
 
-    ol:not([class]),
-    ul:not([class]),
-    .default-list {
-        margin-top: $spacing-medium;
+    & & {
+        margin-top: $measure-medium;
     }
 }
 ol:not([class]),
@@ -122,13 +127,13 @@ ol.default-list {
     li {
         counter-increment: ordered-list;
 
-        &:before {
+        &::before {
             content: "# " counter(ordered-list);
         }
     }
 }
-ul:not([class]) li:before,
-ul.default-list li:before {
+ul:not([class]) li::before,
+ul.default-list li::before {
     // BULLET
     content: "•";
     // 24px
@@ -136,12 +141,11 @@ ul.default-list li:before {
     line-height: 1;
 }
 dl {
-    @extend %content-element;
     width: 100%;
     overflow: hidden;
 
     &:not(:last-child) {
-        margin-bottom: $spacing-medium;
+        margin-bottom: $measure-medium;
     }
 
     dt {
@@ -166,7 +170,7 @@ dl {
         @include media("<=small") {
             width: auto;
             display: block;
-            margin-left: $spacing-medium;
+            margin-left: $measure-medium;
         }
     }
 }
@@ -178,8 +182,7 @@ a img {
     height: auto;
 }
 figure {
-    @extend %content-element;
-    margin: 0 0 $spacing-medium;
+    margin: 0 0 $measure-medium;
 
     img,
     svg {
@@ -194,17 +197,16 @@ figure {
 }
 
 blockquote {
-    @extend %content-element;
     @include quotes;
 
     p {
         margin-bottom: 0 !important;
 
-        &:before {
+        &::before {
             content: open-quote;
         }
 
-        &:after {
+        &::after {
             content: close-quote;
         }
     }
@@ -212,7 +214,7 @@ blockquote {
     cite {
         display: block;
 
-        &:before {
+        &::before {
             // HYPHEN, NO-BREAK SPACE
             content: "‐ ";
         }
@@ -240,16 +242,25 @@ ins {
     text-decoration: none;
 }
 
+time {
+    display: block;
+}
+
 hr {
-    @extend %content-element;
     background-color: $color-brand;
     width: 100%;
     max-width: 530px; // it just works, lines up with <h1>
     height: $border-default;
     display: block;
     border: 0;
-    margin: $spacing-large auto;
+    margin: $measure-large auto;
     box-shadow: 0 0 .5rem $color-brand-alt;
+
+    %content-elements + & {
+        @include media("<=medium") {
+            margin-top: $measure-medium;
+        }
+    }
 }
 
 /**
@@ -260,6 +271,9 @@ video {
     width: 100%;
     border: none;
     overflow-x: hidden;
+}
+iframe {
+    margin-bottom: $measure-medium;
 }
 
 ::selection {

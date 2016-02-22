@@ -2,7 +2,7 @@
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit; }
 
 /**
@@ -430,23 +430,27 @@ ul:not([class]) li,
   ul:not([class]) li:last-child,
   .default-list li:last-child {
     margin-bottom: 1.5rem; }
-  ol:not([class]) li:before,
-  ul:not([class]) li:before,
-  .default-list li:before {
+  ol:not([class]) li::before,
+  ul:not([class]) li::before,
+  .default-list li::before {
     position: absolute;
     top: 0;
     left: 0;
     font-weight: 600; }
 
 ol:not([class]) ol:not([class]),
-ol:not([class]) ul:not([class]),
-ol:not([class]) .default-list,
 ul:not([class]) ol:not([class]),
-ul:not([class]) ul:not([class]),
-ul:not([class]) .default-list,
-.default-list ol:not([class]),
-.default-list ul:not([class]),
-.default-list .default-list {
+.default-list ol:not([class]), ol:not([class])
+ul:not([class]),
+ul:not([class])
+ul:not([class]),
+.default-list
+ul:not([class]), ol:not([class])
+.default-list,
+ul:not([class])
+.default-list,
+.default-list
+.default-list {
   margin-top: 1.5rem; }
 
 ol:not([class]),
@@ -455,12 +459,12 @@ ol.default-list {
   ol:not([class]) li,
   ol.default-list li {
     counter-increment: ordered-list; }
-    ol:not([class]) li:before,
-    ol.default-list li:before {
+    ol:not([class]) li::before,
+    ol.default-list li::before {
       content: "# " counter(ordered-list); }
 
-ul:not([class]) li:before,
-ul.default-list li:before {
+ul:not([class]) li::before,
+ul.default-list li::before {
   content: "•";
   font-size: 1.5rem;
   line-height: 1; }
@@ -512,14 +516,14 @@ blockquote,
 
 blockquote p {
   margin-bottom: 0 !important; }
-  blockquote p:before {
+  blockquote p::before {
     content: open-quote; }
-  blockquote p:after {
+  blockquote p::after {
     content: close-quote; }
 
 blockquote cite {
   display: block; }
-  blockquote cite:before {
+  blockquote cite::before {
     content: "‐ "; }
 
 q {
@@ -547,6 +551,9 @@ dfn[title] {
 ins {
   text-decoration: none; }
 
+time {
+  display: block; }
+
 hr {
   background-color: #8cddff;
   width: 100%;
@@ -556,6 +563,14 @@ hr {
   border: 0;
   margin: 2.25rem auto;
   box-shadow: 0 0 0.5rem #f473ff; }
+  @media (max-width: 800px) {
+    blockquote + hr,
+    dl + hr,
+    ol + hr,
+    ul + hr,
+    figure:not([class]) + hr,
+    p + hr {
+      margin-top: 1.5rem; } }
 
 /**
  * Fix `iframe` and `video`
@@ -565,6 +580,9 @@ video {
   width: 100%;
   border: none;
   overflow-x: hidden; }
+
+iframe {
+  margin-bottom: 1.5rem; }
 
 pre {
   margin-top: 0;
@@ -586,7 +604,7 @@ a {
   .page-life-comix .nav-primary-life-comix a {
     color: #f473ff;
     text-decoration: none; }
-  a:not([class]):before {
+  a:not([class])::before {
     -webkit-transition: width 0.2s ease;
     transition: width 0.2s ease;
     will-change: width;
@@ -602,10 +620,10 @@ a {
     left: auto;
     right: 0;
     z-index: -1; }
-  a:not([class]):hover:before, a:not([class]):focus:before, a:not([class]):active:before, .page-home .nav-primary-home a:not([class]):before,
-  .page-about .nav-primary-about a:not([class]):before,
-  .page-projects .nav-primary-projects a:not([class]):before,
-  .page-life-comix .nav-primary-life-comix a:not([class]):before {
+  a:not([class]):hover::before, a:not([class]):focus::before, a:not([class]):active::before, .page-home .nav-primary-home a:not([class])::before,
+  .page-about .nav-primary-about a:not([class])::before,
+  .page-projects .nav-primary-projects a:not([class])::before,
+  .page-life-comix .nav-primary-life-comix a:not([class])::before {
     width: 100%;
     left: 0;
     right: auto;
@@ -614,9 +632,7 @@ a {
 .heading-anchor {
   display: none;
   vertical-align: middle; }
-  :hover > .heading-anchor,
-  :focus > .heading-anchor,
-  :active > .heading-anchor {
+  h1:hover > .heading-anchor, h2:hover > .heading-anchor, h3:hover > .heading-anchor, h4:hover > .heading-anchor, h5:hover > .heading-anchor, h6:hover > .heading-anchor, h1:focus > .heading-anchor, h2:focus > .heading-anchor, h3:focus > .heading-anchor, h4:focus > .heading-anchor, h5:focus > .heading-anchor, h6:focus > .heading-anchor, h1:active > .heading-anchor, h2:active > .heading-anchor, h3:active > .heading-anchor, h4:active > .heading-anchor, h5:active > .heading-anchor, h6:active > .heading-anchor {
     display: inline-block; }
 
 button, .button {
@@ -624,6 +640,10 @@ button, .button {
   outline-style: none;
   white-space: nowrap;
   cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  margin: 0; }
 
 input[type="date"],
 input[type="datetime"],
@@ -656,10 +676,10 @@ main {
 .clear {
   clear: both;
   zoom: 1; }
-  .clear:before, .clear:after {
+  .clear::before, .clear::after {
     content: "";
     display: table; }
-  .clear:after {
+  .clear::after {
     clear: both; }
 
 header {
@@ -743,11 +763,9 @@ footer {
   position: relative; }
   .logo:hover, .logo:focus {
     -webkit-transform: translateY(-0.25rem);
-        -ms-transform: translateY(-0.25rem);
             transform: translateY(-0.25rem); }
   .logo:active {
     -webkit-transform: translateY(0.25rem);
-        -ms-transform: translateY(0.25rem);
             transform: translateY(0.25rem); }
   .logo img {
     margin: 0; }
@@ -786,15 +804,14 @@ footer {
 
 article {
   position: relative; }
-  article:before {
+  article::before {
     content: "";
     background-color: #8cddff;
     width: 100%;
     max-width: 530px;
     height: 0.125rem;
     box-shadow: 0 0 0.5rem #f473ff; }
-  .loader article > h1, .loader article > h2, .loader article > h3, .loader article > h4, .loader article > h5, .loader article > h6, .loader article > p, .loader article > ol, .loader article >
-  ul, .loader article > dl, .loader article > figure, .loader article > blockquote, .loader article > hr, .loader article > pre {
+  .loader article > pre {
     -webkit-animation: article-loader 1.5s ease;
             animation: article-loader 1.5s ease; }
 
@@ -834,7 +851,7 @@ article {
   background-color: rgba(13, 13, 13, 0.7);
   position: relative;
   line-height: 1.5; }
-  .shell:before {
+  .shell::before {
     content: "";
     background-image: -webkit-repeating-linear-gradient(top, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
     background-image: repeating-linear-gradient(to bottom, transparent 0, rgba(248, 248, 248, 0.05) 2em, transparent 4em);
@@ -915,7 +932,7 @@ article {
     visibility: visible;
     -webkit-animation: shell-input-delay 2.2s ease;
             animation: shell-input-delay 2.2s ease; }
-    .lede--shell .lede--shell-input:before {
+    .lede--shell .lede--shell-input::before {
       content: "> \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A >";
       position: absolute;
       top: 0;
@@ -943,7 +960,7 @@ article {
  * Create a loading effect at the bottom of the .lede-shell if it's a page class
  */
 /*body*/
-.loader .lede--shell code:after {
+.loader .lede--shell code::after {
   content: "████████████████████";
   width: 12em;
   display: block;
@@ -1059,7 +1076,6 @@ article {
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%); }
 
 .modal-toggle-label {
@@ -1089,10 +1105,8 @@ article {
     width: 100%;
     height: 100%; }
 
-.hide,
-.hidden,
-.svg--master,
-a span:not([class]):not([itemprop]) {
+.hidden, .svg--master, a span:not([class]):not([itemprop]),
+.hide {
   width: 1px !important;
   height: 1px !important;
   padding: 0 !important;
@@ -1119,6 +1133,19 @@ p:empty {
   overflow-wrap: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
-     -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto; }
+
+.border-radius,
+.round,
+.rounded,
+aside:not([class*="main-aside"]) {
+  background-clip: padding-box;
+  border-radius: 0.25rem; }
+
+.border-radius-thin,
+.round-thin,
+.rounded-thin,
+a:not([class])::before {
+  background-clip: padding-box;
+  border-radius: 0.125rem; }

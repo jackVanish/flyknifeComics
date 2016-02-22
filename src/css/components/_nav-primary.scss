@@ -11,8 +11,8 @@
 
     @include media("<=medium") {
         float: none;
-        padding-top:    $spacing-medium;
-        padding-bottom: $spacing-medium;
+        padding-top:    $measure-medium;
+        padding-bottom: $measure-medium;
     }
 
     @include media("<=small") {
@@ -34,11 +34,11 @@
 
         a {
             display: block;
-            padding: $spacing-small $spacing-medium;
+            padding: $measure-small $measure-medium;
             border-radius: 0;
 
             @include media("<=small") {
-                padding: $spacing-small 0;
+                padding: $measure-small 0;
                 text-align: center;
             }
         }

@@ -6,8 +6,8 @@
 footer {
     color: $color-brand-alt;
     border-top: $border-thick solid rgba($color-white, .1);
-    padding-top:    $spacing-large;
-    padding-bottom: $spacing-large;
+    padding-top:    $measure-large;
+    padding-bottom: $measure-large;
 
     section {
         max-width: $wrapper-width-medium !important;

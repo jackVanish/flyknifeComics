@@ -23,7 +23,7 @@
 ///
 /// @throw Error if no parameters are passed.
 ///
-@function gradient( $from, $to, $direction: "to bottom" ) {
+@function gradient($from, $to, $direction: "to bottom") {
 
     @if( length($from) == 0 or length($to) == 0 ) {
         @error "gradient() expects two or three parameters.";
@@ -47,13 +47,13 @@
 ///
 /// @example scss
 ///   opacity: opacity("10-percent");
-///   // opacity: .10;
+///   // opacity: 0.10;
 ///
 /// @return {Number} Opacity value
 ///
 /// @throw Error if no parameters are passed.
 ///
-@function opacity( $value ) {
+@function opacity($value) {
 
     @if( length($value) == 0 ) {
         @error "opacity() expects one parameter."
@@ -86,7 +86,7 @@
 /// @throw Error if no parameters are passed.
 /// @throw Error if parameter passed does not match a key in $z-indexes.
 ///
-@function z-index( $value ) {
+@function z-index($value) {
 
     @if( length($value) == 0 ) {
         @error "z-index() expects at least one parameter."
@@ -102,7 +102,7 @@
 
 
 ///
-/// Contrasting Text Color (Unused)
+/// Contrasting Text Color
 ///
 /// @param {Color} $background-color - Background Color to contrast
 /// @param {Color} $text-color-light [$color-white] - Color to use for dark backgrounds
@@ -112,41 +112,29 @@
 ///   background-color: #111111;
 ///   color: contrasting-color(#111111);
 ///   // background-color: #111111;
-///   // color: white;
+///   // color: #f8f8f8;
 ///
-/// @return {Color} Contrasting Color
+/// @return {Color} Contrasting Text Color
 ///
 /// @throw Error if no parameters are passed.
 ///
-@function contrasting-color( $background-color, $text-color-light: $color-white, $text-color-dark: $color-black ) {
-
-    $magic-number-red:     241;
-    $magic-number-green:   691;
-    $magic-number-blue:    68;
-    $magic-number-divisor: $magic-number-red + $magic-number-green + $magic-number-blue;
+@function contrasting-color($background-color, $text-color-dark: $color-text, $text-color-light: $color-white) {
 
     @if( length($background-color) == 0 ) {
         @error "contrasting-color() expects at least one parameter.";
     }
 
-    $component-red:   red($background-color);
-    $component-green: green($background-color);
-    $component-blue:  blue($background-color);
-
-    $number: sqrt((($component-red * $component-red * $magic-number-red) + ($component-green * $component-green * $magic-number-green) + ($component-blue * $component-blue * $magic-number-blue)) / $magic-number-divisor);
-    $number: 100% * $number / 255;
-
-    @if( $number < 65% ) {
-        @return $text-color-light;
-    } @else {
+    @if (lightness($background-color) > 65) {
         @return $text-color-dark;
+    } @else {
+        @return $text-color-light;
     }
 
 }
 
 
 ///
-/// Strip Units from a Number (Unused)
+/// Strip Units from a Number
 ///
 /// @param {Number} $value - Number with units
 ///
@@ -156,9 +144,9 @@
 ///
 /// @return {Number} Number without units
 ///
-/// @throw Error if no parameters are passed.
+/// @throw Error if no parameter is passed.
 ///
-@function strip-units( $value ) {
+@function strip-units($value) {
 
     @if( length($value) == 0 ) {
         @error "strip-units() expects at least one parameter."

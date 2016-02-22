@@ -10,7 +10,6 @@
 
 /// UTILS
 @import "utils/variables.global",
-        "utils/variables.code",
         "utils/functions",
         "utils/mixins";
 
@@ -43,8 +42,7 @@
         "components/media";
 
 /// PAGES
-@import "pages/styleguide",
-        "pages/notfound";
+
 
 /// HELPERS/TRUMPS
 @import "utils/helpers";

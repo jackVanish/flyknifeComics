@@ -4,11 +4,11 @@
 ////
 
 .shell {
-    background-color: rgba($color-black-alt, opacity(ultra));
+    background-color: rgba($color-black-alt, opacity("70-percent"));
     position: relative;
     line-height: 1.5;
 
-    &:before {
+    &::before {
         content: "";
         background-image: repeating-linear-gradient(to bottom,
                                                     transparent 0,
@@ -33,7 +33,7 @@
     }
 
     code {
-        padding: $spacing-medium;
+        padding: $measure-medium;
     }
 }
 
@@ -91,14 +91,14 @@
     .lede--shell-input {
         max-width: 100%;
         padding-left: 1.2em;
-        margin: 0 $spacing-medium $spacing-medium;
+        margin: 0 $measure-medium $measure-medium;
         position: relative;
         overflow: hidden;
         outline: none;
         visibility: visible;
         animation: shell-input-delay 2.2s ease;
 
-        &:before {
+        &::before {
             content: "> \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A > \A >";
             position: absolute;
             top:  0;
@@ -124,13 +124,13 @@
  */
 /*body*/.loader .lede--shell {
     code {
-        &:after {
+        &::after {
             content: "████████████████████";
             width: 12em;
             display: block;
             overflow: hidden;
             pointer-events: none;
-            font-family: $font-family-code;
+            font-family: $font-family-monospace;
             animation: shell-loader 1s steps(19, end);
         }
     }

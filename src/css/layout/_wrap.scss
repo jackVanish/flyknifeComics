@@ -3,8 +3,9 @@
 /// @group layout
 ////
 
+
 main {
-    padding-bottom: $spacing-large;
+    padding-bottom: $measure-large;
 }
 
 .wrap {
@@ -23,13 +24,14 @@ main {
 .clear {
     clear: both;
     zoom: 1;
-    &:before,
-    &:after {
+
+    &::before,
+    &::after {
         content: "";
         display: table;
     }
 
-    &:after {
+    &::after {
         clear: both;
     }
 }

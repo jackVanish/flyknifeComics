@@ -20,6 +20,14 @@
         {% capture meta_image %}{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
     {% endif %}
 
+    {% capture body_class %}
+        {% for class in page.page_class %}
+            {{ class }}
+        {% endfor %}
+        {% if page.shell %}loader{% endif %}
+    {% endcapture %}
+    {% assign body_class_array = body_class | split: ' ' %}
+
     {% assign modal_toggle_count = 0 %}
 
     <meta charset="utf-8">
@@ -27,7 +35,10 @@
 
     <title>{{ meta_title }}</title>
 
-    {% include head/head-css.html %}
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Englebert">
+    <link rel="stylesheet" href="/css/main.min.css">
 
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
@@ -70,7 +81,5 @@
         <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
         <meta property="og:image" content="{{ meta_image }}">
     {% endif %}
-
-    {% include head/head-js.html %}
 
 </head>

@@ -15,6 +15,6 @@ pre {
     @extend %content-element;
     // override `normalize.css`
     margin-top: 0;
-    margin-bottom: $spacing-medium;
+    margin-bottom: $measure-medium;
     white-space: pre-wrap;
 }
