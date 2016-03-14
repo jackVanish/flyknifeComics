@@ -18,3 +18,5 @@ the Apocalypse Clock is ticking.
 **LIFE COMIX:** Bad dreams and hard days under the rock-solid dome of Atlas City. Can Bruce and Chris keep the rumble rolling, or is the last dome on Earth about to crumble?
 
 **[THE LIFE COMIX 2014 CHILLED-OUT SUMMERTIME JAM](/images/comics/2014Jam.pdf):** The original Snakepunk comic. Originally published for **Hal-Con 2014**, the *Jam* represents the triumphant return of the 90s' hottest fandom. Get Jazz.
+
+**STONR GARBAGE:** A zany, drug-fuelled comedy about loneliness, alienation, and the desire to exert agency in one's own life when one is too young to have any agency worth exerting. **Coming March 2016!**
