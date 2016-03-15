@@ -24,11 +24,11 @@
     `````````````````````````````````
         ```-->
 
-<html lang="en" ⚡>
+<html lang="en">
 
 {% include components/head.html %}
 
-<body{% if body_class != '' %} class="{{ body_class_array | join:'  ' }}"{% endif %} itemscope itemtype="http://data-vocabulary.org/WebPage">
+<body{% if body_class_array != '' %} class="{{ body_class_array }}"{% endif %} itemscope itemtype="http://data-vocabulary.org/WebPage">
 
     <header class="wrap  clear" role="banner">
 

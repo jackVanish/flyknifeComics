@@ -1,34 +1,26 @@
+{% if page.page_class contains 'page-home' %}
+    {% capture meta_title %}{{ site.title }} - {{ site.tagline }}{% endcapture %}
+{% else %}
+    {% capture meta_title %}{{ page.title }} - {{ site.title }}{% endcapture %}
+{% endif %}
+
+{% if page.lede %}
+    {% capture meta_lede %}{{ page.lede | strip_html }}{% endcapture %}
+{% else %}
+    {% capture meta_lede %}{{ site.lede | strip_html }}{% endcapture %}
+{% endif %}
+
+{% capture body_class %}
+    {% for class in page.page_class %}
+        {{ class }}
+    {% endfor %}
+    {% if page.shell %}loader{% endif %}
+{% endcapture %}
+{% assign body_class_array = body_class | split: ' ' | join: '  ' %}
+
+{% assign modal_toggle_count = 0 %}
+
 <head>
-
-    {% if page.page_class contains 'page-home' %}
-        {% capture meta_title %}{{ site.title }} - {{ site.tagline }}{% endcapture %}
-    {% else %}
-        {% capture meta_title %}{{ page.title }} - {{ site.title }}{% endcapture %}
-    {% endif %}
-
-    {% if page.lede %}
-        {% capture meta_lede %}{{ page.lede | strip_html }}{% endcapture %}
-    {% else %}
-        {% capture meta_lede %}{{ site.lede | strip_html }}{% endcapture %}
-    {% endif %}
-
-    {% if page.banner_mobile %}
-        {% capture meta_image %}{{ page.banner_mobile | prepend: '/images/banners/' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
-    {% else if page.banner %}
-        {% capture meta_image %}{{ page.banner | prepend: '/images/banners/' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
-    {% else %}
-        {% capture meta_image %}{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
-    {% endif %}
-
-    {% capture body_class %}
-        {% for class in page.page_class %}
-            {{ class }}
-        {% endfor %}
-        {% if page.shell %}loader{% endif %}
-    {% endcapture %}
-    {% assign body_class_array = body_class | split: ' ' %}
-
-    {% assign modal_toggle_count = 0 %}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">

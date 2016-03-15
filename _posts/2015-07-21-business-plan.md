@@ -3,7 +3,7 @@ layout: article
 
 date: 2015-07-21 00:00:01
 
-title: View business-plan.doc
+title: view business-plan.doc
 
 shell: |
   > cd /secret/businessplans/pragmatic/
