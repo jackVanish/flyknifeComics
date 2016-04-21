@@ -19,4 +19,4 @@ the Apocalypse Clock is ticking.
 
 **[THE LIFE COMIX 2014 CHILLED-OUT SUMMERTIME JAM](/images/comics/2014Jam.pdf):** The original Snakepunk comic. Originally published for **Hal-Con 2014**, the *Jam* represents the triumphant return of the 90s' hottest fandom. Get Jazz.
 
-**STONR GARBAGE:** Stop by the picturesque town of Gordon Downs for a spell. Kick up your feet and laugh along with classic characters like Ricky Thousand-Joints, Ricky Thousand-Joints' Doppelganger, and Stellarton Crendle in this zany, drug fuelled comedy about loneliness, alienation, and the crushing fear that all agency is illusory. **Coming 4/20/2016!**
+**STONR GARBAGE:** Stop by the picturesque town of Gordon Downs for a spell. Kick up your feet and laugh along with classic characters like Ricky Thousand-Joints, Ricky Thousand-Joints' Doppelganger, and Stellarton Crendle in this zany, drug fuelled comedy about loneliness, alienation, and the crushing fear that all agency is illusory. **Hard Copy Released, PDF Coming Soon!**
