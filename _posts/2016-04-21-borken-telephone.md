@@ -22,7 +22,7 @@ author_farewell: Rock,
 author: Bruce
 ---
 
-Full Disclosure & Spoiler Warning: So, Peter Chiykowski, the guy behind this album, is a good friend of mine, but that doesn't influence my opinion of the album. Also, the review does contain 'spoilers', which I ordinarily wouldn't think was a big deal for an album, but since so many of the jokes are so rapid-fire and clever, I feel like maybe you should go listen to the album first, so that they land the way they should. Short review, it's great, it's funny, you should listen to it, you can order it or stream the whole thing here: http://borkentelephone.com/. Spoiler warning ends here. 
+Full Disclosure & Spoiler Warning: So, Peter Chiykowski, the guy behind this album, is a good friend of mine, but that doesn't influence my opinion of the album. Also, the review does contain 'spoilers', which I ordinarily wouldn't think was a big deal for an album, but since so many of the jokes are so rapid-fire and clever, I feel like maybe you should go listen to the album first, so that they land the way they should. Short review, it's great, it's funny, you should listen to it, you can order it or stream the whole thing [here](http://borkentelephone.com/). Spoiler warning ends here. 
 
 
 
@@ -39,4 +39,4 @@ It's such a perfect theme for a geek-rock album; it captures something quintesse
 
  There are a couple of songs that don't quite stick their landings. "The Philosophical Zombie Slayer" is a perfect display of Chiykowski's whip-quick pun skills, but the swing-styled tune comes across a little flat; and 'This Will Never End' is a bittersweet ode to nostalgia past its due date but it lacks the narrative cohesion that really drives the other tracks. The album's quality never drops below "Pleasant but not quite as good as the rest," though, and when that's the worst you can say, you're still looking at a very solid piece of work. The collaborators are all in fine form, too, and it's a joy to hear them lend their unique stylings to Chiykowski's already-great song ideas. There's just not that much more to say except that it works. It works better than it should, for how bonkers an idea it is. Ultimately, Borken Telephone is a breezy, charismatic collection of head-bopping songs that are as clever as they are catchy, and it's more than worth a listen. If this is the caliber of work we can expect from Chiykowski, musically, then I'm keeping my ear to the ground. Are you listening? Because you should be. 
 
-Borken Telephone is available for order and streaming at http://borkentelephone.com/. If you like it, check out Peter's other work at http://rockpapercynic.com/. 
+Borken Telephone is available for order and streaming at [borkentelephone.com](http://borkentelephone.com/). If you like it, check out Peter's webcomic, [Rock, Paper, Cynic](http://rockpapercynic.com/). 
