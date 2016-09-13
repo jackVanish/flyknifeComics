@@ -3,7 +3,7 @@ layout: article
 
 date: 2016-01-27 09:00:01
 
-title: Update projects.txt
+title: update projects.txt
 
 shell: |
   > cd bruce/projects

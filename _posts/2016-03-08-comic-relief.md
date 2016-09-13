@@ -3,7 +3,7 @@ layout: article
 
 date: 2016-03-08 19:03:36
 
-title: Re: big box o' comics
+title: "Re: big box o' comics"
 
 shell: |
   > mailclient
