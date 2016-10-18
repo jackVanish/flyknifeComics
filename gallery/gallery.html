@@ -16,14 +16,19 @@
         color: white;
         font-family: 'VT323', monospace;
       }
+      .navigation {
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body ng-app="bookGallery">
     <div ng-controller="galleryCtrl">
       <p>{{ test }}</p>
       <current-image></current-image>
-      <a ng-click="next()" href="">NEXT</a>
-      <a ng-click="prev()" href="">PREV</a>
+      <div class="navigation">
+        <a ng-click="next()" href="">NEXT</a>
+        <a ng-click="prev()" href="">PREV</a>
+      </div>
     </div>
   </body>
 </html>
