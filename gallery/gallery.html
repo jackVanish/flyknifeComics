@@ -8,7 +8,9 @@
   <body ng-app="bookGallery">
     <div ng-controller="galleryCtrl">
       <p>{{ test }}</p>
-      <current-image></current-image>
+      <img ng-src="/images/comics/kobraStallion2/{{ count }}.png" />
+      <a ng-click="next()" href="">NEXT</a>
+      <a ng-click="prev()" href="">PREV</a>
     </div>
   </body>
 </html>
