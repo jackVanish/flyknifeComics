@@ -17,3 +17,8 @@ body a {
   margin: 0 auto;
   text-align: center;
 }
+
+.navigation input {
+  background-color: cyan;
+  font-family: 'VT323', monospace;
+}
