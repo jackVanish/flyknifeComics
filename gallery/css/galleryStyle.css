@@ -1,0 +1,16 @@
+.current-image img {
+  width: 100%;
+}
+
+body {
+  background-color:black;
+}
+
+body a {
+  color: white;
+  font-family: 'VT323', monospace;
+}
+
+.navigation {
+  margin: 0 auto;
+}
