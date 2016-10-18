@@ -25,12 +25,13 @@
     </style>
   </head>
   <body ng-app="bookGallery">
+    <div id="top"></div>
     <div ng-controller="galleryCtrl">
       <p>{{ test }}</p>
       <current-image></current-image>
       <div class="navigation">
-        <a ng-click="next()" href="">NEXT</a>
-        <a ng-click="prev()" href="">PREV</a>
+        <a ng-click="next()" href="#top">NEXT</a>
+        <a ng-click="prev()" href="#top">PREV</a>
       </div>
     </div>
   </body>
