@@ -21,4 +21,5 @@ body a {
 .navigation input {
   background-color: cyan;
   font-size: 25px;
+  font-family: 'VT323', monospace;
 }
