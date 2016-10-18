@@ -4,8 +4,8 @@ galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
     $scope.test = "Welcome to the Gallery";
   }]);
 
-galleryApp.directive('currentPage', function() {
-    console.log("Current Page is present.");
+galleryApp.directive('currentImage', function() {
+    console.log("Current Image is present.");
     return {
         restrict: 'E';
     }
