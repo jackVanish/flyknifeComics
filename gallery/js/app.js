@@ -14,6 +14,10 @@ galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
             $scope.count -= 1;
         }
     }
+    
+    $scope.goToPage = function(page) {
+        $scope.count = page;
+    }
   }]);
 
 galleryApp.directive('currentImage', function() {
