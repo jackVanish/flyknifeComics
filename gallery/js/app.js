@@ -10,7 +10,7 @@ galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
     }
     
     $scope.prev = function() {
-        if($scope.count-1 > 0) {
+        if($scope.count-1 >= 0) {
             $scope.count -= 1;
         }
     }
