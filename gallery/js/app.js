@@ -1,7 +1,7 @@
 var galleryApp = angular.module("bookGallery", []);
 
 galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
-    $scope.test = "Welcome to the Gallery";
+    $scope.test = "Updating the Gallery";
     
     $scope.count = 0;
     
