@@ -18,6 +18,6 @@ galleryApp.directive('currentImage', function() {
     console.log("Current Image is present.");
     return {
         restrict: 'E',
-        template: "<div class="current-image"><img ng-src="images/comics/kobraStallion2/{{ count }}.png" /></div>"
+        templateUrl: "currentImage.html"
     }
 });
