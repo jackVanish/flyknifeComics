@@ -27,3 +27,11 @@ galleryApp.directive('currentImage', function() {
         templateUrl: "js/currentImage.html"
     }
 });
+
+galleryApp.directive('navigationBlock',function() {
+    console.log("Navigation element is on page.");
+    return {
+        restrict: 'E',
+        templateUrl: "js/navigationBlock.html"
+    }
+});
