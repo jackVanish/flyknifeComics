@@ -17,6 +17,7 @@ galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
 galleryApp.directive('currentImage', function() {
     console.log("Current Image is present.");
     return {
-        restrict: 'E'
+        restrict: 'E',
+        template: "<div class="current-image"><img ng-src="images/comics/kobraStallion2/{{ count }}.png" /></div>"
     }
 });
