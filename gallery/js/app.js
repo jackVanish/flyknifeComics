@@ -18,6 +18,6 @@ galleryApp.directive('currentImage', function() {
     console.log("Current Image is present.");
     return {
         restrict: 'E',
-        templateUrl: "/js/currentImage.html"
+        templateUrl: "js/currentImage.html"
     }
 });
