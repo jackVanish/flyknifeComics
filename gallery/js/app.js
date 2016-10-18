@@ -1,7 +1,7 @@
 var galleryApp = angular.module("bookGallery", []);
 
 galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
-    $scope.test = "Updating the Gallery";
+    $scope.test = "Gallery should contain logic and updated templatepath";
     
     $scope.count = 0;
     
