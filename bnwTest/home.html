@@ -1,10 +1,12 @@
 <head>
   <script>
-    var videoElement = document.getElementById('videoLink');
-    videoElement.onClick = launchVideo;
-    
+    document.ready(function() {
+      var videoElement = document.getElementById('videoLink');
+      videoElement.onClick = launchVideo;
+    });
+      
     function launchVideo() {
-      window.open("videoPage.html","","width=428,height=741")
+      window.open("videoPage.html","","width=428,height=300")
     }
   </script>
 </head>
