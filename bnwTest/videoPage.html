@@ -17,6 +17,7 @@
   </style>
 	
   <script>
+  document.ready(function() {
     // Find all YouTube videos
     var $allVideos = $("iframe[src^='//www.vimeo.com']"),
 
@@ -47,7 +48,7 @@
   });
 
   // Kick off one resize to fix all videos on page load
-  }).resize();
+  }).resize(); });
 </script>
 </head>
 <body>
