@@ -34,6 +34,12 @@
     #cube .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
     #cube .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
     #cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+    #cube.show-front  { transform: translateZ( -100px ) rotateY(    0deg ); }
+    #cube.show-back   { transform: translateZ( -100px ) rotateX( -180deg ); }
+    #cube.show-right  { transform: translateZ( -100px ) rotateY(  -90deg ); }
+    #cube.show-left   { transform: translateZ( -100px ) rotateY(   90deg ); }
+    #cube.show-top    { transform: translateZ( -100px ) rotateX(  -90deg ); }
+    #cube.show-bottom { transform: translateZ( -100px ) rotateX(   90deg ); }
   </style>
 </head>
 <body>
