@@ -1,4 +1,10 @@
 <head>
+  <script>
+    function rotate(face) {
+      var elem = document.getElementById(face);
+      elem.classname = "show-" + face;
+    }
+  </script>
   <style>
     .container {
       width: 200px;
@@ -23,27 +29,27 @@
       border: 2px solid black;
       opacity: .5;
     }
-    #cube .front  { 
+    #cube #front  { 
       transform: rotateY(0deg) translateZ(100px);
       background: red; 
     }
-    #cube .back   { 
+    #cube #back   { 
       transform: rotateX(180deg) translateZ(100px);
       background: orange;
     }
-    #cube .right  { 
+    #cube #right  { 
       transform: rotateY(90deg) translateZ(100px);
       background: yellow;
     }
-    #cube .left   {
+    #cube #left   {
       transform: rotateY(-90deg) translateZ(100px);
       background: green;
     }
-    #cube .top    {
+    #cube #top    {
       transform: rotateX(90deg) translateZ(100px);
       background: blue;
     }
-    #cube .bottom {
+    #cube #bottom {
       transform: rotateX(-90deg) translateZ(100px);
       background: purple;
     }
@@ -59,27 +65,19 @@
 <body>
   <section class="container">
     <div id="cube">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-      <figure class="right"></figure>
-      <figure class="left"></figure>
-      <figure class="top"></figure>
-      <figure class="bottom"></figure>
-      
-      
-      <button class="show-front">Show 1</button>
-  <button class="show-front">Show 2</button>
-  <button class="show-front">Show 3</button>
-  <button class="show-front">Show 4</button>
-  <button class="show-front">Show 5</button>
-  <button class="show-front">Show 6</button>
+      <figure id="front"></figure>
+      <figure id="back"></figure>
+      <figure id="right"></figure>
+      <figure id="left"></figure>
+      <figure id="top"></figure>
+      <figure id="bottom"></figure>
     </div>
   </section>
   <br />
-  <button class="show-front">Show 1</button>
-  <button class="show-front">Show 2</button>
-  <button class="show-front">Show 3</button>
-  <button class="show-front">Show 4</button>
-  <button class="show-front">Show 5</button>
-  <button class="show-front">Show 6</button>
+  <button class="show-front" onclick="rotate(front)">Show 1</button>
+  <button class="show-back" onclick="rotate(back)">Show 2</button>
+  <button class="show-right" onclick="rotate(right)">Show 3</button>
+  <button class="show-left" onclick="rotate(left)">Show 4</button>
+  <button class="show-top" onclick="rotate(top)">Show 5</button>
+  <button class="show-bottom" onclick="rotate(bottom)">Show 6</button>
 </body>
