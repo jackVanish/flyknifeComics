@@ -14,8 +14,8 @@
       window.resizeTo(current[0], current[1]);
     }
     function launchVideo() {
-      window.open("videoPage.html","","width=800,height=470")
-      window.addEventListener('resize', resizeToMinimum, false)
+      var vidWindow = window.open("videoPage.html","","width=800,height=470")
+      vidWindow.addEventListener('resize', resizeToMinimum, false)
     }
   </script>
 </head>
