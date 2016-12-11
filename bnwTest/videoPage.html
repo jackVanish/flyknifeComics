@@ -10,11 +10,12 @@
       {
         console.log("Too small!");
         window.resizeTo(minimum[0], minimum[1]);
+	return;
       }
   
       console.log("In Resize Function");
       
-      window.resizeTo(minimum[0], minimum[1]);
+      window.resizeTo(current[0], (current[0]*0.5625));
     }
 
     window.addEventListener('resize', resizeToMinimum, false)
