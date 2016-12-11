@@ -22,12 +22,12 @@
       position: absolute;
       border: 2px solid black;
     }
-    #cube .front  { transform: rotateY(   0deg ); }
-    #cube .back   { transform: rotateX( 180deg ); }
-    #cube .right  { transform: rotateY(  90deg ); }
-    #cube .left   { transform: rotateY( -90deg ); }
-    #cube .top    { transform: rotateX(  90deg ); }
-    #cube .bottom { transform: rotateX( -90deg ); }
+    #cube .front  { transform: rotateY(   0deg ); background: red; }
+    #cube .back   { transform: rotateX( 180deg ); background: orange;}
+    #cube .right  { transform: rotateY(  90deg ); background: yellow;}
+    #cube .left   { transform: rotateY( -90deg ); background: green;}
+    #cube .top    { transform: rotateX(  90deg ); background: blue;}
+    #cube .bottom { transform: rotateX( -90deg ); background: purple;}
     #cube .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
     #cube .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
     #cube .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
@@ -45,15 +45,15 @@
 <body>
   <section class="container">
     <div id="cube">
-      <figure class="front"><iframe src="//player.vimeo.com/video/77149266" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
-      <figure class="back"><iframe src="//player.vimeo.com/video/77149266" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
-      <figure class="right"><iframe src="//player.vimeo.com/video/77149266" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
-      <figure class="left"><iframe src="//player.vimeo.com/video/77149266" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
-      <figure class="top"><iframe src="//player.vimeo.com/video/77149266" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
-      <figure class="bottom"><iframe src="//player.vimeo.com/video/77149266" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
+      <figure class="front"></figure>
+      <figure class="back"></figure>
+      <figure class="right"></figure>
+      <figure class="left"></figure>
+      <figure class="top"></figure>
+      <figure class="bottom"></figure>
     </div>
   </section>
-  
+  <br />
   <button class="show-front">Show 1</button>
   <button class="show-front">Show 2</button>
   <button class="show-front">Show 3</button>
