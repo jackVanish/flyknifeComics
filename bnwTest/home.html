@@ -4,6 +4,8 @@
     function resizeToMinimum(){
       var minimum    = [800, 470];
       var current    = [window.outerWidth, window.outerHeight];
+      
+      console.log("Current:" + current);
 
       if(current[0] < minimum[0] || current[1] < minimum[1])
       {
