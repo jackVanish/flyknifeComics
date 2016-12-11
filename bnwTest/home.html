@@ -1,26 +1,9 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
-    /*function resizeToMinimum(){
-      var minimum    = [800, 470];
-      var current    = [window.outerWidth, window.outerHeight];
-      
-      console.log("Current:" + current);
-
-      if(current[0] < minimum[0] || current[1] < minimum[1])
-      {
-        console.log("Too small!");
-        window.resizeTo(minimum[0], minimum[1]);
-      }
-  
-      console.log("In Resize Function");
-      
-      window.resizeTo(minimum[0], minimum[1]);
-    }*/
     function launchVideo() {
       var vidWindow = window.open("videoPage.html","","width=800,height=470")
       console.log("Window launched");
-      //vidWindow.addEventListener('resize', resizeToMinimum, false)
     }
   </script>
 </head>
