@@ -1,7 +1,7 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
-    function resizeToMinimum(){
+    /*function resizeToMinimum(){
       var minimum    = [800, 470];
       var current    = [window.outerWidth, window.outerHeight];
       
@@ -16,11 +16,11 @@
       console.log("In Resize Function");
       
       window.resizeTo(minimum[0], minimum[1]);
-    }
+    }*/
     function launchVideo() {
       var vidWindow = window.open("videoPage.html","","width=800,height=470")
       console.log("Window launched");
-      vidWindow.addEventListener('resize', resizeToMinimum, false)
+      //vidWindow.addEventListener('resize', resizeToMinimum, false)
     }
   </script>
 </head>
