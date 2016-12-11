@@ -2,9 +2,7 @@
   <script>
     function rotate(face) {
       console.log(face);
-      var elem = document.getElementById(face);
-      console.log(elem);
-      elem.classname = "show-" + face;
+      document.getElementById(face).classname = "show-" + face;
     }
   </script>
   <style>
