@@ -10,11 +10,14 @@
       while(i-- > 0){
         restricted[i] = mimimum[i] > current[i] ? minimum[i] : current[i];
       }
-
+  
+      console.log("In Resize Function");
+      
       window.resizeTo(current[0], current[1]);
     }
     function launchVideo() {
       var vidWindow = window.open("videoPage.html","","width=800,height=470")
+      console.log("Window launched");
       vidWindow.addEventListener('resize', resizeToMinimum, false)
     }
   </script>
