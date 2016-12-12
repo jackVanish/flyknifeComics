@@ -1,15 +1,15 @@
 <head>
   <script>
   function resizeToMinimum(){
-      var minimum    = [800, 500];
+      var minimum    = 800;
       var current    = [window.outerWidth, window.outerHeight];
       
       console.log("Current:" + current);
 
-      if(current[0] < minimum[0] || current[1] < minimum[1])
+      if(current[0] < 800)
       {
         console.log("Too small!");
-        window.resizeTo(minimum[0], minimum[1]);
+        window.resizeTo(minimum[0], minimum[0]*0.5625);
       }
       else {
         console.log("In Resize Function");
