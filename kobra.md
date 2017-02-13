@@ -27,9 +27,13 @@ In 1989, Laughing Lizard Productions- at that time, floundering financially and 
 
 They became **KOBRA STALLION**. 
 
+![Kobra Stallion Logo](/images/screencap1.png)
+
 **KOBRA STALLION** was as visionary as it was audacious, as risky as it was revelatory. A madcap vision of a neon-soaked future populated with noble dragon knights, bureaucracy-addled fungus people, villains of limitless cruelty and tragic pathos, and of course, the high-flying space wizards themselves, the Zap Jockeys, who drew their power from the darkness between stars, and in a universe of uncertain morals and lethal dangers, still managed to embody the Promethean flame of hope. 
 
 Alas, it was too much, too soon for the world- and too little, too late, for Laughing Lizard. Censors felt that the show's ambiguous morals and frequent violence were too transgressive for a children's show. Parents were divided on the show's strongly pro-diversity message, which embraced a variety of alternative lifestyles still considered uncommon and shameful at the time. Reviewers found the dialogue stilted and unconvincingly delivered, and the animation hurried and low-budget. And audiences, for the most part, weren't interested in staying up for its 2:00AM time slot. Laughing Lizard's finances never recovered, and in a matter of months, they folded. The last episode of any Laughing Lizard show ever aired was **KOBRA STALLION**'s 67th episode, _The Last Flight of the Escher Zero, Part 3_. And for many years, it seemed that **KOBRA STALLION**, for all its forward-looking futurism, would be lost to generations yet to come. 
+
+![Kobra Stallion Logo](/images/screencap2.png)
 
 It wouldn't be until 2014, and a fateful meeting between Flyknife Comics' Bruce Delo and the former head of Laughing Lizard, Trent B. Mondegreene, that Kobra Stallion would come to light again. 
 
