@@ -17,4 +17,4 @@ _The Electric Knights stand silent guard over HALIFAX_1, ever watchful, awaiting
 
 {% include content/heading.html type="h3" title="KOBRA DRAGOONS" %}
 
-_Heroes from the last great war, soldiers of _
+_Heroes from the last great war, soldiers of freedom and justice, walking among us in secret._

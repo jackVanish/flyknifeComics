@@ -15,7 +15,7 @@ It ran for a single season of 67 episodes, and was cancelled following low ratin
 
 Now, Flyknife Comics has reached into the past and brought it back to life. Reinvisioned for a whole new generation of Snakepunks, it's...
 
-![Kobra Stallion Logo](/images/kobraStallionLogo.png)
+![Kobra Stallion Logo](/images/KobraStallionLogo.png)
 
 **THRILL** at the impossible story of the war that came to the Kaplan Sector and rocked humanity's understanding of the universe. **LIVE** the adventure with your favourite characters from the beloved 1989 TV series, like guerilla journalist Elegy Williams, battle-hardened Jenner Belasco, and of course, **ZAP JOCKEYS** Captain Gunsmoke and Snakes Leningrad. Amid the hail of missile fire, the thunder of mass driver rounds, and the flash and dazzle of Zap-Fu fights, Gunsmoke and Leningrad prove it again: you ain't never seen **LOVABLE SCAMPS**(TM) like these!
 
