@@ -7,6 +7,12 @@ sitemap:
 title: KOBRA STALLION
 ---
 
+Wanna read Kobra Stallion right away? Don't care about the lore? _Just bought_ *KOBRA STALLION VOLUME 2* and can't wait to experience the vivid rapture of Snakepunk for the first time? Hit the links below and *LIVE THE ADVENTURE LIKE YOU'VE NEVER LIVED IT BEFORE!*
+
+[Read _The Life Comix 2014 Chilled-Out Summertime Jam_](https://tapastic.com/series/life-comix-jam)  
+[Read _Kobra Stallion Volume 1: Reptile Justice in the Stars_](https://tapastic.com/series/kobra-stallion-1)  
+[Read _Kobra Stallion Volume 2: Radical Astral Tilt_ (Upload in progress)](https://tapas.io/series/Kobra-Stallion-Vol-2-Radical-Astral-Tilt)
+
 {% include content/heading.html type="h2" title="The Original Snakepunk Adventure Returns" %}
 
 In 1989, the most revolutionary television show ever produced was broadcast.
@@ -50,6 +56,7 @@ _Electricity here, kids and skids! Ever since Cobalt got the servers back up and
 Both _The Life Comix 2014 Chilled-Out Summertime Jam_ and _Kobra Stallion Volume 1: Reptile Justice in the Stars_ are available for free, in their entirety, on Tapastic!
 
 [Read _The Life Comix 2014 Chilled-Out Summertime Jam_](https://tapastic.com/series/life-comix-jam)  
-[Read _Kobra Stallion Volume 1: Reptile Justice in the Stars_](https://tapastic.com/series/kobra-stallion-1)
+[Read _Kobra Stallion Volume 1: Reptile Justice in the Stars_](https://tapastic.com/series/kobra-stallion-1)  
+[Read _Kobra Stallion Volume 2: Radical Astral Tilt_ (Upload in progress)](https://tapas.io/series/Kobra-Stallion-Vol-2-Radical-Astral-Tilt)
 
-_Kobra Stallion Volume 2: Radical Astral Tilt_ will be released in full on Tapastic in November 2017. Want to read it earlier? A $2 pledge to [_The Flyknife Comics Patreon_](https://www.patreon.com/user?u=2563721) will net you an immediate digital copy. Plus, you will get **unlimited lifetime access** to subsequent books in the series when they are released.
+We're currently in the process of uploading _Kobra Stallion 2_ to the *INTERNET*. Want to read it earlier? A $2 pledge to [_The Flyknife Comics Patreon_](https://www.patreon.com/user?u=2563721) will net you an immediate digital copy. Plus, you will get **unlimited lifetime access** to subsequent books in the series when they are released.
