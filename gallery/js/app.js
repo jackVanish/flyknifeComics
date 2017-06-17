@@ -4,7 +4,8 @@ galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
     $scope.test = "Gallery should contain logic and updated templatepath";
     
     $scope.count = 0;
-    
+    $scope.folder = window.location.pathname.replace('/gallery/','');
+
     $scope.next = function() {
         $scope.count += 1;
     }
@@ -16,15 +17,30 @@ galleryApp.controller('galleryCtrl', ['$scope', function($scope) {
     }
     
     $scope.goToPage = function(page) {
-        $scope.count = page;
+        if (page != null) {
+            $scope.count = page;
+        }
     }
   }]);
+
+galleryApp.directive('checkImage', function($http) {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            attrs.$observe('ngSrc', function(ngSrc) {
+                $http.get(ngSrc).error(function(){
+                    element.attr('src', '/images/galleryEnd.png'); // set default image
+                });
+            });
+        }
+    };
+});
 
 galleryApp.directive('currentImage', function() {
     console.log("Current Image is present.");
     return {
         restrict: 'E',
-        templateUrl: "js/currentImage.html"
+        templateUrl: "/gallery/js/currentImage.html"
     }
 });
 
@@ -32,6 +48,6 @@ galleryApp.directive('navigationBlock',function() {
     console.log("Navigation element is on page.");
     return {
         restrict: 'E',
-        templateUrl: "js/navigationBlock.html"
+        templateUrl: "/gallery/js/navigationBlock.html"
     }
 });

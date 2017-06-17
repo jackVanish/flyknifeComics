@@ -2,24 +2,29 @@
   width: 100%;
 }
 
-body {
-  background-color:black;
+.current-image {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.galleryMain {
   font-family: 'VT323', monospace;
 }
 
-body a {
+.galleryMain a {
   color: white;
   font-size: 50px;
   margin: 25px;
 }
 
-.navigation {
+.galleryNavigation {
   margin: 0 auto;
   text-align: center;
 }
 
-.navigation input {
+.galleryNavigation input {
   background-color: cyan;
   font-size: 25px;
+  color: black;
   font-family: 'VT323', monospace;
 }
