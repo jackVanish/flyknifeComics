@@ -28,3 +28,9 @@
   color: black;
   font-family: 'VT323', monospace;
 }
+
+/** Minor additions to support the Librarium page. */
+img.cover {
+  width:200px;
+  height:auto;
+}
