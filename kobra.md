@@ -9,7 +9,7 @@ title: KOBRA STALLION
 
 Wanna read Kobra Stallion right away? Don't care about the lore? _Just bought_ *KOBRA STALLION VOLUME 2* and can't wait to experience the vivid rapture of Snakepunk for the first time? Hit the links below and *LIVE THE ADVENTURE LIKE YOU'VE NEVER LIVED IT BEFORE!*
 
-[Read _The Life Comix 2014 Chilled-Out Summertime Jam_](https://tapastic.com/series/life-comix-jam)  
+[Read _The Life Comix 2014 Chilled-Out Summertime Jam_](/gallery/2014jam)  
 [Read _Kobra Stallion Volume 1: Reptile Justice in the Stars_](https://tapastic.com/series/kobra-stallion-1)  
 [Read _Kobra Stallion Volume 2: Radical Astral Tilt_ (Upload in progress)](https://tapas.io/series/Kobra-Stallion-Vol-2-Radical-Astral-Tilt)
 
