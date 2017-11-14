@@ -1,8 +1,6 @@
 ---
 layout: default
 page_class: page-projects
-sitemap:
-  priority: 1.0
 
 title: Projects
 ---
