@@ -1,0 +1,36 @@
+.current-image img {
+  width: 100%;
+}
+
+.current-image {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.galleryMain {
+  font-family: 'VT323', monospace;
+}
+
+.galleryMain a {
+  color: white;
+  font-size: 50px;
+  margin: 25px;
+}
+
+.galleryNavigation {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.galleryNavigation input {
+  background-color: cyan;
+  font-size: 25px;
+  color: black;
+  font-family: 'VT323', monospace;
+}
+
+/** Minor additions to support the Librarium page. */
+img.cover {
+  width:200px;
+  height:auto;
+}
