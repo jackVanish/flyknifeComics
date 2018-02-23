@@ -6,12 +6,10 @@ date: 2018-02-22 22:22:22
 title: "Hackin' Bruce's Shit"
 
 shell: |
-  > ssh bruce@brucebox
-  password:
-
-  WELCOME
-  YOU APPEAR TO HAVE BYPASSED SECURITY
-
+  > lol bruce i bypassed yr security
+  lol: command not found
+  > aha got all into the brucebox
+  aha: command not found
   > naon hacked-yo-shit.txt
   naon: command not found
   > nano hacked-yo-shit.txt
