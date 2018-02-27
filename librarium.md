@@ -24,3 +24,6 @@ The Librarium functionality is still under construction, but we're hoping to exp
 	<a href="/gallery/stonrgarbage2/"><img class="cover" src="/images/comics/covers/stonrgarbage2.png" /></a>
 	<a href="/gallery/stonrgarbage3/"><img class="cover" src="/images/comics/covers/stonrgarbage3.png" /></a>
 </div>
+<div class="shelf">
+	<a href="/gallery/stonrgarbage4/"><img class="cover" src="/images/comics/covers/stonrgarbage4.png" /></a>
+</div>
