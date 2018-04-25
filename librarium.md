@@ -15,7 +15,7 @@ The Librarium functionality is still under construction, but we're hoping to exp
 	<h2>THE VALIANT STARS</h2>
 	<a href="/gallery/2014jam"><img class="cover" src="/images/comics/covers/2014Jam.png" /></a>
 	<a href="/gallery/kobrastallion1"><img class="cover" src="/images/comics/covers/kobraStallion.png" /></a>
-	<!--<a href="/\gallery/kobrastallion2"><img class="cover" src="/images/comics/covers/kobraStallion2.png" /></a>-->
+	<a href="/gallery/kobrastallion2"><img class="cover" src="/images/comics/covers/kobraStallion2.png" /></a>
 </div>
 
 <div class="shelf">
