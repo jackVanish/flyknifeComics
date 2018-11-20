@@ -11,7 +11,7 @@ Wanna read Kobra Stallion right away? Don't care about the lore? _Just bought_ *
 
 [Read _The Life Comix 2014 Chilled-Out Summertime Jam_](/gallery/2014jam)  
 [Read _Kobra Stallion Volume 1: Reptile Justice in the Stars_](/gallery/kobrastallion1)  
-[Read _Kobra Stallion Volume 2: Radical Astral Tilt_ (Upload in progress)](https://tapas.io/series/Kobra-Stallion-Vol-2-Radical-Astral-Tilt)
+[Read _Kobra Stallion Volume 2: Radical Astral Tilt_ (Upload in progress)](/gallery/kobrastallion2)
 
 {% include content/heading.html type="h2" title="The Original Snakepunk Adventure Returns" %}
 
