@@ -37,7 +37,14 @@ In here, you'll find recaps of each of the books, as published. You'll also find
 
 <button class="collapsible" data-collapse="jam">The Life Comix 2014 Chilled-Out Summertime Jam (2014)</button>
 <div class="collapsible-content" id="jam">
-  <p>A rollicking space adventure.<a>Snakes Leningrad</a> and <a>Captain Gunsmoke</a> stage a music festival!</p>
+  <p>
+  	<strong>Original publication year</strong>: 2014<br />
+    <strong>Based on</strong>: <em>'Life Comix' Season 3 Episode 2: Confusion in the Bark-etplace!</em><br />
+  	<a href="/gallery/2014jam">Read it here!</a>
+  </p>
+  <p>
+    <strong>Summary:</strong> In their debut adventure, Snakes Leningrad and Captain Gunsmoke stage a summer music festival for the benefit of the people of Earth. Things start out a little shaky for the guys when the opening act, Robot Peter Chiykowski, doesn't go over as planned. And it all goes from bad to worse when their casual acquaintance Spooky Jim arrives with an awful single and an even worse b-side. When the boys shoot down his ambitions and revoke his backstage pass, Jim gets serious and ascends to godhood with the help of an ancient relic known only as the GodStone! Now more powerful than a large dog or several whales, Jim uses his newfound power to throw Gunsmoke and Leningrad out of the festival- and off the planet!
+  </p>
 </div>
 
 {% include content/heading.html type="h2" title="Cast of Characters" %}
