@@ -52,6 +52,18 @@ In here, you'll find recaps of each of the books, as published. You'll also find
   <p>Like the man says, though, it ain't ever that easy! A pitched battle for the fate of Earth erupts in the night sky. Spooky Jim sends his Spooklets into the fray, and Snakes and Gunsmoke hatch a plan to get inside Spooky Jim's head and mess with his brain- literally! When Tom shows up, all bets are off, and the Poet's Soul is finally revealed- inside Robot Peter Chiykowski's heart! The gang only just barely manages to beat Spooky Jim with their legendary weaponry and legendarily good looks. Medals are handed out, the spoils are divvied up, and Spooky Jim gets sent to Space Jail to cool his heels a while. Earth, it seems, will live to jam another day!</p>
 </div>
 
+<button class="collapsible" data-collapse="kobrastallion1">Kobra Stallion Volume 1: Reptile Justice in the Stars (2015)</button>
+<div class="collapsible-content" id="kobrastallion1">
+  <p>
+  	<strong>Original publication year</strong>: 2015<br />
+    <strong>Based on</strong>: <em>Kobra Stallion Season 1 Episode 1: The Quantum Triviality Menace</em><br />
+  	<a href="/gallery/kobrastallion1">Read it here!</a>
+  </p>
+  <p>
+    <strong>Summary:</strong> Gunsmoke and Leningrad are back, and this time, they're on vacation! But not for long- their quiet cruise around the edge of the galaxy is interrupted when they find Vicki Vanguard and Enioch Cruel robbing an alien pyramid on the distant planet of Verde 9. The boys intervene to stop them making off with a mysterious alien relic, but their Zap-Fu isn't tenacious enough to keep the dastardly villains from making their ominous escape! Looks like vacation's cancelled for our favourite Zap Jockeys. 
+  </p>
+</div>
+
 {% include content/heading.html type="h2" title="Cast of Characters" %}
 
 <button class="collapsible" data-collapse="snakes">Snakes Leningrad</button>
