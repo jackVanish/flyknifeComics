@@ -23,3 +23,11 @@
   display: none;
   overflow: hidden;
 }
+
+.dramatic {
+  font-weight:700;
+  text-align:center;
+  font-size:larger;
+  color: #f473ff;
+  text-shadow:0 0 0.5rem #f6a8ff;
+}
