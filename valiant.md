@@ -28,7 +28,7 @@ In here, you'll find recaps of each of the books, as published. In time we will 
 
 [Read _The Life Comix 2014 Chilled-Out Summertime Jam_](/gallery/2014jam)  
 [Read _Kobra Stallion Volume 1: Reptile Justice in the Stars_](/gallery/kobrastallion1)  
-[Read _Kobra Stallion Volume 2: Radical Astral Tilt_ (Upload in progress)](/gallery/kobrastallion2)
+[Read _Kobra Stallion Volume 2: Radical Astral Tilt_](/gallery/kobrastallion2)
 
 {% include content/heading.html type="h2" title="The Original Snakepunk Adventure Returns" %}
 
