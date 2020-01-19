@@ -21,6 +21,21 @@
             </div>
         {% endif %}
 
+        {% if page.title == "THE VALIANT STARS" %}
+            <div id="popup-container" class="popup-container">
+                <div id="popup" class="popup">
+                    <div class="popup-interior">
+                        <img id="popup-image" class="popup-image" />
+                    </div>
+                    <div class="popup-interior">
+                        <h3 id="popup-title">Title</h3>
+                        <p id="popup-text">Description!</p>
+                    </div>
+                    <a id="popup-close" href="#">X</a>
+                </div>
+            </div>
+        {% endif %}
+
         {{ content }}
 
         {% if page.author %}<p>

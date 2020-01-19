@@ -31,3 +31,30 @@
   color: #f473ff;
   text-shadow:0 0 0.5rem #f6a8ff;
 }
+
+.popup-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+.popup {
+  display: flex;
+  border: red 1px solid;
+  padding: 2px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.popup-interior {
+  display: inline-block;
+  border: blue 1px solid;
+  width: 120px;
+  margin: 15px;
+}
+
+.popup-image {
+  width: 120px;
+}

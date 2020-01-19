@@ -40,7 +40,7 @@ In here, you'll find recaps of each of the books, as published. In time we will 
   	<a href="/gallery/2014jam">Read it here!</a>
   </p>
   <p>
-    <strong>Summary:</strong> In their debut adventure, Snakes Leningrad and Captain Gunsmoke stage a summer music festival for the benefit of the people of Earth. Things start out a little shaky for the guys when the opening act, Robot Peter Chiykowski, doesn't go over as planned. And it all goes from bad to worse when their casual acquaintance Spooky Jim arrives with an awful single and an even worse b-side. When the boys shoot down his ambitions and revoke his backstage pass, Jim gets serious and ascends to godhood with the help of an ancient relic known only as the GodStone! Now more powerful than a large dog or several whales, Jim uses his newfound power to throw Gunsmoke and Leningrad out of the festival- and off the planet!
+    <strong>Summary:</strong> In their debut adventure, <a data-bio="snakes" class="bio-link" href="#">Snakes Leningrad</a> and Captain Gunsmoke stage a summer music festival for the benefit of the people of Earth. Things start out a little shaky for the guys when the opening act, Robot Peter Chiykowski, doesn't go over as planned. And it all goes from bad to worse when their casual acquaintance Spooky Jim arrives with an awful single and an even worse b-side. When the boys shoot down his ambitions and revoke his backstage pass, Jim gets serious and ascends to godhood with the help of an ancient relic known only as the GodStone! Now more powerful than a large dog or several whales, Jim uses his newfound power to throw Gunsmoke and Leningrad out of the festival- and off the planet!
   </p>
   <p>As Gunsmoke, Leningrad, and RPC drift unbound through space, they float past the borders of the Kaplan Sector and wind up on the distant world of Xaxo. Taking a breather to regroup and plan, they do their best to recall how Spooky Jim got his hands on the Godstone. They remember the last time they saw it- when they stole it from Pixel City! They blasted through Rogue Cryptograms and hard encryption and busted out, only to get rolled by Commander Joachim Pegasus- the galaxy's nicest space cop- and his trusty ensign, Conrad Toast. Just when it looks like Gunsmoke and Leningrad might get a stern talking-to, all three of them get rolled by fellow Zap Jockeys and intergalactic rock superstars, Ten-Volt Tom and his band- those high-flyin', hard-jammin' astronauts, the Ancient Circumstances!</p>
   <p>Zap-Fu flies in the most classic fashion imaginable, until Gunsmoke and Tom fight each other to a standstill- Tom has the Godstone, but Gunsmoke still holds the much more powerful Prophecy Stone! Gunsmoke and Leningrad beat a snarky retreat, and then flash back to the present, just in time to realize that if Spooky Jim has the Godstone, that means Spooky Jim stole it from Tom's treasure planet- which means he has access to a dizzying array of terrifying weaponry and cool gadgets!</p>
@@ -71,6 +71,5 @@ In here, you'll find recaps of each of the books, as published. In time we will 
   <p>Jenner gets his retirement, with mixed feelings, and Pegasus and Toast prepare to address their Zybo saviours. But the fight isn't over- and neither is the adventure! Kobra Stallion part 2 is available online- read it now!</p>
 </div>
 
-<script src="/valiantRecap/js/recap.js">
-	
-</script>
+<script src="/valiantRecap/js/bios.js"></script>
+<script src="/valiantRecap/js/recap.js"></script>
