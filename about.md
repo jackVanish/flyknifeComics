@@ -79,11 +79,11 @@ CHRIS can typically be found at [chrisburnell.com](https://chrisburnell.com).
     <dd><em>Knifewolf//Hyper Punks Double Digest: ATTAXX! Assault on Gogol-1010</em></dd>
 </dl>
 
-Christian "The Wolf" DeWolf, owner and operator of Wolf Butler Comedy Server, is an international street cyber-
+Christian "The Wolf" DeWolf, owner and operator of Mirth Turtle Media, is an international street cyber-
 samurai and business operator. By day, he puts his opponents in *atari* with sensible investments and dependable returns,
-but by night, The Wolf stalks the streets of HALIFAX_1, raising his sword to COMMANDER ZETA and striking back against
-the darkness with defiant swings of his katana. His mighty swing can cut the very fabric of the GRIDDZONE, but despite
-such power, he fights on the side of good. He can be found at [christiandewolf.com](https://www.christiandewolf.com).
+but by night, The Wolf stalks the streets of HALIFAX_1, raising his fist to COMMANDER ZETA and striking back against
+the darkness with defiant swings of his "smart" wrecking bar. His mighty swing can wreck the very fabric of the GRIDDZONE, but despite
+such power, he fights on the side of good. He can be found at [mirthturtle.com](https://www.mirthturtle.com).
 
 <dl class="about-details">
     <dt>STRENGTH:</dt>
@@ -93,7 +93,7 @@ such power, he fights on the side of good. He can be found at [christiandewolf.c
     <dt>CYBER-DECK:</dt>
     <dd>2x8</dd>
     <dt>QUOTE:</dt>
-    <dd><q>Better watch out when my katana's CYBER-D METER is full- critical strike! <em>Atari!</em></q></dd>
+    <dd><q>Better watch out when my wrecking bar's CYBER-D METER is full- critical strike! <em>Atari!</em></q></dd>
 </dl>
 
 {% include content/heading.html type="h3" title="STEWART DELO" %}
@@ -140,4 +140,4 @@ Scion of Supernovas. Last of the Ravenous Hearts. <em>Deadstarr</em>. He of many
 --------
 
 
-(Flyknife Comics is owned and operated by Bruce Delo, with semi-regular collaborations by <a href="https://www.christiandewolf.com/" title="">Christian DeWolf</a>, Jon Pye, and Stewart Delo. Site design by <a href="https://chrisburnell.com/" title="">Chris Burnell</a>. Flyknife Comics is based in Canada and produces small-press comic books for a wide audience. All work on the site, unless otherwise indicated, is licensed under a {{ site.copyright }}.)
+(Flyknife Comics is owned and operated by Bruce Delo, with semi-regular collaborations by <a href="https://www.mirthturtle.com/" title="">Christian DeWolf</a>, Jon Pye, and Stewart Delo. Site design by <a href="https://chrisburnell.com/" title="">Chris Burnell</a>. Flyknife Comics is based in Canada and produces small-press comic books for a wide audience. All work on the site, unless otherwise indicated, is licensed under a {{ site.copyright }}.)
