@@ -28,6 +28,6 @@ Now, with my newly-incorporated cyber-business, I'm in the perfect position to r
 
 I've had to update some of the jokes and a few of the political references, but the original text is mostly intact. Instead of printing it on mere paper, though, I got it etched on Datasilk, and sprung for a cover with diamond embossing. I'm going to charge out the face for it.
 
-Luckily, my estate camped my <a href="http://www.ghostcrime.com/" target="_blank" title="Ghostcrime.com">old domain</a> this whole time, so you can once again order a copy from there.
+Luckily, my estate camped my <a href="https://www.ghostcrime.com/" target="_blank" title="Ghostcrime.com">old domain</a> this whole time, so you can once again order a copy from there.
 
 It's time to get this cyber-business off the ground.

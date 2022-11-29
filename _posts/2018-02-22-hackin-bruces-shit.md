@@ -18,7 +18,7 @@ author_farewell: Sorry Bruce for hacking your blog and calling your readers para
 author: Christian
 ---
 
-<a href="https://www.christiandewolf.com/" target="_blank" title="ChristianDeWolf.com">Christian</a> here! Bruce hasn't written a blog post in a while, so, with his business interests in mind, I'm taking it upon myself to inject one into his code.
+<a href="https://www.mirthturtle.com/" target="_blank" title="MirthTurtle.com">Christian</a> here! Bruce hasn't written a blog post in a while, so, with his business interests in mind, I'm taking it upon myself to inject one into his code.
 
 Bruce and I are going to be showing up at the Spring Geequinox at the Halifax Forum the weekend of April 14-15th, which is a great time to come down and buy our stuff. We'll be at different tables, but will be no doubt in communication through our dedicated Linux-based devices. (don't worry -- we're not hacking YOUR shit, just each others')
 
