@@ -26,8 +26,30 @@ The **Character Index**- organized by faction- begins below. In each entry, you'
 
 **Warning**: While this resource may be useful as you work your way through the story, please note that it does contain **unmarked spoilers**. Proceed with caution! If you want to experience the story as-intended, start in the [Librarium](/librarium).
 
-<p class="dramatic">Character Index</p>
-
+<h2>Character Index</h2>
+<p class="dramatic">Zap Jockeys</p>
+<div class="shelf">
+  <details>
+    <summary>Snakes Leningrad</summary>
+        <p>A Zap Jockey and cool dude. A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.</p>
+  </details>
+  <details>
+    <summary>Captain Gunsmoke</summary>
+        <p>A Zap Jockey and cool dude. A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.</p>
+  </details>
+  <details>
+    <summary>Fox Burke</summary>
+        <p>A Zap Jockey and cool dude. A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.</p>
+  </details>
+  <details>
+    <summary>Fractal Fatale</summary>
+        <p>A Zap Jockey and cool dude. A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.</p>
+  </details>
+  <details>
+    <summary>Darkshark Murderstar</summary>
+        <p>A Zap Jockey and cool dude. A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.A Zap Jockey and cool dude.</p>
+  </details>
+</div>
 
 <a name="bookRecaps"></a>
 <p class="dramatic">Book Index</p>
