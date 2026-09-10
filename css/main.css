@@ -605,7 +605,10 @@ a {
   .page-life-comix .nav-primary-life-comix a {
     color: #f473ff;
     background-color: transparent;
-    text-decoration: none; }
+    text-decoration: none;
+    p {
+      color: #f8f8f8 !important;
+    } }
   a:not([class])::before {
     -webkit-transition: width 0.2s ease;
     transition: width 0.2s ease;
@@ -630,7 +633,10 @@ a {
     left: 0;
     right: auto;
     background-color: transparent;
-    border-bottom-color: #f473ff; }
+    border-bottom-color: #f473ff;
+    p {
+      color: #e4e4e4;
+    } }
 
 .heading-anchor {
   display: none;
@@ -1171,6 +1177,9 @@ code {
 }
 
 .post-preview {
+}
+
+.post-preview-tombstone {
   max-width: 250px;
 }
 
@@ -1197,6 +1206,18 @@ code {
   padding: 0px 6px;
   color: black !important;
   font-size: 0.7em;
+}
+
+.post-preview-content {
+  max-width: 350px;
+  display: block;
+  p {
+    word-wrap: break-word;
+    white-space: normal;
+    color: #acacac;
+    font-size: 0.8em;
+    line-height: 20px;
+  }
 }
 
 .christian {

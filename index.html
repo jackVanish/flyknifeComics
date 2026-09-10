@@ -14,12 +14,32 @@ title: COBALT AND ELECTRICITY
         <li>
             <a href="{{ post.url }}">
                 <div class="post-preview">
-                    <div class="post-preview-topline">
-                        <time datetime="{{ post.date | date_to_xmlschema }}" class="preview-time">{{ post.date | date: '%d %B, %Y' }}</time>
-                        <span class="post-author-indicator {{ post.author | downcase }}">{{ post.author }}</span>
+                    <div class="post-preview-tombstone">
+                        <div class="post-preview-topline">
+                            <time datetime="{{ post.date | date_to_xmlschema }}" class="preview-time">{{ post.date | date: '%d %B, %Y' }}</time>
+                            <span class="post-author-indicator {{ post.author | downcase }}">{{ post.author }}</span>
+                        </div>
+                        <div class="post-preview-body">
+                            {{ post.title }}
+                        </div>
                     </div>
-                    <div class="post-preview-body">
-                        {{ post.title }}
+                    <div class="post-preview-content">
+                        <p>
+                            {% assign max_length = 120 %}
+                            {% assign the_content = post.content | split: " " %}
+                            {% assign cumul_string = "" %}
+
+                            {% for word in the_content %}
+                              {% assign temp = cumul_string | append: " " | append: word | strip %}
+                              {% if temp.size <= max_length %}
+                                {% assign cumul_string = temp %}
+                              {% else %}
+                                {% break %}
+                              {% endif %}
+                            {% endfor %}
+
+                            {{ cumul_string }}...
+                        </p>
                     </div>
                 </div>
             </a>
