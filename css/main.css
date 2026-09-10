@@ -459,14 +459,10 @@ ul:not([class])
   margin-top: 1.5rem; }
 
 ol:not([class]),
-ol.default-list {
-  counter-reset: ordered-list; }
   ol:not([class]) li,
-  ol.default-list li {
-    counter-increment: ordered-list; }
     ol:not([class]) li::before,
     ol.default-list li::before {
-      content: "#" counter(ordered-list); }
+      content: "#" counter(list-item); }
 
 ul:not([class]) li::before,
 ul.default-list li::before {
@@ -608,13 +604,17 @@ a {
   .page-projects .nav-primary-projects a,
   .page-life-comix .nav-primary-life-comix a {
     color: #f473ff;
-    text-decoration: none; }
+    background-color: transparent;
+    text-decoration: none;
+    p {
+      color: #f8f8f8 !important;
+    } }
   a:not([class])::before {
     -webkit-transition: width 0.2s ease;
     transition: width 0.2s ease;
     will-change: width;
     content: "";
-    background-color: #0d0d0d;
+    background-color: transparent;
     width: 0;
     height: 100%;
     border-bottom-width: 0.125rem;
@@ -632,7 +632,11 @@ a {
     width: 100%;
     left: 0;
     right: auto;
-    border-bottom-color: #f473ff; }
+    background-color: transparent;
+    border-bottom-color: #f473ff;
+    p {
+      color: #e4e4e4;
+    } }
 
 .heading-anchor {
   display: none;
@@ -1165,3 +1169,73 @@ aside:not([class*="main-aside"]) {
 a:not([class])::before {
   background-clip: padding-box;
   border-radius: 0.125rem; }
+
+/* summer 2026 update */
+
+code {
+  color: #f473ff;
+}
+
+.post-preview {
+}
+
+.post-preview-tombstone {
+  max-width: 250px;
+}
+
+.post-preview-body {
+  display: flex;
+  max-width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-preview-topline {
+  display: flex;
+  align-items: center;
+}
+
+.preview-time {
+  color: grey;
+  font-size: 0.9em;
+}
+
+.post-author-indicator {
+  border-radius: 5px;
+  margin-left: 25px;
+  padding: 0px 6px;
+  color: black !important;
+  font-size: 0.7em;
+}
+
+.post-preview-content {
+  max-width: 350px;
+  display: block;
+  p {
+    word-wrap: break-word;
+    white-space: normal;
+    color: #acacac;
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+}
+
+.christian {
+  background-color: #8dddff;
+}
+
+.bruce {
+  background-color: #dbad62;
+}
+
+.newsbot {
+  background-color: #e184ff;
+}
+
+.article-nav {
+  margin: 0 auto;
+  text-align: center;
+  a {
+    font-size: 1.2em;
+  }
+}

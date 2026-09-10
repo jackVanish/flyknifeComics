@@ -2,4 +2,8 @@
 
 The Webzone for all things Snakepunk.
 
-More build instructions and whatnot to come.
+## Running
+
+Install ruby, then `gem install jekyll bundler`
+
+Run at `localhost:4000` with `jekyll serve`.
