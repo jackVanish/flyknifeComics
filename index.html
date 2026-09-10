@@ -11,7 +11,7 @@ title: COBALT AND ELECTRICITY
 
 <ol class="default-list  articles-list" role="list" reversed>
     {% for post in site.posts %}
-        <li>
+        <li id="{{ post.slug }}">
             <a href="{{ post.url }}">
                 <div class="post-preview">
                     <div class="post-preview-tombstone">

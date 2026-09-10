@@ -1231,3 +1231,11 @@ code {
 .newsbot {
   background-color: #e184ff;
 }
+
+.article-nav {
+  margin: 0 auto;
+  text-align: center;
+  a {
+    font-size: 1.2em;
+  }
+}
