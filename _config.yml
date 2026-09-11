@@ -26,6 +26,6 @@ permalink: /:categories/:title/
 exclude: ['node_modules', '.sass-cache', 'src']
 incremental: true
 
-gems:
+plugins:
 - jekyll-redirect-from
 # - jemoji
