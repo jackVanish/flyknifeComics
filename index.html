@@ -24,22 +24,20 @@ title: COBALT AND ELECTRICITY
                         </div>
                     </div>
                     <div class="post-preview-content">
-                        <p>
-                            {% assign max_length = 120 %}
-                            {% assign the_content = post.content | split: " " %}
-                            {% assign cumul_string = "" %}
+                        {% assign max_length = 120 -%}
+                        {% assign the_content = post.content | split: " " -%}
+                        {% assign cumul_string = "" -%}
 
-                            {% for word in the_content %}
-                              {% assign temp = cumul_string | append: " " | append: word | strip %}
-                              {% if temp.size <= max_length %}
-                                {% assign cumul_string = temp %}
-                              {% else %}
-                                {% break %}
-                              {% endif %}
-                            {% endfor %}
+                        {% for word in the_content -%}
+                            {% assign temp = cumul_string | append: " " | append: word | strip -%}
+                            {% if temp.size <= max_length -%}
+                                {% assign cumul_string = temp -%}
+                            {% else -%}
+                                {% break -%}
+                            {% endif -%}
+                        {% endfor -%}
 
-                            {{ cumul_string }}...
-                        </p>
+                        <p>{{ cumul_string }}...</p>
                     </div>
                 </div>
             </a>
