@@ -25,7 +25,7 @@ title: COBALT AND ELECTRICITY
                     </div>
                     <div class="post-preview-content">
                         {% assign max_length = 120 -%}
-                        {% assign the_content = post.content | split: " " -%}
+                        {% assign the_content = post.content | markdownify | strip_html | split: " " -%}
                         {% assign cumul_string = "" -%}
 
                         {% for word in the_content -%}
